@@ -25,6 +25,17 @@ You can generate individual cards or batch-export multiple spells from a JSON fi
 
 ---
 
+## 🚀 Download & Run
+
+You can download the latest version of the app from the **[Releases section](https://github.com/Webyven/dnd-spells-card-generator/releases)**.
+
+1. Download the `DnDSpellCardGenerator.exe` file from the latest release.
+2. Run `DnDSpellCardGenerator.exe` — no installation required!
+
+> ⚠️ If Windows SmartScreen shows a warning, click "More info" > "Run anyway".
+
+---
+
 ## 📦 JSON Format
 
 To import multiple spells at once, use a `.json` file with the following structure:
