@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Proyectil guía",
+        "class": "Druida",
+        "duration": "1 turno",
+        "Level": "Conjuro Nivel 1",
+        "range": "120 pies",
+        "castingTime": "1 acción",
+        "school": "Evocación",
+        "description": "Lanzas un rayo de luz hacia una criatura dentro del alcance. Haz un ataque de conjuro a distancia contra el objetivo. Si acierta, el objetivo recibirá 4d6 de daño radiante y la siguiente tirada de ataque contra él antes del final de tu siguiente turno tendrá ventaja. Con un espacio de conjuro de nivel superior. El daño aumenta en 1d6 por cada nivel por encima de 1 que tenga el espacio.",
+        "components": "VSCM"
+    },
+    {
+        "name": "Proyectil mágico",
+        "class": "Hechicero",
+        "duration": "Instantáneo",
+        "Level": "Conjuro Nivel 1",
+        "range": "120 pies",
+        "castingTime": "1 acción",
+        "school": "Transmutación",
+        "description": "Creas tres dardos brillantes de fuerza mágica y cada uno de ellos golpea a una criatura de tu elección a la que puedas ver dentro del alcance. Cada dardo inflige 1d4 +1 de daño de fuerza al objetivo. Todos los dardos aciertan a la vez y puedes dirigirlos para que acierten a una sola criatura o a varias. Con un espacio de conjuro de nivel superior. El conjuro crea un dardo adicional por cada nivel por encima de 1 que tenga el espacio.",
+        "components": "VS"
+    }
+]

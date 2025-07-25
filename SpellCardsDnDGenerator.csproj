@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Costura.Fody.6.0.0\build\Costura.Fody.props" Condition="Exists('packages\Costura.Fody.6.0.0\build\Costura.Fody.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E419904-6BCD-4A9C-BFF1-BBC000EDB252}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SpellCardsDnDGenerator</RootNamespace>
+    <AssemblyName>SpellCardsDnDGenerator</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Costura, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
+      <HintPath>packages\Costura.Fody.6.0.0\lib\netstandard2.0\Costura.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\Weby\source\repos\AutocompleteShortcuts\bin\Debug\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CardControl.Designer.cs">
+      <DependentUpon>CardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Spell.cs" />
+    <EmbeddedResource Include="CardControl.resx">
+      <DependentUpon>CardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abjuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Conjuration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Divination.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evocation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Illusion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Necromancy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Transmutation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Somatic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verbal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material copia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Material Transparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Somatic Transparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verbal Transparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barbarian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cleric.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Druid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fighter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paladin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ranger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rogue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sorcerer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borde Carta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marco Carta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarbarianLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BardLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cleric Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Druid Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fighter Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monk Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaladinLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RangerLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rogue Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sorcerer Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warlock Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wizard Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enchantment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Concentration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="Resources\Transmutation White.png" />
+    <None Include="Resources\Necromancy White.png" />
+    <None Include="Resources\Illusion White.png" />
+    <None Include="Resources\Evocation White.png" />
+    <None Include="Resources\Enchantment White.png" />
+    <None Include="Resources\Divination White.png" />
+    <None Include="Resources\Conjuration White.png" />
+    <None Include="Resources\Abjuration White.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Fody.6.9.2\build\Fody.targets" Condition="Exists('packages\Fody.6.9.2\build\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Fody.6.9.2\build\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Fody.6.9.2\build\Fody.targets'))" />
+    <Error Condition="!Exists('packages\Costura.Fody.6.0.0\build\Costura.Fody.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Costura.Fody.6.0.0\build\Costura.Fody.props'))" />
+    <Error Condition="!Exists('packages\Costura.Fody.6.0.0\build\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Costura.Fody.6.0.0\build\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="packages\Costura.Fody.6.0.0\build\Costura.Fody.targets" Condition="Exists('packages\Costura.Fody.6.0.0\build\Costura.Fody.targets')" />
+</Project>
