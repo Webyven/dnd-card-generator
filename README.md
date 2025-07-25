@@ -3,8 +3,6 @@
 A Windows Forms (.NET) desktop application that allows you to create customized **Dungeons & Dragons 5e spell cards** with a clean, printable design.  
 You can generate individual cards or batch-export multiple spells from a JSON file as high-quality images.
 
----
-
 ## ✨ Features
 
 - 🧪 **Visual editor** to easily create custom spell cards.
@@ -15,15 +13,11 @@ You can generate individual cards or batch-export multiple spells from a JSON fi
 - ✅ Customizable fields: name, class, level, school, casting time, duration, range, components, material cost, etc.
 - 🎨 Automatically displays visual flags for **ritual** and **concentration** components.
 
----
-
 ## 🖥️ Screenshots
 
 | Main interface | Exported cards folder |
 |----------------|------------------------|
 | ![App Screenshot](assets/screenshot-app.png) | ![Cards Screenshot](assets/screenshot-exported-spells.png) |
-
----
 
 ## 🚀 Download & Run
 
@@ -33,8 +27,6 @@ You can download the latest version of the app from the **[Releases section](htt
 2. Run `DnDSpellCardGenerator.exe` — no installation required!
 
 > ⚠️ If Windows SmartScreen shows a warning, click "More info" > "Run anyway".
-
----
 
 ## 📦 JSON Format
 
@@ -70,8 +62,6 @@ To import multiple spells at once, use a `.json` file with the following structu
         C = Concentration
 
 materialCost is optional and only used if the spell requires a material component with a cost.
-
----
 
 ## 📌 Possible Improvements
 
