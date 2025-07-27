@@ -203,7 +203,7 @@ namespace SpellCardsDnDGenerator
 				case "Conjuración":
 					panelSchool.BackgroundImage = lblSpellName.ForeColor == Color.White ? Properties.Resources.Conjuration_White :  Properties.Resources.Conjuration;
 					break;
-				case "Divinación":
+				case "Adivinación":
 					panelSchool.BackgroundImage = lblSpellName.ForeColor == Color.White ? Properties.Resources.Divination_White : Properties.Resources.Divination;
 					break;
 				case "Encantamiento":

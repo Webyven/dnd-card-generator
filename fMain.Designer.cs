@@ -341,7 +341,7 @@
 			this.cbSchool.Items.AddRange(new object[] {
             "Ilusión",
             "Encantamiento",
-            "Divinación",
+            "Adivinación",
             "Necromancia",
             "Evocación",
             "Conjuración",
