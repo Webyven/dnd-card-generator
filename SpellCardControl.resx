@@ -117,11 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="lblDescription.Text" xml:space="preserve">
-    <value>Realizas una maravilla menor, una muestra de poder sobrenatural, un efecto mágico inofensivo dentro del alcance.
-Si lanzas este conjuro varias veces, puedes tener hasta tres de estos efectos de 1 minuto activos a la vez. Puedes disipar uno de estos efectos como acción.
-&lt;br/&gt;&lt;br/&gt;
-Puede otorgar ventaja en &lt;b&gt;tiradas de Carisma&lt;/b&gt; (Intimidación)
-</value>
-  </data>
 </root>

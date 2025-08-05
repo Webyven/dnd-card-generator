@@ -120,8 +120,7 @@
   <data name="txtDescription.DefaultText" xml:space="preserve">
     <value>Realizas una maravilla menor, una muestra de poder sobrenatural, un efecto mágico inofensivo dentro del alcance.
 Si lanzas este conjuro varias veces, puedes tener hasta tres de estos efectos de 1 minuto activos a la vez. Puedes disipar uno de estos efectos como acción.
-&lt;br/&gt;&lt;br/&gt;
-Puede otorgar ventaja en &lt;b&gt;tiradas de Carisma&lt;/b&gt; (Intimidación)</value>
+Puede otorgar ventaja en *tiradas de Carisma* (Intimidación)</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

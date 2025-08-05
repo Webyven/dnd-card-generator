@@ -63,11 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CardControl.cs">
+    <Compile Include="GameObject.cs" />
+    <Compile Include="SpellCardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CardControl.Designer.cs">
-      <DependentUpon>CardControl.cs</DependentUpon>
+    <Compile Include="SpellCardControl.Designer.cs">
+      <DependentUpon>SpellCardControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Constants.cs" />
     <Compile Include="fMain.cs">
@@ -79,8 +80,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spell.cs" />
-    <EmbeddedResource Include="CardControl.resx">
-      <DependentUpon>CardControl.cs</DependentUpon>
+    <EmbeddedResource Include="SpellCardControl.resx">
+      <DependentUpon>SpellCardControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>

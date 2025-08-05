@@ -8,7 +8,7 @@ namespace SpellCardsDnDGenerator
 {
 	public partial class fMain : Form
 	{
-		CardControl cardControl = new CardControl();
+		SpellCardControl cardControl = new SpellCardControl();
 
 		public fMain()
 		{
@@ -23,6 +23,7 @@ namespace SpellCardsDnDGenerator
 			pctPreviewCard.Image = bmp;
 			pctPreviewCard.SizeMode = PictureBoxSizeMode.Zoom; // Mantiene la relación de aspecto
 			cardControl.SomethingChanged += Something_Changed;
+			cardControl.SetDescription(txtDescription.Text);
 		}
 
 		private void cbMaterial_Changed(object sender, EventArgs e)

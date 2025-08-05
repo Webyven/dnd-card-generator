@@ -253,9 +253,8 @@
 			this.txtDescription.PasswordChar = '\0';
 			this.txtDescription.PlaceholderText = "";
 			this.txtDescription.SelectedText = "";
-			this.txtDescription.SelectionStart = 349;
 			this.txtDescription.ShadowDecoration.Parent = this.txtDescription;
-			this.txtDescription.Size = new System.Drawing.Size(573, 49);
+			this.txtDescription.Size = new System.Drawing.Size(573, 99);
 			this.txtDescription.TabIndex = 14;
 			this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
 			// 
@@ -316,7 +315,7 @@
 			this.btnExport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnExport.ForeColor = System.Drawing.Color.White;
 			this.btnExport.HoverState.Parent = this.btnExport;
-			this.btnExport.Location = new System.Drawing.Point(34, 597);
+			this.btnExport.Location = new System.Drawing.Point(34, 647);
 			this.btnExport.Name = "btnExport";
 			this.btnExport.ShadowDecoration.Parent = this.btnExport;
 			this.btnExport.Size = new System.Drawing.Size(180, 37);
@@ -459,7 +458,7 @@
 			this.pctPreviewCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.pctPreviewCard.Location = new System.Drawing.Point(642, 12);
 			this.pctPreviewCard.Name = "pctPreviewCard";
-			this.pctPreviewCard.Size = new System.Drawing.Size(489, 628);
+			this.pctPreviewCard.Size = new System.Drawing.Size(489, 678);
 			this.pctPreviewCard.TabIndex = 26;
 			this.pctPreviewCard.TabStop = false;
 			// 
@@ -475,7 +474,7 @@
 			this.btnImport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnImport.ForeColor = System.Drawing.Color.White;
 			this.btnImport.HoverState.Parent = this.btnImport;
-			this.btnImport.Location = new System.Drawing.Point(427, 597);
+			this.btnImport.Location = new System.Drawing.Point(427, 647);
 			this.btnImport.Name = "btnImport";
 			this.btnImport.ShadowDecoration.Parent = this.btnImport;
 			this.btnImport.Size = new System.Drawing.Size(180, 37);
@@ -495,7 +494,7 @@
 			this.btnExportJSON.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnExportJSON.ForeColor = System.Drawing.Color.White;
 			this.btnExportJSON.HoverState.Parent = this.btnExportJSON;
-			this.btnExportJSON.Location = new System.Drawing.Point(231, 597);
+			this.btnExportJSON.Location = new System.Drawing.Point(231, 647);
 			this.btnExportJSON.Name = "btnExportJSON";
 			this.btnExportJSON.ShadowDecoration.Parent = this.btnExportJSON;
 			this.btnExportJSON.Size = new System.Drawing.Size(180, 37);
@@ -604,7 +603,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1148, 661);
+			this.ClientSize = new System.Drawing.Size(1148, 711);
 			this.Controls.Add(this.txtLevel);
 			this.Controls.Add(this.lblLevel);
 			this.Controls.Add(this.txtMaterialCost);

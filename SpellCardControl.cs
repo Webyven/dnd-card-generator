@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -6,7 +7,7 @@ namespace SpellCardsDnDGenerator
 {
 	public delegate void SomethingChangedEventHandler(object sender, EventArgs e);
 
-	public partial class CardControl : UserControl
+	public partial class SpellCardControl : UserControl
 	{
 		public event SomethingChangedEventHandler SomethingChanged;
 		private Spell _spell = new Spell();
@@ -47,7 +48,7 @@ namespace SpellCardsDnDGenerator
 			EndUpdate();
 		}
 
-		public CardControl()
+		public SpellCardControl()
 		{
 			InitializeComponent();
 		}
@@ -264,9 +265,81 @@ namespace SpellCardsDnDGenerator
 
 		public void SetDescription(string description)
 		{
-			lblDescription.Text = description;
 			if (_spell != null)
 				_spell.Description = description;
+
+			this.flowDescriptionPanel.Controls.Clear();
+			string[] lines = description.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+
+			// Pseudocódigo:
+			// 1. Usar un carácter especial para marcar el inicio/fin de cursiva, por ejemplo _ para italic.
+			// 2. Modificar el bucle de análisis para detectar * (negrita) y _ (cursiva).
+			// 3. Aplicar FontStyle.Bold, FontStyle.Italic o ambos según el estado actual.
+			// 4. Procesar cada línea y aplicar los estilos correspondientes.
+
+			// Reemplaza el bloque de procesamiento de líneas en SetDescription por este:
+			foreach (string line in lines)
+			{
+				RichTextBox rtb = new RichTextBox();
+				rtb.BorderStyle = BorderStyle.None;
+				rtb.ReadOnly = true;
+				rtb.BackColor = this.flowDescriptionPanel.BackColor;
+				rtb.Font = new Font("MPlantin", 18F, FontStyle.Regular);
+
+				int start = 0;
+				bool bold = false;
+				bool italic = false;
+				for (int i = 0; i < line.Length; i++)
+				{
+					if (line[i] == '*' || line[i] == '_')
+					{
+						if (i > start)
+						{
+							rtb.SelectionStart = rtb.TextLength;
+							rtb.SelectionLength = 0;
+							FontStyle style = FontStyle.Regular;
+							if (bold && italic)
+								style = FontStyle.Bold | FontStyle.Italic;
+							else if (bold)
+								style = FontStyle.Bold;
+							else if (italic)
+								style = FontStyle.Italic;
+
+							rtb.SelectionFont = new Font(rtb.Font, style);
+							rtb.AppendText(line.Substring(start, i - start));
+						}
+						if (line[i] == '*')
+							bold = !bold;
+						else
+							italic = !italic;
+						start = i + 1;
+					}
+				}
+				if (start < line.Length)
+				{
+					rtb.SelectionStart = rtb.TextLength;
+					rtb.SelectionLength = 0;
+					FontStyle style = FontStyle.Regular;
+					if (bold && italic)
+						style = FontStyle.Bold | FontStyle.Italic;
+					else if (bold)
+						style = FontStyle.Bold;
+					else if (italic)
+						style = FontStyle.Italic;
+
+					rtb.SelectionFont = new Font(rtb.Font, style);
+					rtb.AppendText(line.Substring(start));
+				}
+				rtb.ScrollBars = RichTextBoxScrollBars.None;
+				rtb.Width = this.flowDescriptionPanel.Width - 10;
+
+				rtb.Height = Math.Max(
+					TextRenderer.MeasureText(rtb.Text, rtb.Font).Height + 20,
+					(int)Math.Ceiling(rtb.GetPositionFromCharIndex(rtb.TextLength - 1).Y + rtb.Font.Height * 1.1)
+				);
+
+				this.flowDescriptionPanel.Controls.Add(rtb);
+			}
 
 			if (!_isUpdating && SomethingChanged != null)
 				SomethingChanged(this, EventArgs.Empty);

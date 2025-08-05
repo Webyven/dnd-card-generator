@@ -1,6 +1,6 @@
 ﻿namespace SpellCardsDnDGenerator
 {
-	partial class CardControl
+	partial class SpellCardControl
 	{
 		/// <summary> 
 		/// Variable del diseñador necesaria.
@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CardControl));
 			this.topPanel = new Guna.UI2.WinForms.Guna2Panel();
 			this.lblRitual = new System.Windows.Forms.Label();
 			this.lblLevel = new System.Windows.Forms.Label();
@@ -47,12 +46,12 @@
 			this.lblSovietic = new System.Windows.Forms.Label();
 			this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lblMaterial = new System.Windows.Forms.Label();
-			this.lblDescription = new Guna.UI2.WinForms.Guna2HtmlLabel();
 			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
 			this.lblDuration = new System.Windows.Forms.Label();
 			this.pctConcentration = new System.Windows.Forms.PictureBox();
 			this.lblClass = new System.Windows.Forms.Label();
 			this.lblMaterialGold = new System.Windows.Forms.Label();
+			this.flowDescriptionPanel = new System.Windows.Forms.FlowLayoutPanel();
 			this.topPanel.SuspendLayout();
 			this.panelRandom.SuspendLayout();
 			this.guna2Panel1.SuspendLayout();
@@ -270,17 +269,6 @@
 			this.lblMaterial.Text = "M";
 			this.lblMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// lblDescription
-			// 
-			this.lblDescription.AutoSize = false;
-			this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-			this.lblDescription.Font = new System.Drawing.Font("MPlantin", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblDescription.Location = new System.Drawing.Point(99, 603);
-			this.lblDescription.Name = "lblDescription";
-			this.lblDescription.Size = new System.Drawing.Size(634, 413);
-			this.lblDescription.TabIndex = 16;
-			this.lblDescription.Text = resources.GetString("lblDescription.Text");
-			// 
 			// flowLayoutPanel1
 			// 
 			this.flowLayoutPanel1.Controls.Add(this.lblDuration);
@@ -333,14 +321,22 @@
 			this.lblMaterialGold.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			this.lblMaterialGold.Visible = false;
 			// 
-			// CardControl
+			// flowDescriptionPanel
+			// 
+			this.flowDescriptionPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+			this.flowDescriptionPanel.Location = new System.Drawing.Point(99, 603);
+			this.flowDescriptionPanel.Name = "flowDescriptionPanel";
+			this.flowDescriptionPanel.Size = new System.Drawing.Size(634, 413);
+			this.flowDescriptionPanel.TabIndex = 20;
+			// 
+			// SpellCardControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::SpellCardsDnDGenerator.Properties.Resources.Borde_Carta;
+			this.Controls.Add(this.flowDescriptionPanel);
 			this.Controls.Add(this.lblMaterialGold);
 			this.Controls.Add(this.lblClass);
-			this.Controls.Add(this.lblDescription);
 			this.Controls.Add(this.guna2Panel3);
 			this.Controls.Add(this.guna2Panel2);
 			this.Controls.Add(this.guna2Panel1);
@@ -352,7 +348,7 @@
 			this.Controls.Add(this.panelRandom);
 			this.Controls.Add(this.topPanel);
 			this.Controls.Add(this.flowLayoutPanel1);
-			this.Name = "CardControl";
+			this.Name = "SpellCardControl";
 			this.Size = new System.Drawing.Size(822, 1122);
 			this.topPanel.ResumeLayout(false);
 			this.panelRandom.ResumeLayout(false);
@@ -386,12 +382,12 @@
 		private System.Windows.Forms.Label lblSovietic;
 		private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
 		private System.Windows.Forms.Label lblMaterial;
-		private Guna.UI2.WinForms.Guna2HtmlLabel lblDescription;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
 		private System.Windows.Forms.PictureBox pctConcentration;
 		private System.Windows.Forms.Label lblRitual;
 		private System.Windows.Forms.Label lblDuration;
 		private System.Windows.Forms.Label lblClass;
 		private System.Windows.Forms.Label lblMaterialGold;
+		private System.Windows.Forms.FlowLayoutPanel flowDescriptionPanel;
 	}
 }
