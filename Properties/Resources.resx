@@ -130,11 +130,17 @@
   <data name="BarbarianLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BarbarianLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Barbarian_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Barbarian White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Bard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BardLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BardLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bard_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bard White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Borde_Carta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Borde Carta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -144,6 +150,9 @@
   </data>
   <data name="Cleric_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cleric Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cleric_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cleric White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Concentration" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Concentration.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +175,9 @@
   <data name="Druid_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Druid Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Druid_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Druid White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Enchantment" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enchantment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -184,6 +196,12 @@
   <data name="Fighter_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fighter Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fighter_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fighter White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GenericLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GenericLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Illusion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Illusion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,6 +217,9 @@
   <data name="Monk_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Monk Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Monk_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monk White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Necromancy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Necromancy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,11 +232,17 @@
   <data name="PaladinLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PaladinLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Paladin_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paladin White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Ranger" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ranger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RangerLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RangerLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ranger_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ranger White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rogue" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rogue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,11 +250,17 @@
   <data name="Rogue_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rogue Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rogue_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rogue White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Sorcerer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sorcerer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sorcerer_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sorcerer Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sorcerer_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sorcerer White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Transmutation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Transmutation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,10 +274,16 @@
   <data name="Warlock_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Warlock Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Warlock_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warlock White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Wizard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wizard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Wizard_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Wizard Line.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizard_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wizard White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

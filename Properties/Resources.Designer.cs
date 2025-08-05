@@ -93,6 +93,16 @@ namespace SpellCardsDnDGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Barbarian_White {
+            get {
+                object obj = ResourceManager.GetObject("Barbarian_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BarbarianLine {
             get {
                 object obj = ResourceManager.GetObject("BarbarianLine", resourceCulture);
@@ -106,6 +116,16 @@ namespace SpellCardsDnDGenerator.Properties {
         internal static System.Drawing.Bitmap Bard {
             get {
                 object obj = ResourceManager.GetObject("Bard", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bard_White {
+            get {
+                object obj = ResourceManager.GetObject("Bard_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,6 +166,16 @@ namespace SpellCardsDnDGenerator.Properties {
         internal static System.Drawing.Bitmap Cleric_Line {
             get {
                 object obj = ResourceManager.GetObject("Cleric_Line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cleric_White {
+            get {
+                object obj = ResourceManager.GetObject("Cleric_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +253,16 @@ namespace SpellCardsDnDGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Druid_White {
+            get {
+                object obj = ResourceManager.GetObject("Druid_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Enchantment {
             get {
                 object obj = ResourceManager.GetObject("Enchantment", resourceCulture);
@@ -283,6 +323,26 @@ namespace SpellCardsDnDGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Fighter_White {
+            get {
+                object obj = ResourceManager.GetObject("Fighter_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GenericLine {
+            get {
+                object obj = ResourceManager.GetObject("GenericLine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Illusion {
             get {
                 object obj = ResourceManager.GetObject("Illusion", resourceCulture);
@@ -333,6 +393,16 @@ namespace SpellCardsDnDGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Monk_White {
+            get {
+                object obj = ResourceManager.GetObject("Monk_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Necromancy {
             get {
                 object obj = ResourceManager.GetObject("Necromancy", resourceCulture);
@@ -363,6 +433,16 @@ namespace SpellCardsDnDGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Paladin_White {
+            get {
+                object obj = ResourceManager.GetObject("Paladin_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PaladinLine {
             get {
                 object obj = ResourceManager.GetObject("PaladinLine", resourceCulture);
@@ -376,6 +456,16 @@ namespace SpellCardsDnDGenerator.Properties {
         internal static System.Drawing.Bitmap Ranger {
             get {
                 object obj = ResourceManager.GetObject("Ranger", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ranger_White {
+            get {
+                object obj = ResourceManager.GetObject("Ranger_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +503,16 @@ namespace SpellCardsDnDGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rogue_White {
+            get {
+                object obj = ResourceManager.GetObject("Rogue_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Sorcerer {
             get {
                 object obj = ResourceManager.GetObject("Sorcerer", resourceCulture);
@@ -426,6 +526,16 @@ namespace SpellCardsDnDGenerator.Properties {
         internal static System.Drawing.Bitmap Sorcerer_Line {
             get {
                 object obj = ResourceManager.GetObject("Sorcerer_Line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sorcerer_White {
+            get {
+                object obj = ResourceManager.GetObject("Sorcerer_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,6 +583,16 @@ namespace SpellCardsDnDGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Warlock_White {
+            get {
+                object obj = ResourceManager.GetObject("Warlock_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Wizard {
             get {
                 object obj = ResourceManager.GetObject("Wizard", resourceCulture);
@@ -486,6 +606,16 @@ namespace SpellCardsDnDGenerator.Properties {
         internal static System.Drawing.Bitmap Wizard_Line {
             get {
                 object obj = ResourceManager.GetObject("Wizard_Line", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wizard_White {
+            get {
+                object obj = ResourceManager.GetObject("Wizard_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

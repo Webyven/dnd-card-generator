@@ -39,6 +39,21 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
     <Reference Include="Costura, Version=6.0.0.0, Culture=neutral, PublicKeyToken=9919ef960d84173d, processorArchitecture=MSIL">
       <HintPath>packages\Costura.Fody.6.0.0\lib\netstandard2.0\Costura.dll</HintPath>
     </Reference>
@@ -51,7 +66,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +81,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameObject.cs" />
+    <Compile Include="GenericCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GenericCardControl.Designer.cs">
+      <DependentUpon>GenericCardControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpellCardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,17 +103,44 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Spell.cs" />
+    <EmbeddedResource Include="GenericCardControl.resx">
+      <DependentUpon>GenericCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="SpellCardControl.resx">
       <DependentUpon>SpellCardControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Fuentes\Bookinsanity\Bookinsanity Bold Italic.otf" />
+    <None Include="Fuentes\Bookinsanity\Bookinsanity Bold.otf" />
+    <None Include="Fuentes\Bookinsanity\Bookinsanity Italic.otf" />
+    <None Include="Fuentes\Bookinsanity\Bookinsanity.otf" />
+    <None Include="Fuentes\MavenPro-VariableFont_wght.ttf" />
+    <None Include="Fuentes\MPLANTI1.ttf" />
+    <None Include="Fuentes\MPLANTI3.ttf" />
+    <None Include="Fuentes\MPLANTIN.ttf" />
+    <None Include="Fuentes\Mr Eaves\Mr Eaves Small Caps.otf" />
+    <None Include="Fuentes\RINGM___.TTF" />
+    <None Include="Fuentes\Scaly Sans Caps\Scaly Sans Caps Bold Italic.otf" />
+    <None Include="Fuentes\Scaly Sans Caps\Scaly Sans Caps Bold.otf" />
+    <None Include="Fuentes\Scaly Sans Caps\Scaly Sans Caps Italic.otf" />
+    <None Include="Fuentes\Scaly Sans Caps\Scaly Sans Caps.otf" />
+    <None Include="Fuentes\Scaly Sans\Scaly Sans Bold Italic.otf" />
+    <None Include="Fuentes\Scaly Sans\Scaly Sans Bold.otf" />
+    <None Include="Fuentes\Scaly Sans\Scaly Sans Italic.otf" />
+    <None Include="Fuentes\Scaly Sans\Scaly Sans.otf" />
+    <None Include="Fuentes\Zatanna Misdirection\Zatanna Misdirection Bold Italic.otf" />
+    <None Include="Fuentes\Zatanna Misdirection\Zatanna Misdirection Bold.otf" />
+    <None Include="Fuentes\Zatanna Misdirection\Zatanna Misdirection Italic.otf" />
+    <None Include="Fuentes\Zatanna Misdirection\Zatanna Misdirection.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -238,6 +288,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\GenericLine.png" />
+    <None Include="Resources\Wizard White.png" />
+    <None Include="Resources\Warlock White.png" />
+    <None Include="Resources\Sorcerer White.png" />
+    <None Include="Resources\Rogue White.png" />
+    <None Include="Resources\Ranger White.png" />
+    <None Include="Resources\Paladin White.png" />
+    <None Include="Resources\Monk White.png" />
+    <None Include="Resources\Fighter White.png" />
+    <None Include="Resources\Druid White.png" />
+    <None Include="Resources\Cleric White.png" />
+    <None Include="Resources\Bard White.png" />
+    <None Include="Resources\Barbarian White.png" />
     <None Include="Resources\Transmutation White.png" />
     <None Include="Resources\Necromancy White.png" />
     <None Include="Resources\Illusion White.png" />

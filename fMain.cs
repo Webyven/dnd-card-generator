@@ -10,6 +10,8 @@ namespace SpellCardsDnDGenerator
 	{
 		SpellCardControl cardControl = new SpellCardControl();
 
+		bool isSpellCard = true;
+
 		public fMain()
 		{
 			InitializeComponent();
@@ -206,6 +208,38 @@ namespace SpellCardsDnDGenerator
 		private void txtLevel_TextChanged(object sender, EventArgs e)
 		{
 			cardControl.SetLevel(txtLevel.Text);
+		}
+
+		private void btnSpellType_Click(object sender, EventArgs e)
+		{
+			this.isSpellCard = true;
+			UpdateUI();
+		}
+
+		private void btnGenericType_Click(object sender, EventArgs e)
+		{
+			this.isSpellCard = false;
+			UpdateUI();
+		}
+
+		private void UpdateUI()
+		{
+			if (this.isSpellCard)
+			{
+				btnSpellType.FillColor = Color.FromArgb(224, 224, 224);
+				btnSpellType.FillColor2 = Color.FromArgb(224, 224, 224);
+				btnGenericType.FillColor = Color.White;
+				btnGenericType.FillColor2 = Color.White;
+				pages.SelectedTab = pages.TabPages["pageSpells"];
+			}
+			else
+			{
+				btnSpellType.FillColor = Color.White;
+				btnSpellType.FillColor2 = Color.White;
+				btnGenericType.FillColor = Color.FromArgb(224, 224, 224);
+				btnGenericType.FillColor2 = Color.FromArgb(224, 224, 224);
+				pages.SelectedTab = pages.TabPages["pageGeneric"];
+			}
 		}
 	}
 }
