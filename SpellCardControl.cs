@@ -3,10 +3,8 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace SpellCardsDnDGenerator
+namespace DnDCardGenerator
 {
-	public delegate void SomethingChangedEventHandler(object sender, EventArgs e);
-
 	public partial class SpellCardControl : UserControl
 	{
 		public event SomethingChangedEventHandler SomethingChanged;

@@ -1,4 +1,4 @@
-﻿namespace SpellCardsDnDGenerator
+﻿namespace DnDCardGenerator
 {
 	partial class fMain
 	{
@@ -43,15 +43,12 @@
 			this.txtDescription = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.cbClass = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.btnExport = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.cbSchool = new Guna.UI2.WinForms.Guna2ComboBox();
 			this.cbConcentration = new Guna.UI2.WinForms.Guna2CheckBox();
 			this.cbMaterial = new Guna.UI2.WinForms.Guna2CheckBox();
 			this.cbVerbal = new Guna.UI2.WinForms.Guna2CheckBox();
 			this.cbSovietic = new Guna.UI2.WinForms.Guna2CheckBox();
 			this.label8 = new System.Windows.Forms.Label();
-			this.btnImport = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.btnExportJSON = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.cbRitual = new Guna.UI2.WinForms.Guna2CheckBox();
 			this.txtMaterialCost = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label9 = new System.Windows.Forms.Label();
@@ -65,15 +62,15 @@
 			this.pages = new Bunifu.UI.WinForms.BunifuPages();
 			this.pageSpells = new System.Windows.Forms.TabPage();
 			this.pageGeneric = new System.Windows.Forms.TabPage();
-			this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+			this.txtGenericDescription = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label11 = new System.Windows.Forms.Label();
-			this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+			this.txtGenericName = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
-			this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.cbIcon = new Guna.UI2.WinForms.Guna2ComboBox();
+			this.btnExportJSON = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnImport = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnExport = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.guna2ShadowPanel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pctPreviewCard)).BeginInit();
 			this.pages.SuspendLayout();
@@ -287,7 +284,7 @@
 			this.txtDescription.SelectedText = "";
 			this.txtDescription.SelectionStart = 332;
 			this.txtDescription.ShadowDecoration.Parent = this.txtDescription;
-			this.txtDescription.Size = new System.Drawing.Size(573, 90);
+			this.txtDescription.Size = new System.Drawing.Size(573, 94);
 			this.txtDescription.TabIndex = 14;
 			this.txtDescription.TextChanged += new System.EventHandler(this.txtDescription_TextChanged);
 			// 
@@ -337,27 +334,6 @@
 			this.cbClass.TabIndex = 4;
 			this.cbClass.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
 			this.cbClass.SelectedIndexChanged += new System.EventHandler(this.cbClass_SelectedIndexChanged);
-			// 
-			// btnExport
-			// 
-			this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnExport.Animated = true;
-			this.btnExport.BorderRadius = 5;
-			this.btnExport.CheckedState.Parent = this.btnExport;
-			this.btnExport.CustomImages.Parent = this.btnExport;
-			this.btnExport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnExport.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnExport.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnExport.ForeColor = System.Drawing.Color.Black;
-			this.btnExport.HoverState.Parent = this.btnExport;
-			this.btnExport.Location = new System.Drawing.Point(10, 551);
-			this.btnExport.Name = "btnExport";
-			this.btnExport.ShadowDecoration.Parent = this.btnExport;
-			this.btnExport.Size = new System.Drawing.Size(180, 37);
-			this.btnExport.TabIndex = 15;
-			this.btnExport.Text = "Exportar como imagen";
-			this.btnExport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-			this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
 			// 
 			// cbSchool
 			// 
@@ -491,48 +467,6 @@
 			this.label8.Size = new System.Drawing.Size(85, 16);
 			this.label8.TabIndex = 25;
 			this.label8.Text = "Componentes";
-			// 
-			// btnImport
-			// 
-			this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnImport.Animated = true;
-			this.btnImport.BorderRadius = 5;
-			this.btnImport.CheckedState.Parent = this.btnImport;
-			this.btnImport.CustomImages.Parent = this.btnImport;
-			this.btnImport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnImport.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnImport.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnImport.ForeColor = System.Drawing.Color.Black;
-			this.btnImport.HoverState.Parent = this.btnImport;
-			this.btnImport.Location = new System.Drawing.Point(403, 551);
-			this.btnImport.Name = "btnImport";
-			this.btnImport.ShadowDecoration.Parent = this.btnImport;
-			this.btnImport.Size = new System.Drawing.Size(180, 37);
-			this.btnImport.TabIndex = 17;
-			this.btnImport.Text = "Importar JSON";
-			this.btnImport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-			this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
-			// 
-			// btnExportJSON
-			// 
-			this.btnExportJSON.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnExportJSON.Animated = true;
-			this.btnExportJSON.BorderRadius = 5;
-			this.btnExportJSON.CheckedState.Parent = this.btnExportJSON;
-			this.btnExportJSON.CustomImages.Parent = this.btnExportJSON;
-			this.btnExportJSON.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnExportJSON.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnExportJSON.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnExportJSON.ForeColor = System.Drawing.Color.Black;
-			this.btnExportJSON.HoverState.Parent = this.btnExportJSON;
-			this.btnExportJSON.Location = new System.Drawing.Point(207, 551);
-			this.btnExportJSON.Name = "btnExportJSON";
-			this.btnExportJSON.ShadowDecoration.Parent = this.btnExportJSON;
-			this.btnExportJSON.Size = new System.Drawing.Size(180, 37);
-			this.btnExportJSON.TabIndex = 16;
-			this.btnExportJSON.Text = "Exportar a JSON";
-			this.btnExportJSON.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-			this.btnExportJSON.Click += new System.EventHandler(this.btnExportJSON_Click);
 			// 
 			// cbRitual
 			// 
@@ -729,12 +663,12 @@
 			this.pages.Location = new System.Drawing.Point(24, 100);
 			this.pages.Multiline = true;
 			this.pages.Name = "pages";
-			this.pages.Page = this.pageGeneric;
-			this.pages.PageIndex = 1;
-			this.pages.PageName = "pageGeneric";
-			this.pages.PageTitle = "GenericPage";
+			this.pages.Page = this.pageSpells;
+			this.pages.PageIndex = 0;
+			this.pages.PageName = "pageSpells";
+			this.pages.PageTitle = "SpellsPage";
 			this.pages.SelectedIndex = 0;
-			this.pages.Size = new System.Drawing.Size(596, 620);
+			this.pages.Size = new System.Drawing.Size(596, 575);
 			this.pages.TabIndex = 38;
 			animation1.AnimateOnlyDifferences = true;
 			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -758,12 +692,9 @@
 			// 
 			this.pageSpells.BackColor = System.Drawing.SystemColors.Control;
 			this.pageSpells.Controls.Add(this.txtDescription);
-			this.pageSpells.Controls.Add(this.btnExportJSON);
 			this.pageSpells.Controls.Add(this.txtLevel);
-			this.pageSpells.Controls.Add(this.btnImport);
 			this.pageSpells.Controls.Add(this.cbSovietic);
 			this.pageSpells.Controls.Add(this.lblLevel);
-			this.pageSpells.Controls.Add(this.btnExport);
 			this.pageSpells.Controls.Add(this.label1);
 			this.pageSpells.Controls.Add(this.txtMaterialCost);
 			this.pageSpells.Controls.Add(this.txtName);
@@ -787,22 +718,19 @@
 			this.pageSpells.Location = new System.Drawing.Point(4, 4);
 			this.pageSpells.Name = "pageSpells";
 			this.pageSpells.Padding = new System.Windows.Forms.Padding(3);
-			this.pageSpells.Size = new System.Drawing.Size(588, 594);
+			this.pageSpells.Size = new System.Drawing.Size(588, 549);
 			this.pageSpells.TabIndex = 0;
 			this.pageSpells.Text = "SpellsPage";
 			// 
 			// pageGeneric
 			// 
 			this.pageGeneric.BackColor = System.Drawing.SystemColors.Control;
-			this.pageGeneric.Controls.Add(this.guna2GradientButton1);
-			this.pageGeneric.Controls.Add(this.guna2GradientButton2);
-			this.pageGeneric.Controls.Add(this.guna2GradientButton3);
-			this.pageGeneric.Controls.Add(this.guna2TextBox1);
+			this.pageGeneric.Controls.Add(this.txtGenericDescription);
 			this.pageGeneric.Controls.Add(this.label11);
-			this.pageGeneric.Controls.Add(this.guna2TextBox2);
+			this.pageGeneric.Controls.Add(this.txtGenericName);
 			this.pageGeneric.Controls.Add(this.label12);
 			this.pageGeneric.Controls.Add(this.label13);
-			this.pageGeneric.Controls.Add(this.guna2ComboBox1);
+			this.pageGeneric.Controls.Add(this.cbIcon);
 			this.pageGeneric.Location = new System.Drawing.Point(4, 4);
 			this.pageGeneric.Name = "pageGeneric";
 			this.pageGeneric.Padding = new System.Windows.Forms.Padding(3);
@@ -810,38 +738,39 @@
 			this.pageGeneric.TabIndex = 1;
 			this.pageGeneric.Text = "GenericPage";
 			// 
-			// guna2TextBox1
+			// txtGenericDescription
 			// 
-			this.guna2TextBox1.AcceptsReturn = true;
-			this.guna2TextBox1.AcceptsTab = true;
-			this.guna2TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+			this.txtGenericDescription.AcceptsReturn = true;
+			this.txtGenericDescription.AcceptsTab = true;
+			this.txtGenericDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-			this.guna2TextBox1.Animated = true;
-			this.guna2TextBox1.BorderRadius = 5;
-			this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.guna2TextBox1.DefaultText = resources.GetString("guna2TextBox1.DefaultText");
-			this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-			this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-			this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-			this.guna2TextBox1.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-			this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-			this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-			this.guna2TextBox1.Location = new System.Drawing.Point(10, 99);
-			this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.guna2TextBox1.Multiline = true;
-			this.guna2TextBox1.Name = "guna2TextBox1";
-			this.guna2TextBox1.PasswordChar = '\0';
-			this.guna2TextBox1.PlaceholderText = "";
-			this.guna2TextBox1.SelectedText = "";
-			this.guna2TextBox1.SelectionStart = 332;
-			this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-			this.guna2TextBox1.Size = new System.Drawing.Size(573, 438);
-			this.guna2TextBox1.TabIndex = 20;
+			this.txtGenericDescription.Animated = true;
+			this.txtGenericDescription.BorderRadius = 5;
+			this.txtGenericDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtGenericDescription.DefaultText = resources.GetString("txtGenericDescription.DefaultText");
+			this.txtGenericDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtGenericDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtGenericDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericDescription.DisabledState.Parent = this.txtGenericDescription;
+			this.txtGenericDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+			this.txtGenericDescription.FocusedState.Parent = this.txtGenericDescription;
+			this.txtGenericDescription.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtGenericDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.txtGenericDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.txtGenericDescription.HoverState.Parent = this.txtGenericDescription;
+			this.txtGenericDescription.Location = new System.Drawing.Point(10, 99);
+			this.txtGenericDescription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtGenericDescription.Multiline = true;
+			this.txtGenericDescription.Name = "txtGenericDescription";
+			this.txtGenericDescription.PasswordChar = '\0';
+			this.txtGenericDescription.PlaceholderText = "";
+			this.txtGenericDescription.SelectedText = "";
+			this.txtGenericDescription.SelectionStart = 729;
+			this.txtGenericDescription.ShadowDecoration.Parent = this.txtGenericDescription;
+			this.txtGenericDescription.Size = new System.Drawing.Size(573, 487);
+			this.txtGenericDescription.TabIndex = 20;
+			this.txtGenericDescription.TextChanged += new System.EventHandler(this.txtGenericDescription_TextChanged);
 			// 
 			// label11
 			// 
@@ -853,33 +782,34 @@
 			this.label11.TabIndex = 15;
 			this.label11.Text = "Nombre";
 			// 
-			// guna2TextBox2
+			// txtGenericName
 			// 
-			this.guna2TextBox2.Animated = true;
-			this.guna2TextBox2.BorderRadius = 5;
-			this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.guna2TextBox2.DefaultText = "Proyectil Guía";
-			this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-			this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-			this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-			this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-			this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-			this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-			this.guna2TextBox2.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-			this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-			this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-			this.guna2TextBox2.Location = new System.Drawing.Point(10, 31);
-			this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-			this.guna2TextBox2.Name = "guna2TextBox2";
-			this.guna2TextBox2.PasswordChar = '\0';
-			this.guna2TextBox2.PlaceholderText = "";
-			this.guna2TextBox2.SelectedText = "";
-			this.guna2TextBox2.SelectionStart = 14;
-			this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-			this.guna2TextBox2.Size = new System.Drawing.Size(283, 36);
-			this.guna2TextBox2.TabIndex = 16;
+			this.txtGenericName.Animated = true;
+			this.txtGenericName.BorderRadius = 5;
+			this.txtGenericName.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtGenericName.DefaultText = "Agarrar (Grapple)";
+			this.txtGenericName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtGenericName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtGenericName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericName.DisabledState.Parent = this.txtGenericName;
+			this.txtGenericName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+			this.txtGenericName.FocusedState.Parent = this.txtGenericName;
+			this.txtGenericName.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtGenericName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.txtGenericName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.txtGenericName.HoverState.Parent = this.txtGenericName;
+			this.txtGenericName.Location = new System.Drawing.Point(10, 31);
+			this.txtGenericName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtGenericName.Name = "txtGenericName";
+			this.txtGenericName.PasswordChar = '\0';
+			this.txtGenericName.PlaceholderText = "";
+			this.txtGenericName.SelectedText = "";
+			this.txtGenericName.SelectionStart = 17;
+			this.txtGenericName.ShadowDecoration.Parent = this.txtGenericName;
+			this.txtGenericName.Size = new System.Drawing.Size(283, 36);
+			this.txtGenericName.TabIndex = 16;
+			this.txtGenericName.TextChanged += new System.EventHandler(this.txtGenericName_TextChanged);
 			// 
 			// label12
 			// 
@@ -901,99 +831,113 @@
 			this.label13.TabIndex = 19;
 			this.label13.Text = "Descripción";
 			// 
-			// guna2ComboBox1
+			// cbIcon
 			// 
-			this.guna2ComboBox1.Animated = true;
-			this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-			this.guna2ComboBox1.BorderRadius = 5;
-			this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-			this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-			this.guna2ComboBox1.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-			this.guna2ComboBox1.FormattingEnabled = true;
-			this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-			this.guna2ComboBox1.ItemHeight = 30;
-			this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Objeto",
+			this.cbIcon.Animated = true;
+			this.cbIcon.BackColor = System.Drawing.Color.Transparent;
+			this.cbIcon.BorderRadius = 5;
+			this.cbIcon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbIcon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbIcon.FocusedColor = System.Drawing.Color.Empty;
+			this.cbIcon.FocusedState.Parent = this.cbIcon;
+			this.cbIcon.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+			this.cbIcon.FormattingEnabled = true;
+			this.cbIcon.HoverState.Parent = this.cbIcon;
+			this.cbIcon.ItemHeight = 30;
+			this.cbIcon.Items.AddRange(new object[] {
             "Acción",
+            "Objeto",
+            "Clase: Bardo",
             "Clase: Bárbaro",
-            "Clase: "});
-			this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-			this.guna2ComboBox1.Location = new System.Drawing.Point(300, 31);
-			this.guna2ComboBox1.Name = "guna2ComboBox1";
-			this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-			this.guna2ComboBox1.Size = new System.Drawing.Size(283, 36);
-			this.guna2ComboBox1.StartIndex = 1;
-			this.guna2ComboBox1.TabIndex = 18;
-			this.guna2ComboBox1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+            "Clase: Paladin",
+            "Clase: Explorador",
+            "Clase: Clérigo",
+            "Clase: Pícaro",
+            "Clase: Druida",
+            "Clase: Hechicero",
+            "Clase: Guerrero",
+            "Clase: Brujo",
+            "Clase: Monje",
+            "Clase: Mago"});
+			this.cbIcon.ItemsAppearance.Parent = this.cbIcon;
+			this.cbIcon.Location = new System.Drawing.Point(300, 31);
+			this.cbIcon.Name = "cbIcon";
+			this.cbIcon.ShadowDecoration.Parent = this.cbIcon;
+			this.cbIcon.Size = new System.Drawing.Size(283, 36);
+			this.cbIcon.StartIndex = 0;
+			this.cbIcon.TabIndex = 18;
+			this.cbIcon.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.cbIcon.SelectedIndexChanged += new System.EventHandler(this.cbIcon_SelectedIndexChanged);
 			// 
-			// guna2GradientButton1
+			// btnExportJSON
 			// 
-			this.guna2GradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.guna2GradientButton1.Animated = true;
-			this.guna2GradientButton1.BorderRadius = 5;
-			this.guna2GradientButton1.CheckedState.Parent = this.guna2GradientButton1;
-			this.guna2GradientButton1.CustomImages.Parent = this.guna2GradientButton1;
-			this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.guna2GradientButton1.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2GradientButton1.ForeColor = System.Drawing.Color.Black;
-			this.guna2GradientButton1.HoverState.Parent = this.guna2GradientButton1;
-			this.guna2GradientButton1.Location = new System.Drawing.Point(207, 551);
-			this.guna2GradientButton1.Name = "guna2GradientButton1";
-			this.guna2GradientButton1.ShadowDecoration.Parent = this.guna2GradientButton1;
-			this.guna2GradientButton1.Size = new System.Drawing.Size(180, 37);
-			this.guna2GradientButton1.TabIndex = 22;
-			this.guna2GradientButton1.Text = "Exportar a JSON";
-			this.guna2GradientButton1.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.btnExportJSON.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnExportJSON.Animated = true;
+			this.btnExportJSON.BorderRadius = 5;
+			this.btnExportJSON.CheckedState.Parent = this.btnExportJSON;
+			this.btnExportJSON.CustomImages.Parent = this.btnExportJSON;
+			this.btnExportJSON.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnExportJSON.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnExportJSON.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnExportJSON.ForeColor = System.Drawing.Color.Black;
+			this.btnExportJSON.HoverState.Parent = this.btnExportJSON;
+			this.btnExportJSON.Location = new System.Drawing.Point(230, 681);
+			this.btnExportJSON.Name = "btnExportJSON";
+			this.btnExportJSON.ShadowDecoration.Parent = this.btnExportJSON;
+			this.btnExportJSON.Size = new System.Drawing.Size(180, 37);
+			this.btnExportJSON.TabIndex = 40;
+			this.btnExportJSON.Text = "Exportar a JSON";
+			this.btnExportJSON.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
 			// 
-			// guna2GradientButton2
+			// btnImport
 			// 
-			this.guna2GradientButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.guna2GradientButton2.Animated = true;
-			this.guna2GradientButton2.BorderRadius = 5;
-			this.guna2GradientButton2.CheckedState.Parent = this.guna2GradientButton2;
-			this.guna2GradientButton2.CustomImages.Parent = this.guna2GradientButton2;
-			this.guna2GradientButton2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.guna2GradientButton2.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2GradientButton2.ForeColor = System.Drawing.Color.Black;
-			this.guna2GradientButton2.HoverState.Parent = this.guna2GradientButton2;
-			this.guna2GradientButton2.Location = new System.Drawing.Point(403, 551);
-			this.guna2GradientButton2.Name = "guna2GradientButton2";
-			this.guna2GradientButton2.ShadowDecoration.Parent = this.guna2GradientButton2;
-			this.guna2GradientButton2.Size = new System.Drawing.Size(180, 37);
-			this.guna2GradientButton2.TabIndex = 23;
-			this.guna2GradientButton2.Text = "Importar JSON";
-			this.guna2GradientButton2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnImport.Animated = true;
+			this.btnImport.BorderRadius = 5;
+			this.btnImport.CheckedState.Parent = this.btnImport;
+			this.btnImport.CustomImages.Parent = this.btnImport;
+			this.btnImport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnImport.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnImport.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnImport.ForeColor = System.Drawing.Color.Black;
+			this.btnImport.HoverState.Parent = this.btnImport;
+			this.btnImport.Location = new System.Drawing.Point(426, 681);
+			this.btnImport.Name = "btnImport";
+			this.btnImport.ShadowDecoration.Parent = this.btnImport;
+			this.btnImport.Size = new System.Drawing.Size(180, 37);
+			this.btnImport.TabIndex = 41;
+			this.btnImport.Text = "Importar JSON";
+			this.btnImport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
 			// 
-			// guna2GradientButton3
+			// btnExport
 			// 
-			this.guna2GradientButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.guna2GradientButton3.Animated = true;
-			this.guna2GradientButton3.BorderRadius = 5;
-			this.guna2GradientButton3.CheckedState.Parent = this.guna2GradientButton3;
-			this.guna2GradientButton3.CustomImages.Parent = this.guna2GradientButton3;
-			this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.guna2GradientButton3.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.guna2GradientButton3.ForeColor = System.Drawing.Color.Black;
-			this.guna2GradientButton3.HoverState.Parent = this.guna2GradientButton3;
-			this.guna2GradientButton3.Location = new System.Drawing.Point(10, 551);
-			this.guna2GradientButton3.Name = "guna2GradientButton3";
-			this.guna2GradientButton3.ShadowDecoration.Parent = this.guna2GradientButton3;
-			this.guna2GradientButton3.Size = new System.Drawing.Size(180, 37);
-			this.guna2GradientButton3.TabIndex = 21;
-			this.guna2GradientButton3.Text = "Exportar como imagen";
-			this.guna2GradientButton3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.btnExport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnExport.Animated = true;
+			this.btnExport.BorderRadius = 5;
+			this.btnExport.CheckedState.Parent = this.btnExport;
+			this.btnExport.CustomImages.Parent = this.btnExport;
+			this.btnExport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnExport.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnExport.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnExport.ForeColor = System.Drawing.Color.Black;
+			this.btnExport.HoverState.Parent = this.btnExport;
+			this.btnExport.Location = new System.Drawing.Point(33, 681);
+			this.btnExport.Name = "btnExport";
+			this.btnExport.ShadowDecoration.Parent = this.btnExport;
+			this.btnExport.Size = new System.Drawing.Size(180, 37);
+			this.btnExport.TabIndex = 39;
+			this.btnExport.Text = "Exportar como imagen";
+			this.btnExport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
 			// 
 			// fMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1148, 741);
+			this.Controls.Add(this.btnExportJSON);
+			this.Controls.Add(this.btnImport);
+			this.Controls.Add(this.btnExport);
 			this.Controls.Add(this.label10);
 			this.Controls.Add(this.pctPreviewCard);
 			this.Controls.Add(this.guna2ShadowPanel1);
@@ -1027,7 +971,6 @@
 		private Guna.UI2.WinForms.Guna2TextBox txtDescription;
 		private System.Windows.Forms.Label label7;
 		private Guna.UI2.WinForms.Guna2ComboBox cbClass;
-		private Guna.UI2.WinForms.Guna2GradientButton btnExport;
 		private Guna.UI2.WinForms.Guna2ComboBox cbSchool;
 		private Guna.UI2.WinForms.Guna2CheckBox cbConcentration;
 		private Guna.UI2.WinForms.Guna2CheckBox cbMaterial;
@@ -1035,8 +978,6 @@
 		private Guna.UI2.WinForms.Guna2CheckBox cbSovietic;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.PictureBox pctPreviewCard;
-		private Guna.UI2.WinForms.Guna2GradientButton btnImport;
-		private Guna.UI2.WinForms.Guna2GradientButton btnExportJSON;
 		private Guna.UI2.WinForms.Guna2CheckBox cbRitual;
 		private Guna.UI2.WinForms.Guna2TextBox txtMaterialCost;
 		private System.Windows.Forms.Label label9;
@@ -1049,15 +990,15 @@
 		private Bunifu.UI.WinForms.BunifuPages pages;
 		private System.Windows.Forms.TabPage pageSpells;
 		private System.Windows.Forms.TabPage pageGeneric;
-		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+		private Guna.UI2.WinForms.Guna2TextBox txtGenericDescription;
 		private System.Windows.Forms.Label label11;
-		private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+		private Guna.UI2.WinForms.Guna2TextBox txtGenericName;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label13;
-		private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-		private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-		private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-		private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+		private Guna.UI2.WinForms.Guna2ComboBox cbIcon;
+		private Guna.UI2.WinForms.Guna2GradientButton btnExportJSON;
+		private Guna.UI2.WinForms.Guna2GradientButton btnImport;
+		private Guna.UI2.WinForms.Guna2GradientButton btnExport;
 	}
 }
 

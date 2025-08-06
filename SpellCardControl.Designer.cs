@@ -1,4 +1,4 @@
-﻿namespace SpellCardsDnDGenerator
+﻿namespace DnDCardGenerator
 {
 	partial class SpellCardControl
 	{
@@ -64,7 +64,7 @@
 			// topPanel
 			// 
 			this.topPanel.BackColor = System.Drawing.Color.Transparent;
-			this.topPanel.BackgroundImage = global::SpellCardsDnDGenerator.Properties.Resources.BarbarianLine;
+			this.topPanel.BackgroundImage = global::DnDCardGenerator.Properties.Resources.BarbarianLine;
 			this.topPanel.Controls.Add(this.lblRitual);
 			this.topPanel.Controls.Add(this.lblLevel);
 			this.topPanel.Controls.Add(this.lblSpellName);
@@ -135,7 +135,7 @@
 			// panelSchool
 			// 
 			this.panelSchool.BackColor = System.Drawing.Color.Transparent;
-			this.panelSchool.BackgroundImage = global::SpellCardsDnDGenerator.Properties.Resources.Evocation;
+			this.panelSchool.BackgroundImage = global::DnDCardGenerator.Properties.Resources.Evocation;
 			this.panelSchool.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
 			this.panelSchool.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.panelSchool.FillColor = System.Drawing.Color.Transparent;
@@ -292,7 +292,7 @@
 			// 
 			// pctConcentration
 			// 
-			this.pctConcentration.Image = global::SpellCardsDnDGenerator.Properties.Resources.Concentration;
+			this.pctConcentration.Image = global::DnDCardGenerator.Properties.Resources.Concentration;
 			this.pctConcentration.Location = new System.Drawing.Point(149, 3);
 			this.pctConcentration.Name = "pctConcentration";
 			this.pctConcentration.Size = new System.Drawing.Size(85, 39);
@@ -333,7 +333,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = global::SpellCardsDnDGenerator.Properties.Resources.Borde_Carta;
+			this.BackgroundImage = global::DnDCardGenerator.Properties.Resources.Borde_Carta;
 			this.Controls.Add(this.flowDescriptionPanel);
 			this.Controls.Add(this.lblMaterialGold);
 			this.Controls.Add(this.lblClass);

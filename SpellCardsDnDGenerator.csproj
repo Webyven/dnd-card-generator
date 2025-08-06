@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3E419904-6BCD-4A9C-BFF1-BBC000EDB252}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SpellCardsDnDGenerator</RootNamespace>
-    <AssemblyName>SpellCardsDnDGenerator</AssemblyName>
+    <RootNamespace>DnDCardGenerator</RootNamespace>
+    <AssemblyName>DnDCardGenerator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameObject.cs" />
+    <Compile Include="GameObjectType.cs" />
     <Compile Include="GenericCardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -288,6 +289,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Line.png" />
     <None Include="Resources\GenericLine.png" />
     <None Include="Resources\Wizard White.png" />
     <None Include="Resources\Warlock White.png" />

@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace SpellCardsDnDGenerator
+namespace DnDCardGenerator
 {
 	public partial class fMain : Form
 	{
+		Spell currentSpell = new Spell();
 		SpellCardControl cardControl = new SpellCardControl();
+		GameObject currentObject = new GameObject();
+		GenericCardControl genericCardControl = new GenericCardControl();
 
 		bool isSpellCard = true;
 
@@ -16,43 +19,51 @@ namespace SpellCardsDnDGenerator
 		{
 			InitializeComponent();
 
-			// Renderiza el CardControl a un Bitmap
-			Bitmap bmp = new Bitmap(cardControl.Width, cardControl.Height);
-			cardControl.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
 			cbMaterial.CheckedChanged += cbMaterial_Changed;
-
-			// Muestra el Bitmap en un PictureBox
-			pctPreviewCard.Image = bmp;
-			pctPreviewCard.SizeMode = PictureBoxSizeMode.Zoom; // Mantiene la relación de aspecto
 			cardControl.SomethingChanged += Something_Changed;
-			cardControl.SetDescription(txtDescription.Text);
+			genericCardControl.SomethingChanged += Something_Changed;
+
+			UpdateSpellFromInputs();
+			cardControl.Spell = currentSpell;
+
+			UpdateObjectFromInputs();
+			genericCardControl.GameObject = currentObject;
+			genericCardControl.RefreshControl();
+
+			UpdatePreview();
 		}
 
 		private void cbMaterial_Changed(object sender, EventArgs e)
 		{
 			txtMaterialCost.Enabled = cbMaterial.Checked;
+			UpdateSpellFromInputs();
+			UpdatePreview();
 		}
 
 		private void Something_Changed(object sender, EventArgs e)
 		{
-			// Renderiza el CardControl a un Bitmap
-			Bitmap bmp = new Bitmap(cardControl.Width, cardControl.Height);
-			cardControl.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
-			// Actualiza el PictureBox con el nuevo Bitmap
-			pctPreviewCard.Image = bmp;
+			UpdatePreview();
 		}
 
 		private void txtName_TextChanged(object sender, EventArgs e)
 		{
-			cardControl.SetSpellName(txtName.Text);
+			if (isSpellCard)
+			{
+				UpdateSpellFromInputs();
+			}
+			else
+			{
+				UpdateObjectFromInputs();
+			}
+			UpdatePreview();
 		}
 
 		private void btnExport_Click(object sender, EventArgs e)
 		{
-			// Exportar cardControl como imagen
-			using (Bitmap bitmap = new Bitmap(cardControl.Width, cardControl.Height))
+			Control previewControl = isSpellCard ? (Control)cardControl : (Control)genericCardControl;
+			using (Bitmap bitmap = new Bitmap(previewControl.Width, previewControl.Height))
 			{
-				cardControl.DrawToBitmap(bitmap, new Rectangle(0, 0, cardControl.Width, cardControl.Height));
+				previewControl.DrawToBitmap(bitmap, new Rectangle(0, 0, previewControl.Width, previewControl.Height));
 				Clipboard.SetImage(bitmap);
 			}
 			MessageBox.Show("La carta ha sido copiada al portapapeles como imagen.", "Exportar Imagen", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -60,42 +71,150 @@ namespace SpellCardsDnDGenerator
 
 		private void txtRange_TextChanged(object sender, EventArgs e)
 		{
-			cardControl.SetRange(txtRange.Text);
+			UpdateSpellFromInputs();
+			UpdatePreview();
 		}
 
 		private void txtDescription_TextChanged(object sender, EventArgs e)
 		{
-			cardControl.SetDescription(txtDescription.Text);
+			if (isSpellCard)
+			{
+				UpdateSpellFromInputs();
+			}
+			else
+			{
+				UpdateObjectFromInputs();
+			}
+			UpdatePreview();
 		}
 
 		private void cbSchool_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			cardControl.SetSchool(cbSchool.SelectedItem.ToString());
+			UpdateSpellFromInputs();
+			UpdatePreview();
 		}
 
 		private void txtCastingTime_TextChanged(object sender, EventArgs e)
 		{
-			cardControl.SetCastingTime(txtCastingTime.Text);
+			UpdateSpellFromInputs();
+			UpdatePreview();
 		}
 
 		private void txtDuration_TextChanged(object sender, EventArgs e)
 		{
-			cardControl.SetDuration(txtDuration.Text);
+			UpdateSpellFromInputs();
+			UpdatePreview();
 		}
 
 		private void cbSovietic_CheckedChanged(object sender, EventArgs e)
 		{
-			cardControl.SetComponents(cbConcentration.Checked,
-				cbRitual.Checked,
-				cbMaterial.Checked,
-				cbVerbal.Checked,
-				cbSovietic.Checked
-			);
+			UpdateSpellFromInputs();
+			UpdatePreview();
 		}
 
 		private void cbClass_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			cardControl.SetClass(cbClass.SelectedItem.ToString());
+			UpdateSpellFromInputs();
+			UpdatePreview();
+		}
+
+		private void txtMaterialCost_TextChanged(object sender, EventArgs e)
+		{
+			UpdateSpellFromInputs();
+			UpdatePreview();
+		}
+
+		private void txtLevel_TextChanged(object sender, EventArgs e)
+		{
+			UpdateSpellFromInputs();
+			UpdatePreview();
+		}
+
+		private void UpdateSpellFromInputs()
+		{
+			currentSpell.Name = txtName.Text;
+			currentSpell.Level = txtLevel.Text;
+			currentSpell.School = cbSchool.SelectedItem != null ? cbSchool.SelectedItem.ToString() : string.Empty;
+			currentSpell.Class = cbClass.SelectedItem != null ? cbClass.SelectedItem.ToString() : string.Empty;
+			currentSpell.CastingTime = txtCastingTime.Text;
+			currentSpell.Range = txtRange.Text;
+			currentSpell.Duration = txtDuration.Text;
+			currentSpell.Description = txtDescription.Text;
+			currentSpell.MaterialCost = txtMaterialCost.Text;
+			currentSpell.Components = string.Format("{0}{1}{2}{3}{4}",
+				cbConcentration.Checked ? "C" : "",
+				cbMaterial.Checked ? "M" : "",
+				cbVerbal.Checked ? "V" : "",
+				cbSovietic.Checked ? "S" : "",
+				cbRitual.Checked ? "R" : "");
+
+			cardControl.Spell = currentSpell;
+		}
+
+		private void UpdateObjectFromInputs()
+		{
+			// Inputs para la carta genérica
+			currentObject.Name = txtGenericName.Text;
+			currentObject.Description = txtGenericDescription.Text;
+
+			switch (cbIcon.SelectedItem != null ? cbIcon.SelectedItem.ToString() : "")
+			{
+				case "Acción":
+					currentObject.Icon = Properties.Resources.Barbarian_White;
+					break;
+				case "Objeto":
+					currentObject.Icon = Properties.Resources.Illusion_White;
+					break;
+				case "Clase: Bárbaro":
+					currentObject.Icon = Properties.Resources.Barbarian_White;
+					break;
+				case "Clase: Bardo":
+					currentObject.Icon = Properties.Resources.Bard_White;
+					break;
+				case "Clase: Clérigo":
+					currentObject.Icon = Properties.Resources.Cleric_White;
+					break;
+				case "Clase: Druida":
+					currentObject.Icon = Properties.Resources.Druid_White;
+					break;
+				case "Clase: Guerrero":
+					currentObject.Icon = Properties.Resources.Fighter_White;
+					break;
+				case "Clase: Paladín":
+					currentObject.Icon = Properties.Resources.Paladin_White;
+					break;
+				case "Clase: Pícaro":
+					currentObject.Icon = Properties.Resources.Rogue_White;
+					break;
+				case "Clase: Hechicero":
+					currentObject.Icon = Properties.Resources.Sorcerer_White;
+					break;
+				case "Clase: Explorador":
+					currentObject.Icon = Properties.Resources.Ranger_White;
+					break;
+				case "Clase: Warlock":
+					currentObject.Icon = Properties.Resources.Warlock_White;
+					break;
+				case "Clase: Monje":
+					currentObject.Icon = Properties.Resources.Monk_White;
+					break;
+				default:
+					currentObject.Icon = null;
+					break;
+			}
+
+			// Puedes agregar más propiedades si tu modelo GameObject lo requiere
+			genericCardControl.GameObject = currentObject;
+			genericCardControl.RefreshControl();
+		}
+
+		private void UpdatePreview()
+		{
+			Control previewControl = isSpellCard ? (Control)cardControl : (Control)genericCardControl;
+			Bitmap bmp = new Bitmap(previewControl.Width, previewControl.Height);
+			previewControl.DrawToBitmap(bmp, new Rectangle(0, 0, previewControl.Width, previewControl.Height));
+			pctPreviewCard.Image = bmp;
+			pctPreviewCard.SizeMode = PictureBoxSizeMode.Zoom;
 		}
 
 		private void btnImport_Click(object sender, EventArgs e)
@@ -169,10 +288,8 @@ namespace SpellCardsDnDGenerator
 					foreach (Spell spell in spells)
 					{
 						cardControl.Spell = spell;
-						// Actualizar la vista previa
-						Something_Changed(this, EventArgs.Empty);
+						UpdatePreview();
 
-						// Exportar la imagen del CardControl
 						using (Bitmap bitmap = new Bitmap(cardControl.Width, cardControl.Height))
 						{
 							cardControl.DrawToBitmap(bitmap, new Rectangle(0, 0, cardControl.Width, cardControl.Height));
@@ -181,7 +298,7 @@ namespace SpellCardsDnDGenerator
 						}
 						lblProgress.Text = $"Exportando: {spell.Name} ({++exportedCount}/{spellsCount})";
 						progressBar.Value = exportedCount;
-						Application.DoEvents(); // Permite que la UI se actualice
+						Application.DoEvents();
 					}
 
 					progressForm.Close();
@@ -196,30 +313,30 @@ namespace SpellCardsDnDGenerator
 
 		private void btnExportJSON_Click(object sender, EventArgs e)
 		{
-			Clipboard.SetText(JsonConvert.SerializeObject(cardControl.Spell, Formatting.Indented));
-			MessageBox.Show("El hechizo actual ha sido copiado al portapapeles en formato JSON.", "Exportar JSON", MessageBoxButtons.OK, MessageBoxIcon.Information);
-		}
-
-		private void txtMaterialCost_TextChanged(object sender, EventArgs e)
-		{
-			cardControl.SetMaterialCost(txtMaterialCost.Text);
-		}
-
-		private void txtLevel_TextChanged(object sender, EventArgs e)
-		{
-			cardControl.SetLevel(txtLevel.Text);
+			if (isSpellCard)
+			{
+				Clipboard.SetText(JsonConvert.SerializeObject(cardControl.Spell, Formatting.Indented));
+				MessageBox.Show("El hechizo actual ha sido copiado al portapapeles en formato JSON.", "Exportar JSON", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			else
+			{
+				Clipboard.SetText(JsonConvert.SerializeObject(genericCardControl.GameObject, Formatting.Indented));
+				MessageBox.Show("La carta ha sido copiada al portapapeles en formato JSON.", "Exportar JSON", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
 		}
 
 		private void btnSpellType_Click(object sender, EventArgs e)
 		{
 			this.isSpellCard = true;
 			UpdateUI();
+			UpdatePreview();
 		}
 
 		private void btnGenericType_Click(object sender, EventArgs e)
 		{
 			this.isSpellCard = false;
 			UpdateUI();
+			UpdatePreview();
 		}
 
 		private void UpdateUI()
@@ -240,6 +357,24 @@ namespace SpellCardsDnDGenerator
 				btnGenericType.FillColor2 = Color.FromArgb(224, 224, 224);
 				pages.SelectedTab = pages.TabPages["pageGeneric"];
 			}
+		}
+
+		private void txtGenericDescription_TextChanged(object sender, EventArgs e)
+		{
+			UpdateObjectFromInputs();
+			UpdatePreview();
+		}
+
+		private void txtGenericName_TextChanged(object sender, EventArgs e)
+		{
+			UpdateObjectFromInputs();
+			UpdatePreview();
+		}
+
+		private void cbIcon_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			UpdateObjectFromInputs();
+			UpdatePreview();
 		}
 	}
 }
