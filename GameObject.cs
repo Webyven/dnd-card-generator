@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -11,8 +12,11 @@ namespace DnDCardGenerator
 	{
 		public string Name { get; set; }
 		public string Description { get; set; }
-		public GameObjectType Type { get; set; }
-		public string Class { get; set; } = string.Empty;
-		public Image Icon { get; set; }
+		public string Type { get; set; } = "Acción";
+		public string Rarity { get; set; } = "Común";
+		public string BottomText { get; set; } = "Acción";
+
+		[JsonIgnore]
+		public Image Icon { get; set; } = Properties.Resources.Throw_White;
 	}
 }

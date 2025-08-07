@@ -29,10 +29,12 @@
 		private void InitializeComponent()
 		{
 			this.topPanel = new Guna.UI2.WinForms.Guna2Panel();
+			this.lblRarity = new System.Windows.Forms.Label();
+			this.lblType = new System.Windows.Forms.Label();
 			this.pctIcon = new System.Windows.Forms.PictureBox();
 			this.lblName = new System.Windows.Forms.Label();
 			this.flowDescriptionPanel = new System.Windows.Forms.FlowLayoutPanel();
-			this.lblClass = new System.Windows.Forms.Label();
+			this.lblBottomText = new System.Windows.Forms.Label();
 			this.topPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pctIcon)).BeginInit();
 			this.SuspendLayout();
@@ -41,20 +43,47 @@
 			// 
 			this.topPanel.BackColor = System.Drawing.Color.Transparent;
 			this.topPanel.BackgroundImage = global::DnDCardGenerator.Properties.Resources.GenericLine;
+			this.topPanel.Controls.Add(this.lblRarity);
+			this.topPanel.Controls.Add(this.lblType);
 			this.topPanel.Controls.Add(this.pctIcon);
 			this.topPanel.Controls.Add(this.lblName);
 			this.topPanel.Location = new System.Drawing.Point(72, 109);
 			this.topPanel.Name = "topPanel";
 			this.topPanel.ShadowDecoration.Parent = this.topPanel;
-			this.topPanel.Size = new System.Drawing.Size(702, 90);
+			this.topPanel.Size = new System.Drawing.Size(702, 120);
 			this.topPanel.TabIndex = 1;
+			// 
+			// lblRarity
+			// 
+			this.lblRarity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblRarity.AutoEllipsis = true;
+			this.lblRarity.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblRarity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+			this.lblRarity.Location = new System.Drawing.Point(506, 69);
+			this.lblRarity.Name = "lblRarity";
+			this.lblRarity.Size = new System.Drawing.Size(179, 38);
+			this.lblRarity.TabIndex = 4;
+			this.lblRarity.Text = "Común";
+			this.lblRarity.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
+			// lblType
+			// 
+			this.lblType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.lblType.AutoEllipsis = true;
+			this.lblType.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+			this.lblType.Location = new System.Drawing.Point(121, 69);
+			this.lblType.Name = "lblType";
+			this.lblType.Size = new System.Drawing.Size(379, 38);
+			this.lblType.TabIndex = 3;
+			this.lblType.Text = "Acción";
 			// 
 			// pctIcon
 			// 
 			this.pctIcon.Image = global::DnDCardGenerator.Properties.Resources.Fighter_White;
-			this.pctIcon.Location = new System.Drawing.Point(28, 15);
+			this.pctIcon.Location = new System.Drawing.Point(28, 22);
 			this.pctIcon.Name = "pctIcon";
-			this.pctIcon.Size = new System.Drawing.Size(60, 60);
+			this.pctIcon.Size = new System.Drawing.Size(75, 75);
 			this.pctIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pctIcon.TabIndex = 2;
 			this.pctIcon.TabStop = false;
@@ -63,39 +92,39 @@
 			// 
 			this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblName.AutoEllipsis = true;
-			this.lblName.Font = new System.Drawing.Font("Ringbearer", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblName.Font = new System.Drawing.Font("Ringbearer", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblName.ForeColor = System.Drawing.Color.White;
-			this.lblName.Location = new System.Drawing.Point(95, 13);
+			this.lblName.Location = new System.Drawing.Point(112, 22);
 			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(596, 73);
+			this.lblName.Size = new System.Drawing.Size(573, 45);
 			this.lblName.TabIndex = 1;
 			this.lblName.Text = "Agarrar (Grapple)";
-			this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.lblName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
 			// 
 			// flowDescriptionPanel
 			// 
 			this.flowDescriptionPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-			this.flowDescriptionPanel.Location = new System.Drawing.Point(72, 225);
+			this.flowDescriptionPanel.Location = new System.Drawing.Point(72, 247);
 			this.flowDescriptionPanel.Name = "flowDescriptionPanel";
-			this.flowDescriptionPanel.Size = new System.Drawing.Size(685, 796);
+			this.flowDescriptionPanel.Size = new System.Drawing.Size(685, 774);
 			this.flowDescriptionPanel.TabIndex = 21;
 			// 
-			// lblClass
+			// lblBottomText
 			// 
-			this.lblClass.Font = new System.Drawing.Font("Bookinsanity Remake", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblClass.Location = new System.Drawing.Point(147, 1033);
-			this.lblClass.Name = "lblClass";
-			this.lblClass.Size = new System.Drawing.Size(543, 28);
-			this.lblClass.TabIndex = 22;
-			this.lblClass.Text = "OBJETO";
-			this.lblClass.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.lblBottomText.Font = new System.Drawing.Font("Bookinsanity Remake", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblBottomText.Location = new System.Drawing.Point(147, 1024);
+			this.lblBottomText.Name = "lblBottomText";
+			this.lblBottomText.Size = new System.Drawing.Size(543, 28);
+			this.lblBottomText.TabIndex = 22;
+			this.lblBottomText.Text = "OBJETO";
+			this.lblBottomText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// GenericCardControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::DnDCardGenerator.Properties.Resources.Borde_Carta;
-			this.Controls.Add(this.lblClass);
+			this.Controls.Add(this.lblBottomText);
 			this.Controls.Add(this.flowDescriptionPanel);
 			this.Controls.Add(this.topPanel);
 			this.Name = "GenericCardControl";
@@ -112,6 +141,8 @@
 		private System.Windows.Forms.Label lblName;
 		private System.Windows.Forms.PictureBox pctIcon;
 		private System.Windows.Forms.FlowLayoutPanel flowDescriptionPanel;
-		private System.Windows.Forms.Label lblClass;
+		private System.Windows.Forms.Label lblBottomText;
+		private System.Windows.Forms.Label lblType;
+		private System.Windows.Forms.Label lblRarity;
 	}
 }

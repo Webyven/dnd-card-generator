@@ -1,7 +1,9 @@
-﻿using Newtonsoft.Json;
+﻿using Bunifu.UI.WinForms;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace DnDCardGenerator
@@ -15,6 +17,8 @@ namespace DnDCardGenerator
 
 		bool isSpellCard = true;
 
+		private Timer debounceTimer;
+
 		public fMain()
 		{
 			InitializeComponent();
@@ -22,6 +26,14 @@ namespace DnDCardGenerator
 			cbMaterial.CheckedChanged += cbMaterial_Changed;
 			cardControl.SomethingChanged += Something_Changed;
 			genericCardControl.SomethingChanged += Something_Changed;
+
+			debounceTimer = new Timer();
+			debounceTimer.Interval = 300; // 300 ms
+			debounceTimer.Tick += (s, e) =>
+			{
+				debounceTimer.Stop();
+				UpdatePreview();
+			};
 
 			UpdateSpellFromInputs();
 			cardControl.Spell = currentSpell;
@@ -37,25 +49,21 @@ namespace DnDCardGenerator
 		{
 			txtMaterialCost.Enabled = cbMaterial.Checked;
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void Something_Changed(object sender, EventArgs e)
 		{
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void txtName_TextChanged(object sender, EventArgs e)
 		{
 			if (isSpellCard)
-			{
 				UpdateSpellFromInputs();
-			}
 			else
-			{
 				UpdateObjectFromInputs();
-			}
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void btnExport_Click(object sender, EventArgs e)
@@ -72,7 +80,7 @@ namespace DnDCardGenerator
 		private void txtRange_TextChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void txtDescription_TextChanged(object sender, EventArgs e)
@@ -85,49 +93,49 @@ namespace DnDCardGenerator
 			{
 				UpdateObjectFromInputs();
 			}
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void cbSchool_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void txtCastingTime_TextChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void txtDuration_TextChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void cbSovietic_CheckedChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void cbClass_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void txtMaterialCost_TextChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void txtLevel_TextChanged(object sender, EventArgs e)
 		{
 			UpdateSpellFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void UpdateSpellFromInputs()
@@ -156,52 +164,6 @@ namespace DnDCardGenerator
 			// Inputs para la carta genérica
 			currentObject.Name = txtGenericName.Text;
 			currentObject.Description = txtGenericDescription.Text;
-
-			switch (cbIcon.SelectedItem != null ? cbIcon.SelectedItem.ToString() : "")
-			{
-				case "Acción":
-					currentObject.Icon = Properties.Resources.Barbarian_White;
-					break;
-				case "Objeto":
-					currentObject.Icon = Properties.Resources.Illusion_White;
-					break;
-				case "Clase: Bárbaro":
-					currentObject.Icon = Properties.Resources.Barbarian_White;
-					break;
-				case "Clase: Bardo":
-					currentObject.Icon = Properties.Resources.Bard_White;
-					break;
-				case "Clase: Clérigo":
-					currentObject.Icon = Properties.Resources.Cleric_White;
-					break;
-				case "Clase: Druida":
-					currentObject.Icon = Properties.Resources.Druid_White;
-					break;
-				case "Clase: Guerrero":
-					currentObject.Icon = Properties.Resources.Fighter_White;
-					break;
-				case "Clase: Paladín":
-					currentObject.Icon = Properties.Resources.Paladin_White;
-					break;
-				case "Clase: Pícaro":
-					currentObject.Icon = Properties.Resources.Rogue_White;
-					break;
-				case "Clase: Hechicero":
-					currentObject.Icon = Properties.Resources.Sorcerer_White;
-					break;
-				case "Clase: Explorador":
-					currentObject.Icon = Properties.Resources.Ranger_White;
-					break;
-				case "Clase: Warlock":
-					currentObject.Icon = Properties.Resources.Warlock_White;
-					break;
-				case "Clase: Monje":
-					currentObject.Icon = Properties.Resources.Monk_White;
-					break;
-				default:
-					currentObject.Icon = null;
-					break;
-			}
 
 			// Puedes agregar más propiedades si tu modelo GameObject lo requiere
 			genericCardControl.GameObject = currentObject;
@@ -272,7 +234,7 @@ namespace DnDCardGenerator
 					lblProgress.Text = "Exportando hechizos, por favor espere...";
 					lblProgress.Location = new Point(20, 7);
 					lblProgress.Width = 240;
-					System.Windows.Forms.ProgressBar progressBar = new System.Windows.Forms.ProgressBar();
+					ProgressBar progressBar = new ProgressBar();
 					progressBar.Style = ProgressBarStyle.Blocks;
 					progressBar.Location = new Point(20, 30);
 					progressBar.Width = 240;
@@ -283,7 +245,6 @@ namespace DnDCardGenerator
 					progressForm.Controls.Add(lblProgress);
 					progressForm.Show();
 					Application.DoEvents(); // Permite que la UI se actualice
-
 
 					foreach (Spell spell in spells)
 					{
@@ -329,14 +290,14 @@ namespace DnDCardGenerator
 		{
 			this.isSpellCard = true;
 			UpdateUI();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void btnGenericType_Click(object sender, EventArgs e)
 		{
 			this.isSpellCard = false;
 			UpdateUI();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void UpdateUI()
@@ -362,19 +323,78 @@ namespace DnDCardGenerator
 		private void txtGenericDescription_TextChanged(object sender, EventArgs e)
 		{
 			UpdateObjectFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void txtGenericName_TextChanged(object sender, EventArgs e)
 		{
 			UpdateObjectFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
 		}
 
 		private void cbIcon_SelectedIndexChanged(object sender, EventArgs e)
 		{
 			UpdateObjectFromInputs();
-			UpdatePreview();
+			DebounceUpdate();
+		}
+
+		private void DebounceUpdate()
+		{
+			debounceTimer.Stop();
+			debounceTimer.Start();
+		}
+
+		private void panelGenericIcon_Click(object sender, EventArgs e)
+		{
+			cmsGenericTypes.Show(panelGenericIcon, new Point(0, panelGenericIcon.Height));
+		}
+
+		private void cmsGenericTypes_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+		{
+			if (!(e.ClickedItem is ToolStripMenuItem menuItem))
+				return;
+
+			// Si tiene dropdown items, no hacemos nada
+			if (menuItem.DropDownItems.Count > 0)
+				return;
+
+			Image image = menuItem.Image;
+			string resourceName = menuItem.Tag as string;
+
+			if (image != null)
+			{
+				currentObject.Icon = Properties.Resources.ResourceManager.GetObject(resourceName) as Image;
+				this.pctGenericIcon.Image = image;
+				genericCardControl.GameObject = currentObject;
+				genericCardControl.RefreshControl();
+				DebounceUpdate();
+			}
+		}
+
+		private void txtGenericType_TextChanged(object sender, EventArgs e)
+		{
+			this.txtGenericInferior.PlaceholderText = string.IsNullOrEmpty(txtGenericType.Text) ? "Acción" : txtGenericType.Text;
+			genericCardControl.GameObject.Type = txtGenericType.Text;
+			genericCardControl.GameObject.BottomText = txtGenericType.Text;
+			genericCardControl.GameObject = currentObject;
+			genericCardControl.RefreshControl();
+			DebounceUpdate();
+		}
+
+		private void txtGenericInferior_TextChanged(object sender, EventArgs e)
+		{
+			genericCardControl.GameObject.BottomText = txtGenericInferior.Text;
+			genericCardControl.GameObject = currentObject;
+			genericCardControl.RefreshControl();
+			DebounceUpdate();
+		}
+
+		private void txtGenericRarity_TextChanged(object sender, EventArgs e)
+		{
+			genericCardControl.GameObject.Rarity = txtGenericRarity.Text;
+			genericCardControl.GameObject = currentObject;
+			genericCardControl.RefreshControl();
+			DebounceUpdate();
 		}
 	}
 }

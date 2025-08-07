@@ -42,8 +42,20 @@
     <Reference Include="Bunifu.UI.WinForms.1.5.3">
       <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPages">
       <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
       <HintPath>..\..\Resources\Libraries\Bunifu\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
@@ -81,7 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameObject.cs" />
-    <Compile Include="GameObjectType.cs" />
     <Compile Include="GenericCardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -289,6 +300,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Witch Hat White.png" />
+    <None Include="Resources\Throw White.png" />
+    <None Include="Resources\Chest White.png" />
+    <None Include="Resources\Witch Hat.png" />
+    <None Include="Resources\Chest.png" />
+    <None Include="Resources\Throw.png" />
     <None Include="Resources\Line.png" />
     <None Include="Resources\GenericLine.png" />
     <None Include="Resources\Wizard White.png" />

@@ -36,28 +36,12 @@ namespace DnDCardGenerator
 				return;
 
 			this.lblName.Text = GameObject.Name;
-			UpdateType();
+			this.pctIcon.Image = GameObject.Icon;
+			this.lblType.Text = GameObject.Type.ToString();
+			this.lblRarity.Text = GameObject.Rarity.ToString();
+			this.lblBottomText.Text = GameObject.BottomText.ToUpper();
+
 			UpdateDescription();
-		}
-
-		private void UpdateType()
-		{
-			this.lblClass.Text = GameObject.Type.ToString();
-
-			switch (GameObject.Type)
-			{
-				case GameObjectType.Item:
-					this.lblClass.Text = "OBJETO";
-					break;
-				case GameObjectType.Action:
-					this.lblClass.Text = "ACCIÓN";
-					break;
-				case GameObjectType.ClassObject:
-					this.lblClass.Text = GameObject.Class.ToUpper();
-					break;
-				default:
-					break;
-			}
 		}
 
 		private void GenericCardControl_Load(object sender, EventArgs e)

@@ -28,8 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -58,24 +59,61 @@
 			this.btnGenericType = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
 			this.label10 = new System.Windows.Forms.Label();
-			this.pctPreviewCard = new System.Windows.Forms.PictureBox();
 			this.pages = new Bunifu.UI.WinForms.BunifuPages();
 			this.pageSpells = new System.Windows.Forms.TabPage();
 			this.pageGeneric = new System.Windows.Forms.TabPage();
+			this.txtGenericInferior = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label12 = new System.Windows.Forms.Label();
+			this.panelGenericIcon = new Guna.UI2.WinForms.Guna2Panel();
+			this.pctGenericIcon = new System.Windows.Forms.PictureBox();
+			this.txtGenericRarity = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label14 = new System.Windows.Forms.Label();
+			this.txtGenericType = new Guna.UI2.WinForms.Guna2TextBox();
+			this.label15 = new System.Windows.Forms.Label();
 			this.txtGenericDescription = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label11 = new System.Windows.Forms.Label();
 			this.txtGenericName = new Guna.UI2.WinForms.Guna2TextBox();
-			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
-			this.cbIcon = new Guna.UI2.WinForms.Guna2ComboBox();
-			this.btnExportJSON = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.cmsGenericTypes = new System.Windows.Forms.ContextMenuStrip(this.components);
+			this.acciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.objetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.clasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.bardoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.bárbaroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.paladinToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.exploradorToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.clérigoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.pícaroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.druidaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.hechiceroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.guerreroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.brujoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.monjeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.magoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.bardoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.bárbaroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.paladinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.exploradorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.clérigoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.pícaroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.druidaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.hechiceroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.guerreroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.brujoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.monjeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.magoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.pctPreviewCard = new System.Windows.Forms.PictureBox();
 			this.btnImport = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.btnExportJSON = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnExport = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.guna2ShadowPanel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pctPreviewCard)).BeginInit();
 			this.pages.SuspendLayout();
 			this.pageSpells.SuspendLayout();
 			this.pageGeneric.SuspendLayout();
+			this.panelGenericIcon.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pctGenericIcon)).BeginInit();
+			this.cmsGenericTypes.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pctPreviewCard)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -121,7 +159,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(8, 80);
+			this.label2.Location = new System.Drawing.Point(8, 77);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(37, 16);
 			this.label2.TabIndex = 3;
@@ -131,7 +169,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(297, 80);
+			this.label3.Location = new System.Drawing.Point(297, 77);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(50, 16);
 			this.label3.TabIndex = 5;
@@ -639,18 +677,6 @@
 			this.label10.Text = "Tipo de carta";
 			this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// pctPreviewCard
-			// 
-			this.pctPreviewCard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.pctPreviewCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.pctPreviewCard.Location = new System.Drawing.Point(642, 12);
-			this.pctPreviewCard.Name = "pctPreviewCard";
-			this.pctPreviewCard.Size = new System.Drawing.Size(489, 708);
-			this.pctPreviewCard.TabIndex = 26;
-			this.pctPreviewCard.TabStop = false;
-			// 
 			// pages
 			// 
 			this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
@@ -663,29 +689,29 @@
 			this.pages.Location = new System.Drawing.Point(24, 100);
 			this.pages.Multiline = true;
 			this.pages.Name = "pages";
-			this.pages.Page = this.pageSpells;
-			this.pages.PageIndex = 0;
-			this.pages.PageName = "pageSpells";
-			this.pages.PageTitle = "SpellsPage";
+			this.pages.Page = this.pageGeneric;
+			this.pages.PageIndex = 1;
+			this.pages.PageName = "pageGeneric";
+			this.pages.PageTitle = "GenericPage";
 			this.pages.SelectedIndex = 0;
 			this.pages.Size = new System.Drawing.Size(596, 575);
 			this.pages.TabIndex = 38;
-			animation1.AnimateOnlyDifferences = true;
-			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-			animation1.LeafCoeff = 0F;
-			animation1.MaxTime = 1F;
-			animation1.MinTime = 0F;
-			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-			animation1.MosaicSize = 0;
-			animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-			animation1.RotateCoeff = 0F;
-			animation1.RotateLimit = 0F;
-			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-			animation1.TimeCoeff = 0F;
-			animation1.TransparencyCoeff = 1F;
-			this.pages.Transition = animation1;
+			animation2.AnimateOnlyDifferences = true;
+			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+			animation2.LeafCoeff = 0F;
+			animation2.MaxTime = 1F;
+			animation2.MinTime = 0F;
+			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+			animation2.MosaicSize = 0;
+			animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+			animation2.RotateCoeff = 0F;
+			animation2.RotateLimit = 0F;
+			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+			animation2.TimeCoeff = 0F;
+			animation2.TransparencyCoeff = 1F;
+			this.pages.Transition = animation2;
 			this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Transparent;
 			// 
 			// pageSpells
@@ -725,18 +751,165 @@
 			// pageGeneric
 			// 
 			this.pageGeneric.BackColor = System.Drawing.SystemColors.Control;
+			this.pageGeneric.Controls.Add(this.txtGenericInferior);
+			this.pageGeneric.Controls.Add(this.label12);
+			this.pageGeneric.Controls.Add(this.panelGenericIcon);
+			this.pageGeneric.Controls.Add(this.txtGenericRarity);
+			this.pageGeneric.Controls.Add(this.label14);
+			this.pageGeneric.Controls.Add(this.txtGenericType);
+			this.pageGeneric.Controls.Add(this.label15);
 			this.pageGeneric.Controls.Add(this.txtGenericDescription);
 			this.pageGeneric.Controls.Add(this.label11);
 			this.pageGeneric.Controls.Add(this.txtGenericName);
-			this.pageGeneric.Controls.Add(this.label12);
 			this.pageGeneric.Controls.Add(this.label13);
-			this.pageGeneric.Controls.Add(this.cbIcon);
 			this.pageGeneric.Location = new System.Drawing.Point(4, 4);
 			this.pageGeneric.Name = "pageGeneric";
 			this.pageGeneric.Padding = new System.Windows.Forms.Padding(3);
-			this.pageGeneric.Size = new System.Drawing.Size(588, 594);
+			this.pageGeneric.Size = new System.Drawing.Size(588, 549);
 			this.pageGeneric.TabIndex = 1;
 			this.pageGeneric.Text = "GenericPage";
+			// 
+			// txtGenericInferior
+			// 
+			this.txtGenericInferior.Animated = true;
+			this.txtGenericInferior.BorderRadius = 5;
+			this.txtGenericInferior.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtGenericInferior.DefaultText = "";
+			this.txtGenericInferior.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtGenericInferior.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtGenericInferior.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericInferior.DisabledState.Parent = this.txtGenericInferior;
+			this.txtGenericInferior.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericInferior.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+			this.txtGenericInferior.FocusedState.Parent = this.txtGenericInferior;
+			this.txtGenericInferior.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtGenericInferior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.txtGenericInferior.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.txtGenericInferior.HoverState.Parent = this.txtGenericInferior;
+			this.txtGenericInferior.Location = new System.Drawing.Point(300, 99);
+			this.txtGenericInferior.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtGenericInferior.Name = "txtGenericInferior";
+			this.txtGenericInferior.PasswordChar = '\0';
+			this.txtGenericInferior.PlaceholderText = "Acción";
+			this.txtGenericInferior.SelectedText = "";
+			this.txtGenericInferior.ShadowDecoration.Parent = this.txtGenericInferior;
+			this.txtGenericInferior.Size = new System.Drawing.Size(283, 36);
+			this.txtGenericInferior.TabIndex = 19;
+			this.txtGenericInferior.TextChanged += new System.EventHandler(this.txtGenericInferior_TextChanged);
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(298, 77);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(84, 16);
+			this.label12.TabIndex = 27;
+			this.label12.Text = "Texto inferior";
+			// 
+			// panelGenericIcon
+			// 
+			this.panelGenericIcon.BorderColor = System.Drawing.Color.Silver;
+			this.panelGenericIcon.BorderRadius = 5;
+			this.panelGenericIcon.BorderThickness = 1;
+			this.panelGenericIcon.Controls.Add(this.pctGenericIcon);
+			this.panelGenericIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.panelGenericIcon.Location = new System.Drawing.Point(10, 99);
+			this.panelGenericIcon.Name = "panelGenericIcon";
+			this.panelGenericIcon.ShadowDecoration.Parent = this.panelGenericIcon;
+			this.panelGenericIcon.Size = new System.Drawing.Size(36, 36);
+			this.panelGenericIcon.TabIndex = 25;
+			this.panelGenericIcon.Click += new System.EventHandler(this.panelGenericIcon_Click);
+			// 
+			// pctGenericIcon
+			// 
+			this.pctGenericIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.pctGenericIcon.Image = global::DnDCardGenerator.Properties.Resources.Throw;
+			this.pctGenericIcon.Location = new System.Drawing.Point(5, 5);
+			this.pctGenericIcon.Name = "pctGenericIcon";
+			this.pctGenericIcon.Size = new System.Drawing.Size(26, 26);
+			this.pctGenericIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pctGenericIcon.TabIndex = 0;
+			this.pctGenericIcon.TabStop = false;
+			this.pctGenericIcon.Click += new System.EventHandler(this.panelGenericIcon_Click);
+			// 
+			// txtGenericRarity
+			// 
+			this.txtGenericRarity.Animated = true;
+			this.txtGenericRarity.BorderRadius = 5;
+			this.txtGenericRarity.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtGenericRarity.DefaultText = "Común";
+			this.txtGenericRarity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtGenericRarity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtGenericRarity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericRarity.DisabledState.Parent = this.txtGenericRarity;
+			this.txtGenericRarity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericRarity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+			this.txtGenericRarity.FocusedState.Parent = this.txtGenericRarity;
+			this.txtGenericRarity.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtGenericRarity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.txtGenericRarity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.txtGenericRarity.HoverState.Parent = this.txtGenericRarity;
+			this.txtGenericRarity.Location = new System.Drawing.Point(300, 31);
+			this.txtGenericRarity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtGenericRarity.Name = "txtGenericRarity";
+			this.txtGenericRarity.PasswordChar = '\0';
+			this.txtGenericRarity.PlaceholderText = "";
+			this.txtGenericRarity.SelectedText = "";
+			this.txtGenericRarity.SelectionStart = 5;
+			this.txtGenericRarity.ShadowDecoration.Parent = this.txtGenericRarity;
+			this.txtGenericRarity.Size = new System.Drawing.Size(283, 36);
+			this.txtGenericRarity.TabIndex = 17;
+			this.txtGenericRarity.TextChanged += new System.EventHandler(this.txtGenericRarity_TextChanged);
+			// 
+			// label14
+			// 
+			this.label14.AutoSize = true;
+			this.label14.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label14.Location = new System.Drawing.Point(8, 77);
+			this.label14.Name = "label14";
+			this.label14.Size = new System.Drawing.Size(31, 16);
+			this.label14.TabIndex = 21;
+			this.label14.Text = "Tipo";
+			// 
+			// txtGenericType
+			// 
+			this.txtGenericType.Animated = true;
+			this.txtGenericType.BorderRadius = 5;
+			this.txtGenericType.Cursor = System.Windows.Forms.Cursors.IBeam;
+			this.txtGenericType.DefaultText = "Acción";
+			this.txtGenericType.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+			this.txtGenericType.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+			this.txtGenericType.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericType.DisabledState.Parent = this.txtGenericType;
+			this.txtGenericType.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+			this.txtGenericType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+			this.txtGenericType.FocusedState.Parent = this.txtGenericType;
+			this.txtGenericType.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtGenericType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+			this.txtGenericType.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+			this.txtGenericType.HoverState.Parent = this.txtGenericType;
+			this.txtGenericType.Location = new System.Drawing.Point(53, 99);
+			this.txtGenericType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.txtGenericType.Name = "txtGenericType";
+			this.txtGenericType.PasswordChar = '\0';
+			this.txtGenericType.PlaceholderText = "";
+			this.txtGenericType.SelectedText = "";
+			this.txtGenericType.SelectionStart = 6;
+			this.txtGenericType.ShadowDecoration.Parent = this.txtGenericType;
+			this.txtGenericType.Size = new System.Drawing.Size(240, 36);
+			this.txtGenericType.TabIndex = 18;
+			this.txtGenericType.TextChanged += new System.EventHandler(this.txtGenericType_TextChanged);
+			// 
+			// label15
+			// 
+			this.label15.AutoSize = true;
+			this.label15.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Location = new System.Drawing.Point(297, 10);
+			this.label15.Name = "label15";
+			this.label15.Size = new System.Drawing.Size(47, 16);
+			this.label15.TabIndex = 23;
+			this.label15.Text = "Rareza";
 			// 
 			// txtGenericDescription
 			// 
@@ -759,7 +932,7 @@
 			this.txtGenericDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
 			this.txtGenericDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
 			this.txtGenericDescription.HoverState.Parent = this.txtGenericDescription;
-			this.txtGenericDescription.Location = new System.Drawing.Point(10, 99);
+			this.txtGenericDescription.Location = new System.Drawing.Point(10, 170);
 			this.txtGenericDescription.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.txtGenericDescription.Multiline = true;
 			this.txtGenericDescription.Name = "txtGenericDescription";
@@ -768,7 +941,7 @@
 			this.txtGenericDescription.SelectedText = "";
 			this.txtGenericDescription.SelectionStart = 729;
 			this.txtGenericDescription.ShadowDecoration.Parent = this.txtGenericDescription;
-			this.txtGenericDescription.Size = new System.Drawing.Size(573, 487);
+			this.txtGenericDescription.Size = new System.Drawing.Size(573, 371);
 			this.txtGenericDescription.TabIndex = 20;
 			this.txtGenericDescription.TextChanged += new System.EventHandler(this.txtGenericDescription_TextChanged);
 			// 
@@ -811,84 +984,244 @@
 			this.txtGenericName.TabIndex = 16;
 			this.txtGenericName.TextChanged += new System.EventHandler(this.txtGenericName_TextChanged);
 			// 
-			// label12
-			// 
-			this.label12.AutoSize = true;
-			this.label12.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label12.Location = new System.Drawing.Point(297, 10);
-			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(37, 16);
-			this.label12.TabIndex = 17;
-			this.label12.Text = "Icono";
-			// 
 			// label13
 			// 
 			this.label13.AutoSize = true;
 			this.label13.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(8, 80);
+			this.label13.Location = new System.Drawing.Point(6, 149);
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(72, 16);
 			this.label13.TabIndex = 19;
 			this.label13.Text = "Descripción";
 			// 
-			// cbIcon
+			// cmsGenericTypes
 			// 
-			this.cbIcon.Animated = true;
-			this.cbIcon.BackColor = System.Drawing.Color.Transparent;
-			this.cbIcon.BorderRadius = 5;
-			this.cbIcon.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-			this.cbIcon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbIcon.FocusedColor = System.Drawing.Color.Empty;
-			this.cbIcon.FocusedState.Parent = this.cbIcon;
-			this.cbIcon.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cbIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-			this.cbIcon.FormattingEnabled = true;
-			this.cbIcon.HoverState.Parent = this.cbIcon;
-			this.cbIcon.ItemHeight = 30;
-			this.cbIcon.Items.AddRange(new object[] {
-            "Acción",
-            "Objeto",
-            "Clase: Bardo",
-            "Clase: Bárbaro",
-            "Clase: Paladin",
-            "Clase: Explorador",
-            "Clase: Clérigo",
-            "Clase: Pícaro",
-            "Clase: Druida",
-            "Clase: Hechicero",
-            "Clase: Guerrero",
-            "Clase: Brujo",
-            "Clase: Monje",
-            "Clase: Mago"});
-			this.cbIcon.ItemsAppearance.Parent = this.cbIcon;
-			this.cbIcon.Location = new System.Drawing.Point(300, 31);
-			this.cbIcon.Name = "cbIcon";
-			this.cbIcon.ShadowDecoration.Parent = this.cbIcon;
-			this.cbIcon.Size = new System.Drawing.Size(283, 36);
-			this.cbIcon.StartIndex = 0;
-			this.cbIcon.TabIndex = 18;
-			this.cbIcon.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
-			this.cbIcon.SelectedIndexChanged += new System.EventHandler(this.cbIcon_SelectedIndexChanged);
+			this.cmsGenericTypes.ImageScalingSize = new System.Drawing.Size(24, 24);
+			this.cmsGenericTypes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acciónToolStripMenuItem,
+            this.objetoToolStripMenuItem,
+            this.clasesToolStripMenuItem});
+			this.cmsGenericTypes.Name = "contextMenuStrip1";
+			this.cmsGenericTypes.Size = new System.Drawing.Size(189, 116);
+			this.cmsGenericTypes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
 			// 
-			// btnExportJSON
+			// acciónToolStripMenuItem
 			// 
-			this.btnExportJSON.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-			this.btnExportJSON.Animated = true;
-			this.btnExportJSON.BorderRadius = 5;
-			this.btnExportJSON.CheckedState.Parent = this.btnExportJSON;
-			this.btnExportJSON.CustomImages.Parent = this.btnExportJSON;
-			this.btnExportJSON.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnExportJSON.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnExportJSON.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnExportJSON.ForeColor = System.Drawing.Color.Black;
-			this.btnExportJSON.HoverState.Parent = this.btnExportJSON;
-			this.btnExportJSON.Location = new System.Drawing.Point(230, 681);
-			this.btnExportJSON.Name = "btnExportJSON";
-			this.btnExportJSON.ShadowDecoration.Parent = this.btnExportJSON;
-			this.btnExportJSON.Size = new System.Drawing.Size(180, 37);
-			this.btnExportJSON.TabIndex = 40;
-			this.btnExportJSON.Text = "Exportar a JSON";
-			this.btnExportJSON.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.acciónToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Throw;
+			this.acciónToolStripMenuItem.Name = "acciónToolStripMenuItem";
+			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(119, 30);
+			this.acciónToolStripMenuItem.Tag = "Throw_White";
+			this.acciónToolStripMenuItem.Text = "Acción";
+			// 
+			// objetoToolStripMenuItem
+			// 
+			this.objetoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Chest;
+			this.objetoToolStripMenuItem.Name = "objetoToolStripMenuItem";
+			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(119, 30);
+			this.objetoToolStripMenuItem.Tag = "Chest_White";
+			this.objetoToolStripMenuItem.Text = "Objeto";
+			// 
+			// clasesToolStripMenuItem
+			// 
+			this.clasesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bardoToolStripMenuItem2,
+            this.bárbaroToolStripMenuItem2,
+            this.paladinToolStripMenuItem2,
+            this.exploradorToolStripMenuItem2,
+            this.clérigoToolStripMenuItem2,
+            this.pícaroToolStripMenuItem2,
+            this.druidaToolStripMenuItem2,
+            this.hechiceroToolStripMenuItem2,
+            this.guerreroToolStripMenuItem2,
+            this.brujoToolStripMenuItem2,
+            this.monjeToolStripMenuItem2,
+            this.magoToolStripMenuItem2});
+			this.clasesToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Witch_Hat;
+			this.clasesToolStripMenuItem.Name = "clasesToolStripMenuItem";
+			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.clasesToolStripMenuItem.Tag = "";
+			this.clasesToolStripMenuItem.Text = "Clases";
+			this.clasesToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
+			// 
+			// bardoToolStripMenuItem2
+			// 
+			this.bardoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Bard;
+			this.bardoToolStripMenuItem2.Name = "bardoToolStripMenuItem2";
+			this.bardoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.bardoToolStripMenuItem2.Tag = "Bard_White";
+			this.bardoToolStripMenuItem2.Text = "Bardo";
+			// 
+			// bárbaroToolStripMenuItem2
+			// 
+			this.bárbaroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Barbarian;
+			this.bárbaroToolStripMenuItem2.Name = "bárbaroToolStripMenuItem2";
+			this.bárbaroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.bárbaroToolStripMenuItem2.Tag = "Barbarian_White";
+			this.bárbaroToolStripMenuItem2.Text = "Bárbaro";
+			// 
+			// paladinToolStripMenuItem2
+			// 
+			this.paladinToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Paladin;
+			this.paladinToolStripMenuItem2.Name = "paladinToolStripMenuItem2";
+			this.paladinToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.paladinToolStripMenuItem2.Tag = "Paladin_White";
+			this.paladinToolStripMenuItem2.Text = "Paladin";
+			// 
+			// exploradorToolStripMenuItem2
+			// 
+			this.exploradorToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Ranger;
+			this.exploradorToolStripMenuItem2.Name = "exploradorToolStripMenuItem2";
+			this.exploradorToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.exploradorToolStripMenuItem2.Tag = "Ranger_White";
+			this.exploradorToolStripMenuItem2.Text = "Explorador";
+			// 
+			// clérigoToolStripMenuItem2
+			// 
+			this.clérigoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Cleric;
+			this.clérigoToolStripMenuItem2.Name = "clérigoToolStripMenuItem2";
+			this.clérigoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.clérigoToolStripMenuItem2.Tag = "Cleric_White";
+			this.clérigoToolStripMenuItem2.Text = "Clérigo";
+			// 
+			// pícaroToolStripMenuItem2
+			// 
+			this.pícaroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Rogue;
+			this.pícaroToolStripMenuItem2.Name = "pícaroToolStripMenuItem2";
+			this.pícaroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.pícaroToolStripMenuItem2.Tag = "Rogue_White";
+			this.pícaroToolStripMenuItem2.Text = "Pícaro";
+			// 
+			// druidaToolStripMenuItem2
+			// 
+			this.druidaToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Druid;
+			this.druidaToolStripMenuItem2.Name = "druidaToolStripMenuItem2";
+			this.druidaToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.druidaToolStripMenuItem2.Tag = "Druid_White";
+			this.druidaToolStripMenuItem2.Text = "Druida";
+			// 
+			// hechiceroToolStripMenuItem2
+			// 
+			this.hechiceroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Sorcerer;
+			this.hechiceroToolStripMenuItem2.Name = "hechiceroToolStripMenuItem2";
+			this.hechiceroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.hechiceroToolStripMenuItem2.Tag = "Sorcerer_White";
+			this.hechiceroToolStripMenuItem2.Text = "Hechicero";
+			// 
+			// guerreroToolStripMenuItem2
+			// 
+			this.guerreroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Fighter;
+			this.guerreroToolStripMenuItem2.Name = "guerreroToolStripMenuItem2";
+			this.guerreroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.guerreroToolStripMenuItem2.Tag = "Fighter_White";
+			this.guerreroToolStripMenuItem2.Text = "Guerrero";
+			// 
+			// brujoToolStripMenuItem2
+			// 
+			this.brujoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Warlock;
+			this.brujoToolStripMenuItem2.Name = "brujoToolStripMenuItem2";
+			this.brujoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.brujoToolStripMenuItem2.Tag = "Warlock_White";
+			this.brujoToolStripMenuItem2.Text = "Brujo";
+			// 
+			// monjeToolStripMenuItem2
+			// 
+			this.monjeToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Monk;
+			this.monjeToolStripMenuItem2.Name = "monjeToolStripMenuItem2";
+			this.monjeToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.monjeToolStripMenuItem2.Tag = "Monk_White";
+			this.monjeToolStripMenuItem2.Text = "Monje";
+			// 
+			// magoToolStripMenuItem2
+			// 
+			this.magoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Wizard;
+			this.magoToolStripMenuItem2.Name = "magoToolStripMenuItem2";
+			this.magoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+			this.magoToolStripMenuItem2.Tag = "Wizard_White";
+			this.magoToolStripMenuItem2.Text = "Mago";
+			// 
+			// bardoToolStripMenuItem1
+			// 
+			this.bardoToolStripMenuItem1.Name = "bardoToolStripMenuItem1";
+			this.bardoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.bardoToolStripMenuItem1.Text = "Bardo";
+			// 
+			// bárbaroToolStripMenuItem1
+			// 
+			this.bárbaroToolStripMenuItem1.Name = "bárbaroToolStripMenuItem1";
+			this.bárbaroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.bárbaroToolStripMenuItem1.Text = "Bárbaro";
+			// 
+			// paladinToolStripMenuItem1
+			// 
+			this.paladinToolStripMenuItem1.Name = "paladinToolStripMenuItem1";
+			this.paladinToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.paladinToolStripMenuItem1.Text = "Paladin";
+			// 
+			// exploradorToolStripMenuItem1
+			// 
+			this.exploradorToolStripMenuItem1.Name = "exploradorToolStripMenuItem1";
+			this.exploradorToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.exploradorToolStripMenuItem1.Text = "Explorador";
+			// 
+			// clérigoToolStripMenuItem1
+			// 
+			this.clérigoToolStripMenuItem1.Name = "clérigoToolStripMenuItem1";
+			this.clérigoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.clérigoToolStripMenuItem1.Text = "Clérigo";
+			// 
+			// pícaroToolStripMenuItem1
+			// 
+			this.pícaroToolStripMenuItem1.Name = "pícaroToolStripMenuItem1";
+			this.pícaroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.pícaroToolStripMenuItem1.Text = "Pícaro";
+			// 
+			// druidaToolStripMenuItem1
+			// 
+			this.druidaToolStripMenuItem1.Name = "druidaToolStripMenuItem1";
+			this.druidaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.druidaToolStripMenuItem1.Text = "Druida";
+			// 
+			// hechiceroToolStripMenuItem1
+			// 
+			this.hechiceroToolStripMenuItem1.Name = "hechiceroToolStripMenuItem1";
+			this.hechiceroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.hechiceroToolStripMenuItem1.Text = "Hechicero";
+			// 
+			// guerreroToolStripMenuItem1
+			// 
+			this.guerreroToolStripMenuItem1.Name = "guerreroToolStripMenuItem1";
+			this.guerreroToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.guerreroToolStripMenuItem1.Text = "Guerrero";
+			// 
+			// brujoToolStripMenuItem1
+			// 
+			this.brujoToolStripMenuItem1.Name = "brujoToolStripMenuItem1";
+			this.brujoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.brujoToolStripMenuItem1.Text = "Brujo";
+			// 
+			// monjeToolStripMenuItem1
+			// 
+			this.monjeToolStripMenuItem1.Name = "monjeToolStripMenuItem1";
+			this.monjeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.monjeToolStripMenuItem1.Text = "Monje";
+			// 
+			// magoToolStripMenuItem1
+			// 
+			this.magoToolStripMenuItem1.Name = "magoToolStripMenuItem1";
+			this.magoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+			this.magoToolStripMenuItem1.Text = "Mago";
+			// 
+			// pctPreviewCard
+			// 
+			this.pctPreviewCard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.pctPreviewCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.pctPreviewCard.Location = new System.Drawing.Point(642, 12);
+			this.pctPreviewCard.Name = "pctPreviewCard";
+			this.pctPreviewCard.Size = new System.Drawing.Size(489, 708);
+			this.pctPreviewCard.TabIndex = 26;
+			this.pctPreviewCard.TabStop = false;
 			// 
 			// btnImport
 			// 
@@ -909,6 +1242,28 @@
 			this.btnImport.TabIndex = 41;
 			this.btnImport.Text = "Importar JSON";
 			this.btnImport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+			// 
+			// btnExportJSON
+			// 
+			this.btnExportJSON.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.btnExportJSON.Animated = true;
+			this.btnExportJSON.BorderRadius = 5;
+			this.btnExportJSON.CheckedState.Parent = this.btnExportJSON;
+			this.btnExportJSON.CustomImages.Parent = this.btnExportJSON;
+			this.btnExportJSON.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnExportJSON.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnExportJSON.Font = new System.Drawing.Font("Maven Pro", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnExportJSON.ForeColor = System.Drawing.Color.Black;
+			this.btnExportJSON.HoverState.Parent = this.btnExportJSON;
+			this.btnExportJSON.Location = new System.Drawing.Point(230, 681);
+			this.btnExportJSON.Name = "btnExportJSON";
+			this.btnExportJSON.ShadowDecoration.Parent = this.btnExportJSON;
+			this.btnExportJSON.Size = new System.Drawing.Size(180, 37);
+			this.btnExportJSON.TabIndex = 40;
+			this.btnExportJSON.Text = "Exportar a JSON";
+			this.btnExportJSON.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.btnExportJSON.Click += new System.EventHandler(this.btnExportJSON_Click);
 			// 
 			// btnExport
 			// 
@@ -929,6 +1284,7 @@
 			this.btnExport.TabIndex = 39;
 			this.btnExport.Text = "Exportar como imagen";
 			this.btnExport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
+			this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
 			// 
 			// fMain
 			// 
@@ -947,12 +1303,15 @@
 			this.Name = "fMain";
 			this.Text = "D&D Card Generator";
 			this.guna2ShadowPanel1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pctPreviewCard)).EndInit();
 			this.pages.ResumeLayout(false);
 			this.pageSpells.ResumeLayout(false);
 			this.pageSpells.PerformLayout();
 			this.pageGeneric.ResumeLayout(false);
 			this.pageGeneric.PerformLayout();
+			this.panelGenericIcon.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pctGenericIcon)).EndInit();
+			this.cmsGenericTypes.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.pctPreviewCard)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -993,11 +1352,45 @@
 		private Guna.UI2.WinForms.Guna2TextBox txtGenericDescription;
 		private System.Windows.Forms.Label label11;
 		private Guna.UI2.WinForms.Guna2TextBox txtGenericName;
-		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label13;
-		private Guna.UI2.WinForms.Guna2ComboBox cbIcon;
-		private Guna.UI2.WinForms.Guna2GradientButton btnExportJSON;
+		private Guna.UI2.WinForms.Guna2TextBox txtGenericRarity;
+		private System.Windows.Forms.Label label14;
+		private Guna.UI2.WinForms.Guna2TextBox txtGenericType;
+		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.ContextMenuStrip cmsGenericTypes;
+		private System.Windows.Forms.ToolStripMenuItem acciónToolStripMenuItem;
+		private Guna.UI2.WinForms.Guna2Panel panelGenericIcon;
+		private Guna.UI2.WinForms.Guna2TextBox txtGenericInferior;
+		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.PictureBox pctGenericIcon;
+		private System.Windows.Forms.ToolStripMenuItem objetoToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem clasesToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem bardoToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem bárbaroToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem paladinToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem exploradorToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem clérigoToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem pícaroToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem druidaToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem hechiceroToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem guerreroToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem brujoToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem monjeToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem magoToolStripMenuItem2;
+		private System.Windows.Forms.ToolStripMenuItem bardoToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem bárbaroToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem paladinToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem exploradorToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem clérigoToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem pícaroToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem druidaToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem hechiceroToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem guerreroToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem brujoToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem monjeToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem magoToolStripMenuItem1;
 		private Guna.UI2.WinForms.Guna2GradientButton btnImport;
+		private Guna.UI2.WinForms.Guna2GradientButton btnExportJSON;
 		private Guna.UI2.WinForms.Guna2GradientButton btnExport;
 	}
 }
