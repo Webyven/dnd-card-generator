@@ -23,8 +23,9 @@ You can generate individual cards or batch-export multiple spells from a JSON fi
 
 You can download the latest version of the app from the **[Releases section](https://github.com/Webyven/dnd-spell-card-generator/releases)**.
 
-1. Download the `DnDSpellCardGenerator.exe` file from the latest release.
-2. Run `DnDSpellCardGenerator.exe` — no installation required!
+1. Download the `DnDCardGenerator.exe` and `Fonts.rar` files from the latest release.
+2. Extract and install the fonts from `Fonts.rar` (Optional, but highly recommended)
+3. Run `DnDCardGenerator.exe` — no installation required!
 
 > ⚠️ If Windows SmartScreen shows a warning, click "More info" > "Run anyway".
 
