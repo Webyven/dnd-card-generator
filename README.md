@@ -1,6 +1,6 @@
-# 🧙‍♂️ D&D Spell Card Generator
+# 🧙‍♂️ D&D Card Generator
 
-A Windows Forms (.NET) desktop application that allows you to create customized **Dungeons & Dragons 5e spell cards** with a clean, printable design.  
+A Windows Forms (.NET) desktop application that allows you to create customized **Dungeons & Dragons 5e cards** with a clean, printable design.  
 You can generate individual cards or batch-export multiple spells from a JSON file as high-quality images.
 
 ## ✨ Features
