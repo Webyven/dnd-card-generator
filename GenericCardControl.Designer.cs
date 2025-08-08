@@ -35,16 +35,17 @@
 			this.lblName = new System.Windows.Forms.Label();
 			this.flowDescriptionPanel = new System.Windows.Forms.FlowLayoutPanel();
 			this.lblBottomText = new System.Windows.Forms.Label();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.topPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pctIcon)).BeginInit();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// topPanel
 			// 
 			this.topPanel.BackColor = System.Drawing.Color.Transparent;
 			this.topPanel.BackgroundImage = global::DnDCardGenerator.Properties.Resources.GenericLine;
-			this.topPanel.Controls.Add(this.lblRarity);
-			this.topPanel.Controls.Add(this.lblType);
+			this.topPanel.Controls.Add(this.panel1);
 			this.topPanel.Controls.Add(this.pctIcon);
 			this.topPanel.Controls.Add(this.lblName);
 			this.topPanel.Location = new System.Drawing.Point(72, 109);
@@ -55,28 +56,33 @@
 			// 
 			// lblRarity
 			// 
-			this.lblRarity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblRarity.AutoEllipsis = true;
+			this.lblRarity.AutoSize = true;
+			this.lblRarity.Dock = System.Windows.Forms.DockStyle.Right;
 			this.lblRarity.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblRarity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-			this.lblRarity.Location = new System.Drawing.Point(506, 69);
+			this.lblRarity.Location = new System.Drawing.Point(457, 0);
+			this.lblRarity.MaximumSize = new System.Drawing.Size(400, 0);
 			this.lblRarity.Name = "lblRarity";
-			this.lblRarity.Size = new System.Drawing.Size(179, 38);
+			this.lblRarity.Size = new System.Drawing.Size(107, 32);
 			this.lblRarity.TabIndex = 4;
 			this.lblRarity.Text = "Común";
 			this.lblRarity.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
 			// lblType
 			// 
-			this.lblType.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblType.AutoEllipsis = true;
+			this.lblType.AutoSize = true;
+			this.lblType.Dock = System.Windows.Forms.DockStyle.Left;
 			this.lblType.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-			this.lblType.Location = new System.Drawing.Point(121, 69);
+			this.lblType.Location = new System.Drawing.Point(0, 0);
+			this.lblType.MaximumSize = new System.Drawing.Size(400, 0);
 			this.lblType.Name = "lblType";
-			this.lblType.Size = new System.Drawing.Size(379, 38);
+			this.lblType.Size = new System.Drawing.Size(110, 32);
 			this.lblType.TabIndex = 3;
 			this.lblType.Text = "Acción";
+			this.lblType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// pctIcon
 			// 
@@ -119,6 +125,15 @@
 			this.lblBottomText.Text = "OBJETO";
 			this.lblBottomText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.lblRarity);
+			this.panel1.Controls.Add(this.lblType);
+			this.panel1.Location = new System.Drawing.Point(121, 71);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(564, 37);
+			this.panel1.TabIndex = 3;
+			// 
 			// GenericCardControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,6 +146,8 @@
 			this.Size = new System.Drawing.Size(822, 1122);
 			this.topPanel.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.pctIcon)).EndInit();
+			this.panel1.ResumeLayout(false);
+			this.panel1.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -144,5 +161,6 @@
 		private System.Windows.Forms.Label lblBottomText;
 		private System.Windows.Forms.Label lblType;
 		private System.Windows.Forms.Label lblRarity;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
