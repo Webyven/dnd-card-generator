@@ -354,8 +354,8 @@ namespace DnDCardGenerator
 			if (!(e.ClickedItem is ToolStripMenuItem menuItem))
 				return;
 
-			// Si tiene dropdown items, no hacemos nada
-			if (menuItem.DropDownItems.Count > 0)
+			// Si es el menú de "Clases", no hacemos nada
+			if (menuItem.Text == "Clases")
 				return;
 
 			Image image = menuItem.Image;

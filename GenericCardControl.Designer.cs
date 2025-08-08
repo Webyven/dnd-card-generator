@@ -29,16 +29,16 @@
 		private void InitializeComponent()
 		{
 			this.topPanel = new Guna.UI2.WinForms.Guna2Panel();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.lblRarity = new System.Windows.Forms.Label();
 			this.lblType = new System.Windows.Forms.Label();
 			this.pctIcon = new System.Windows.Forms.PictureBox();
 			this.lblName = new System.Windows.Forms.Label();
 			this.flowDescriptionPanel = new System.Windows.Forms.FlowLayoutPanel();
 			this.lblBottomText = new System.Windows.Forms.Label();
-			this.panel1 = new System.Windows.Forms.Panel();
 			this.topPanel.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pctIcon)).BeginInit();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pctIcon)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// topPanel
@@ -53,6 +53,15 @@
 			this.topPanel.ShadowDecoration.Parent = this.topPanel;
 			this.topPanel.Size = new System.Drawing.Size(702, 120);
 			this.topPanel.TabIndex = 1;
+			// 
+			// panel1
+			// 
+			this.panel1.Controls.Add(this.lblRarity);
+			this.panel1.Controls.Add(this.lblType);
+			this.panel1.Location = new System.Drawing.Point(121, 71);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(564, 37);
+			this.panel1.TabIndex = 3;
 			// 
 			// lblRarity
 			// 
@@ -125,15 +134,6 @@
 			this.lblBottomText.Text = "OBJETO";
 			this.lblBottomText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// panel1
-			// 
-			this.panel1.Controls.Add(this.lblRarity);
-			this.panel1.Controls.Add(this.lblType);
-			this.panel1.Location = new System.Drawing.Point(121, 71);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(564, 37);
-			this.panel1.TabIndex = 3;
-			// 
 			// GenericCardControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,9 +145,9 @@
 			this.Name = "GenericCardControl";
 			this.Size = new System.Drawing.Size(822, 1122);
 			this.topPanel.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pctIcon)).EndInit();
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pctIcon)).EndInit();
 			this.ResumeLayout(false);
 
 		}

@@ -77,6 +77,9 @@
 			this.cmsGenericTypes = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.acciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.objetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.armaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.escudoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.magiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.clasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bardoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 			this.bárbaroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -106,6 +109,7 @@
 			this.btnImport = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnExportJSON = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnExport = new Guna.UI2.WinForms.Guna2GradientButton();
+			this.herramientaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.guna2ShadowPanel1.SuspendLayout();
 			this.pages.SuspendLayout();
 			this.pageSpells.SuspendLayout();
@@ -939,6 +943,7 @@
 			this.txtGenericDescription.PasswordChar = '\0';
 			this.txtGenericDescription.PlaceholderText = "";
 			this.txtGenericDescription.SelectedText = "";
+			this.txtGenericDescription.SelectionStart = 734;
 			this.txtGenericDescription.ShadowDecoration.Parent = this.txtGenericDescription;
 			this.txtGenericDescription.Size = new System.Drawing.Size(573, 371);
 			this.txtGenericDescription.TabIndex = 20;
@@ -1001,24 +1006,54 @@
             this.objetoToolStripMenuItem,
             this.clasesToolStripMenuItem});
 			this.cmsGenericTypes.Name = "contextMenuStrip1";
-			this.cmsGenericTypes.Size = new System.Drawing.Size(120, 94);
+			this.cmsGenericTypes.Size = new System.Drawing.Size(189, 116);
 			this.cmsGenericTypes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
 			// 
 			// acciónToolStripMenuItem
 			// 
 			this.acciónToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Throw;
 			this.acciónToolStripMenuItem.Name = "acciónToolStripMenuItem";
-			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(119, 30);
+			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
 			this.acciónToolStripMenuItem.Tag = "Throw_White";
 			this.acciónToolStripMenuItem.Text = "Acción";
 			// 
 			// objetoToolStripMenuItem
 			// 
+			this.objetoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.armaToolStripMenuItem,
+            this.escudoToolStripMenuItem,
+            this.magiaToolStripMenuItem,
+            this.herramientaToolStripMenuItem});
 			this.objetoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Chest;
 			this.objetoToolStripMenuItem.Name = "objetoToolStripMenuItem";
-			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(119, 30);
+			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
 			this.objetoToolStripMenuItem.Tag = "Chest_White";
 			this.objetoToolStripMenuItem.Text = "Objeto";
+			this.objetoToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
+			// 
+			// armaToolStripMenuItem
+			// 
+			this.armaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Sword;
+			this.armaToolStripMenuItem.Name = "armaToolStripMenuItem";
+			this.armaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.armaToolStripMenuItem.Tag = "Sword_White";
+			this.armaToolStripMenuItem.Text = "Arma";
+			// 
+			// escudoToolStripMenuItem
+			// 
+			this.escudoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Shield;
+			this.escudoToolStripMenuItem.Name = "escudoToolStripMenuItem";
+			this.escudoToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.escudoToolStripMenuItem.Tag = "Shield_White";
+			this.escudoToolStripMenuItem.Text = "Escudo";
+			// 
+			// magiaToolStripMenuItem
+			// 
+			this.magiaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Wand;
+			this.magiaToolStripMenuItem.Name = "magiaToolStripMenuItem";
+			this.magiaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.magiaToolStripMenuItem.Tag = "Wand_White";
+			this.magiaToolStripMenuItem.Text = "Magia";
 			// 
 			// clasesToolStripMenuItem
 			// 
@@ -1037,7 +1072,7 @@
             this.magoToolStripMenuItem2});
 			this.clasesToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Witch_Hat;
 			this.clasesToolStripMenuItem.Name = "clasesToolStripMenuItem";
-			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(119, 30);
+			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
 			this.clasesToolStripMenuItem.Tag = "";
 			this.clasesToolStripMenuItem.Text = "Clases";
 			this.clasesToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
@@ -1285,6 +1320,14 @@
 			this.btnExport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
 			this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
 			// 
+			// herramientaToolStripMenuItem
+			// 
+			this.herramientaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Tool;
+			this.herramientaToolStripMenuItem.Name = "herramientaToolStripMenuItem";
+			this.herramientaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.herramientaToolStripMenuItem.Tag = "Tool_White";
+			this.herramientaToolStripMenuItem.Text = "Herramienta";
+			// 
 			// fMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1391,6 +1434,10 @@
 		private Guna.UI2.WinForms.Guna2GradientButton btnImport;
 		private Guna.UI2.WinForms.Guna2GradientButton btnExportJSON;
 		private Guna.UI2.WinForms.Guna2GradientButton btnExport;
+		private System.Windows.Forms.ToolStripMenuItem armaToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem escudoToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem magiaToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem herramientaToolStripMenuItem;
 	}
 }
 

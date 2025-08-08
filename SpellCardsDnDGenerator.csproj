@@ -300,6 +300,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Tool.png" />
+    <None Include="Resources\Tool White.png" />
+    <None Include="Resources\Wand.png" />
+    <None Include="Resources\Wand White.png" />
+    <None Include="Resources\Sword.png" />
+    <None Include="Resources\Sword White.png" />
+    <None Include="Resources\Shield.png" />
+    <None Include="Resources\Shield White.png" />
     <None Include="Resources\Witch Hat White.png" />
     <None Include="Resources\Throw White.png" />
     <None Include="Resources\Chest White.png" />
