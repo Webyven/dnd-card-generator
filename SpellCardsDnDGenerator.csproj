@@ -300,6 +300,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Races.png" />
+    <None Include="Resources\Tiefling.png" />
+    <None Include="Resources\Tiefling White.png" />
+    <None Include="Resources\Human.png" />
+    <None Include="Resources\Human White.png" />
+    <None Include="Resources\Halfling.png" />
+    <None Include="Resources\Halfling White.png" />
+    <None Include="Resources\Half Orc.png" />
+    <None Include="Resources\Half Orc White.png" />
+    <None Include="Resources\Half Elf.png" />
+    <None Include="Resources\Half Elf White.png" />
+    <None Include="Resources\Gnome.png" />
+    <None Include="Resources\Gnome White.png" />
+    <None Include="Resources\Githyanki.png" />
+    <None Include="Resources\Githyanki White.png" />
+    <None Include="Resources\Elf.png" />
+    <None Include="Resources\Elf White.png" />
+    <None Include="Resources\Dwarf.png" />
+    <None Include="Resources\Dwarf White.png" />
+    <None Include="Resources\Drow.png" />
+    <None Include="Resources\Drow White.png" />
+    <None Include="Resources\Dragonborn.png" />
+    <None Include="Resources\Dragonborn White.png" />
     <None Include="Resources\Tool.png" />
     <None Include="Resources\Tool White.png" />
     <None Include="Resources\Wand.png" />

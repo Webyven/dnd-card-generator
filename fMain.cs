@@ -355,7 +355,7 @@ namespace DnDCardGenerator
 				return;
 
 			// Si es el menú de "Clases", no hacemos nada
-			if (menuItem.Text == "Clases")
+			if (menuItem.Text == "Clases" || menuItem.Text == "Razas")
 				return;
 
 			Image image = menuItem.Image;

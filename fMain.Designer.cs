@@ -30,7 +30,7 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -80,6 +80,7 @@
 			this.armaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.escudoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.magiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.herramientaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.clasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bardoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 			this.bárbaroToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -93,6 +94,18 @@
 			this.brujoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 			this.monjeToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
 			this.magoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+			this.razasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.dragonbornToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.drowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.dwarfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.elfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.githyankiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.gnomeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.halfElfToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.halfOrcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.halflingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.humanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.tieflingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bardoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.bárbaroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.paladinToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -105,11 +118,10 @@
 			this.brujoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.monjeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.magoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-			this.pctPreviewCard = new System.Windows.Forms.PictureBox();
 			this.btnImport = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnExportJSON = new Guna.UI2.WinForms.Guna2GradientButton();
 			this.btnExport = new Guna.UI2.WinForms.Guna2GradientButton();
-			this.herramientaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.pctPreviewCard = new System.Windows.Forms.PictureBox();
 			this.guna2ShadowPanel1.SuspendLayout();
 			this.pages.SuspendLayout();
 			this.pageSpells.SuspendLayout();
@@ -700,22 +712,22 @@
 			this.pages.SelectedIndex = 0;
 			this.pages.Size = new System.Drawing.Size(596, 575);
 			this.pages.TabIndex = 38;
-			animation1.AnimateOnlyDifferences = true;
-			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-			animation1.LeafCoeff = 0F;
-			animation1.MaxTime = 1F;
-			animation1.MinTime = 0F;
-			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-			animation1.MosaicSize = 0;
-			animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-			animation1.RotateCoeff = 0F;
-			animation1.RotateLimit = 0F;
-			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-			animation1.TimeCoeff = 0F;
-			animation1.TransparencyCoeff = 1F;
-			this.pages.Transition = animation1;
+			animation2.AnimateOnlyDifferences = true;
+			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+			animation2.LeafCoeff = 0F;
+			animation2.MaxTime = 1F;
+			animation2.MinTime = 0F;
+			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+			animation2.MosaicSize = 0;
+			animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+			animation2.RotateCoeff = 0F;
+			animation2.RotateLimit = 0F;
+			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+			animation2.TimeCoeff = 0F;
+			animation2.TransparencyCoeff = 1F;
+			this.pages.Transition = animation2;
 			this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Transparent;
 			// 
 			// pageSpells
@@ -1000,20 +1012,21 @@
 			// 
 			// cmsGenericTypes
 			// 
-			this.cmsGenericTypes.ImageScalingSize = new System.Drawing.Size(24, 24);
+			this.cmsGenericTypes.ImageScalingSize = new System.Drawing.Size(26, 26);
 			this.cmsGenericTypes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acciónToolStripMenuItem,
             this.objetoToolStripMenuItem,
-            this.clasesToolStripMenuItem});
+            this.clasesToolStripMenuItem,
+            this.razasToolStripMenuItem});
 			this.cmsGenericTypes.Name = "contextMenuStrip1";
-			this.cmsGenericTypes.Size = new System.Drawing.Size(189, 116);
+			this.cmsGenericTypes.Size = new System.Drawing.Size(191, 154);
 			this.cmsGenericTypes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
 			// 
 			// acciónToolStripMenuItem
 			// 
 			this.acciónToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Throw;
 			this.acciónToolStripMenuItem.Name = "acciónToolStripMenuItem";
-			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.acciónToolStripMenuItem.Tag = "Throw_White";
 			this.acciónToolStripMenuItem.Text = "Acción";
 			// 
@@ -1026,7 +1039,7 @@
             this.herramientaToolStripMenuItem});
 			this.objetoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Chest;
 			this.objetoToolStripMenuItem.Name = "objetoToolStripMenuItem";
-			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.objetoToolStripMenuItem.Tag = "Chest_White";
 			this.objetoToolStripMenuItem.Text = "Objeto";
 			this.objetoToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
@@ -1035,7 +1048,7 @@
 			// 
 			this.armaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Sword;
 			this.armaToolStripMenuItem.Name = "armaToolStripMenuItem";
-			this.armaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.armaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.armaToolStripMenuItem.Tag = "Sword_White";
 			this.armaToolStripMenuItem.Text = "Arma";
 			// 
@@ -1043,7 +1056,7 @@
 			// 
 			this.escudoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Shield;
 			this.escudoToolStripMenuItem.Name = "escudoToolStripMenuItem";
-			this.escudoToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.escudoToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.escudoToolStripMenuItem.Tag = "Shield_White";
 			this.escudoToolStripMenuItem.Text = "Escudo";
 			// 
@@ -1051,9 +1064,17 @@
 			// 
 			this.magiaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Wand;
 			this.magiaToolStripMenuItem.Name = "magiaToolStripMenuItem";
-			this.magiaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.magiaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
 			this.magiaToolStripMenuItem.Tag = "Wand_White";
 			this.magiaToolStripMenuItem.Text = "Magia";
+			// 
+			// herramientaToolStripMenuItem
+			// 
+			this.herramientaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Tool;
+			this.herramientaToolStripMenuItem.Name = "herramientaToolStripMenuItem";
+			this.herramientaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.herramientaToolStripMenuItem.Tag = "Tool_White";
+			this.herramientaToolStripMenuItem.Text = "Herramienta";
 			// 
 			// clasesToolStripMenuItem
 			// 
@@ -1072,7 +1093,7 @@
             this.magoToolStripMenuItem2});
 			this.clasesToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Witch_Hat;
 			this.clasesToolStripMenuItem.Name = "clasesToolStripMenuItem";
-			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
+			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.clasesToolStripMenuItem.Tag = "";
 			this.clasesToolStripMenuItem.Text = "Clases";
 			this.clasesToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
@@ -1173,6 +1194,114 @@
 			this.magoToolStripMenuItem2.Tag = "Wizard_White";
 			this.magoToolStripMenuItem2.Text = "Mago";
 			// 
+			// razasToolStripMenuItem
+			// 
+			this.razasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dragonbornToolStripMenuItem,
+            this.drowToolStripMenuItem,
+            this.dwarfToolStripMenuItem,
+            this.elfToolStripMenuItem,
+            this.githyankiToolStripMenuItem,
+            this.gnomeToolStripMenuItem,
+            this.halfElfToolStripMenuItem,
+            this.halfOrcToolStripMenuItem,
+            this.halflingToolStripMenuItem,
+            this.humanToolStripMenuItem,
+            this.tieflingToolStripMenuItem});
+			this.razasToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Races;
+			this.razasToolStripMenuItem.Name = "razasToolStripMenuItem";
+			this.razasToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.razasToolStripMenuItem.Text = "Razas";
+			this.razasToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
+			// 
+			// dragonbornToolStripMenuItem
+			// 
+			this.dragonbornToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Dragonborn;
+			this.dragonbornToolStripMenuItem.Name = "dragonbornToolStripMenuItem";
+			this.dragonbornToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.dragonbornToolStripMenuItem.Tag = "Dragonborn_White";
+			this.dragonbornToolStripMenuItem.Text = "Dragonborn";
+			// 
+			// drowToolStripMenuItem
+			// 
+			this.drowToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Drow;
+			this.drowToolStripMenuItem.Name = "drowToolStripMenuItem";
+			this.drowToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.drowToolStripMenuItem.Tag = "Drow_White";
+			this.drowToolStripMenuItem.Text = "Drow";
+			// 
+			// dwarfToolStripMenuItem
+			// 
+			this.dwarfToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Dwarf;
+			this.dwarfToolStripMenuItem.Name = "dwarfToolStripMenuItem";
+			this.dwarfToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.dwarfToolStripMenuItem.Tag = "Dwarf_White";
+			this.dwarfToolStripMenuItem.Text = "Dwarf";
+			// 
+			// elfToolStripMenuItem
+			// 
+			this.elfToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Elf;
+			this.elfToolStripMenuItem.Name = "elfToolStripMenuItem";
+			this.elfToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.elfToolStripMenuItem.Tag = "Elf_White";
+			this.elfToolStripMenuItem.Text = "Elf";
+			// 
+			// githyankiToolStripMenuItem
+			// 
+			this.githyankiToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Githyanki;
+			this.githyankiToolStripMenuItem.Name = "githyankiToolStripMenuItem";
+			this.githyankiToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.githyankiToolStripMenuItem.Tag = "Githyanki_White";
+			this.githyankiToolStripMenuItem.Text = "Githyanki";
+			// 
+			// gnomeToolStripMenuItem
+			// 
+			this.gnomeToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Gnome;
+			this.gnomeToolStripMenuItem.Name = "gnomeToolStripMenuItem";
+			this.gnomeToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.gnomeToolStripMenuItem.Tag = "Gnome_White";
+			this.gnomeToolStripMenuItem.Text = "Gnome";
+			// 
+			// halfElfToolStripMenuItem
+			// 
+			this.halfElfToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Half_Elf;
+			this.halfElfToolStripMenuItem.Name = "halfElfToolStripMenuItem";
+			this.halfElfToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.halfElfToolStripMenuItem.Tag = "Half_Elf_White";
+			this.halfElfToolStripMenuItem.Text = "Half Elf";
+			// 
+			// halfOrcToolStripMenuItem
+			// 
+			this.halfOrcToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Half_Orc;
+			this.halfOrcToolStripMenuItem.Name = "halfOrcToolStripMenuItem";
+			this.halfOrcToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.halfOrcToolStripMenuItem.Tag = "Half_Orc_White";
+			this.halfOrcToolStripMenuItem.Text = "Half Orc";
+			// 
+			// halflingToolStripMenuItem
+			// 
+			this.halflingToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Halfling;
+			this.halflingToolStripMenuItem.Name = "halflingToolStripMenuItem";
+			this.halflingToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.halflingToolStripMenuItem.Tag = "Halfling_White";
+			this.halflingToolStripMenuItem.Text = "Halfling";
+			// 
+			// humanToolStripMenuItem
+			// 
+			this.humanToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Human;
+			this.humanToolStripMenuItem.Name = "humanToolStripMenuItem";
+			this.humanToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.humanToolStripMenuItem.Tag = "Human_White";
+			this.humanToolStripMenuItem.Text = "Human";
+			// 
+			// tieflingToolStripMenuItem
+			// 
+			this.tieflingToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Tiefling;
+			this.tieflingToolStripMenuItem.Name = "tieflingToolStripMenuItem";
+			this.tieflingToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.tieflingToolStripMenuItem.Tag = "Tiefling_White";
+			this.tieflingToolStripMenuItem.Text = "Tiefling";
+			// 
 			// bardoToolStripMenuItem1
 			// 
 			this.bardoToolStripMenuItem1.Name = "bardoToolStripMenuItem1";
@@ -1245,18 +1374,6 @@
 			this.magoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
 			this.magoToolStripMenuItem1.Text = "Mago";
 			// 
-			// pctPreviewCard
-			// 
-			this.pctPreviewCard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.pctPreviewCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.pctPreviewCard.Location = new System.Drawing.Point(642, 12);
-			this.pctPreviewCard.Name = "pctPreviewCard";
-			this.pctPreviewCard.Size = new System.Drawing.Size(489, 708);
-			this.pctPreviewCard.TabIndex = 26;
-			this.pctPreviewCard.TabStop = false;
-			// 
 			// btnImport
 			// 
 			this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -1320,13 +1437,17 @@
 			this.btnExport.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAliasGridFit;
 			this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
 			// 
-			// herramientaToolStripMenuItem
+			// pctPreviewCard
 			// 
-			this.herramientaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Tool;
-			this.herramientaToolStripMenuItem.Name = "herramientaToolStripMenuItem";
-			this.herramientaToolStripMenuItem.Size = new System.Drawing.Size(188, 30);
-			this.herramientaToolStripMenuItem.Tag = "Tool_White";
-			this.herramientaToolStripMenuItem.Text = "Herramienta";
+			this.pctPreviewCard.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.pctPreviewCard.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.pctPreviewCard.Location = new System.Drawing.Point(642, 12);
+			this.pctPreviewCard.Name = "pctPreviewCard";
+			this.pctPreviewCard.Size = new System.Drawing.Size(489, 708);
+			this.pctPreviewCard.TabIndex = 26;
+			this.pctPreviewCard.TabStop = false;
 			// 
 			// fMain
 			// 
@@ -1438,6 +1559,18 @@
 		private System.Windows.Forms.ToolStripMenuItem escudoToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem magiaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem herramientaToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem razasToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem dragonbornToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem drowToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem dwarfToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem elfToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem githyankiToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem gnomeToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem halfElfToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem halfOrcToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem halflingToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem humanToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem tieflingToolStripMenuItem;
 	}
 }
 
