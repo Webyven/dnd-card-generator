@@ -373,9 +373,7 @@ namespace DnDCardGenerator
 
 		private void txtGenericType_TextChanged(object sender, EventArgs e)
 		{
-			this.txtGenericInferior.PlaceholderText = string.IsNullOrEmpty(txtGenericType.Text) ? "Acción" : txtGenericType.Text;
 			genericCardControl.GameObject.Type = txtGenericType.Text;
-			genericCardControl.GameObject.BottomText = txtGenericType.Text;
 			genericCardControl.GameObject = currentObject;
 			genericCardControl.RefreshControl();
 			DebounceUpdate();

@@ -266,18 +266,36 @@ namespace DnDCardGenerator
 			if (_spell != null)
 				_spell.Description = description;
 
+			// Liberar recursos de controles previos
+			foreach (Control ctrl in this.flowDescriptionPanel.Controls)
+			{
+				if (ctrl is PictureBox pb && pb.Image != null)
+				{
+					pb.Image.Dispose();
+					pb.Image = null;
+				}
+				ctrl.Dispose();
+			}
 			this.flowDescriptionPanel.Controls.Clear();
+
 			string[] lines = description.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 
-			// Pseudocódigo:
-			// 1. Usar un carácter especial para marcar el inicio/fin de cursiva, por ejemplo _ para italic.
-			// 2. Modificar el bucle de análisis para detectar * (negrita) y _ (cursiva).
-			// 3. Aplicar FontStyle.Bold, FontStyle.Italic o ambos según el estado actual.
-			// 4. Procesar cada línea y aplicar los estilos correspondientes.
-
-			// Reemplaza el bloque de procesamiento de líneas en SetDescription por este:
 			foreach (string line in lines)
 			{
+				// Si usas PictureBox para líneas, aquí deberías clonar la imagen igual que en GenericCardControl
+				// Ejemplo:
+				// if (line.Trim() == "---")
+				// {
+				//     PictureBox pb = new PictureBox();
+				//     pb.Image = (Image)Properties.Resources.Line.Clone();
+				//     pb.SizeMode = PictureBoxSizeMode.StretchImage;
+				//     pb.Height = 3;
+				//     pb.Width = this.flowDescriptionPanel.Width - 10;
+				//     pb.Margin = new Padding(0, 5, 0, 5);
+				//     this.flowDescriptionPanel.Controls.Add(pb);
+				//     continue;
+				// }
+
 				RichTextBox rtb = new RichTextBox();
 				rtb.BorderStyle = BorderStyle.None;
 				rtb.ReadOnly = true;

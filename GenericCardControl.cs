@@ -36,6 +36,13 @@ namespace DnDCardGenerator
 				return;
 
 			this.lblName.Text = GameObject.Name;
+
+			// Liberar imagen previa de pctIcon
+			if (this.pctIcon.Image != null && this.pctIcon.Image != GameObject.Icon)
+			{
+				this.pctIcon.Image.Dispose();
+				this.pctIcon.Image = null;
+			}
 			this.pctIcon.Image = GameObject.Icon;
 			this.lblType.Text = GameObject.Type.ToString();
 			this.lblRarity.Text = GameObject.Rarity.ToString();
@@ -57,7 +64,18 @@ namespace DnDCardGenerator
 
 		private void UpdateDescription()
 		{
+			// Liberar recursos de controles previos
+			foreach (Control ctrl in this.flowDescriptionPanel.Controls)
+			{
+				if (ctrl is PictureBox pb && pb.Image != null)
+				{
+					pb.Image.Dispose();
+					pb.Image = null;
+				}
+				ctrl.Dispose();
+			}
 			this.flowDescriptionPanel.Controls.Clear();
+
 			string[] lines = GameObject.Description.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 
 			foreach (string line in lines)
@@ -66,7 +84,7 @@ namespace DnDCardGenerator
 				{
 					// Renderizar la imagen de línea
 					PictureBox pb = new PictureBox();
-					pb.Image = Properties.Resources.Line;
+					pb.Image = (Image)Properties.Resources.Line.Clone();
 					pb.SizeMode = PictureBoxSizeMode.StretchImage;
 					pb.Height = 3;
 					pb.Width = this.flowDescriptionPanel.Width - 10;
