@@ -15,6 +15,7 @@ namespace DnDCardGenerator
 		public string Type { get; set; } = "Acción";
 		public string Rarity { get; set; } = "Común";
 		public string BottomText { get; set; } = "Acción";
+		public string Class { get; set; } = string.Empty;
 
 		[JsonIgnore]
 		public Image Icon { get; set; } = Properties.Resources.Throw_White;

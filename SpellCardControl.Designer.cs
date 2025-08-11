@@ -64,7 +64,7 @@
 			// topPanel
 			// 
 			this.topPanel.BackColor = System.Drawing.Color.Transparent;
-			this.topPanel.BackgroundImage = global::DnDCardGenerator.Properties.Resources.BarbarianLine;
+			this.topPanel.BackgroundImage = global::DnDCardGenerator.Properties.Resources.Barbarian_Line;
 			this.topPanel.Controls.Add(this.lblRitual);
 			this.topPanel.Controls.Add(this.lblLevel);
 			this.topPanel.Controls.Add(this.lblSpellName);

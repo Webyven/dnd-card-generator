@@ -181,7 +181,7 @@
   <data name="Elf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Elf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="RangerLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Ranger_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RangerLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Warlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -196,7 +196,7 @@
   <data name="Elf_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Elf White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BarbarianLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Barbarian_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BarbarianLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tiefling_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -256,7 +256,7 @@
   <data name="Fighter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Fighter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BardLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Bard_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BardLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Evocation" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -298,7 +298,7 @@
   <data name="Bard_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bard White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PaladinLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Paladin_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PaladinLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gnome" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -391,7 +391,7 @@
   <data name="Sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GenericLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Generic_Line" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GenericLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Conjuration_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -399,5 +399,11 @@
   </data>
   <data name="Races" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Races.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tabaxi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tabaxi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tabaxi_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tabaxi White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

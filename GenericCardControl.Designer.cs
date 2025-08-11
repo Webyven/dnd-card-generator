@@ -44,7 +44,7 @@
 			// topPanel
 			// 
 			this.topPanel.BackColor = System.Drawing.Color.Transparent;
-			this.topPanel.BackgroundImage = global::DnDCardGenerator.Properties.Resources.GenericLine;
+			this.topPanel.BackgroundImage = global::DnDCardGenerator.Properties.Resources.Generic_Line;
 			this.topPanel.Controls.Add(this.panel1);
 			this.topPanel.Controls.Add(this.pctIcon);
 			this.topPanel.Controls.Add(this.lblName);
@@ -58,9 +58,9 @@
 			// 
 			this.panel1.Controls.Add(this.lblRarity);
 			this.panel1.Controls.Add(this.lblType);
-			this.panel1.Location = new System.Drawing.Point(121, 71);
+			this.panel1.Location = new System.Drawing.Point(130, 71);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(564, 37);
+			this.panel1.Size = new System.Drawing.Size(555, 37);
 			this.panel1.TabIndex = 3;
 			// 
 			// lblRarity
@@ -70,7 +70,7 @@
 			this.lblRarity.Dock = System.Windows.Forms.DockStyle.Right;
 			this.lblRarity.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblRarity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
-			this.lblRarity.Location = new System.Drawing.Point(457, 0);
+			this.lblRarity.Location = new System.Drawing.Point(448, 0);
 			this.lblRarity.MaximumSize = new System.Drawing.Size(400, 0);
 			this.lblRarity.Name = "lblRarity";
 			this.lblRarity.Size = new System.Drawing.Size(107, 32);
@@ -109,9 +109,9 @@
 			this.lblName.AutoEllipsis = true;
 			this.lblName.Font = new System.Drawing.Font("Ringbearer", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblName.ForeColor = System.Drawing.Color.White;
-			this.lblName.Location = new System.Drawing.Point(112, 22);
+			this.lblName.Location = new System.Drawing.Point(121, 22);
 			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(573, 45);
+			this.lblName.Size = new System.Drawing.Size(564, 45);
 			this.lblName.TabIndex = 1;
 			this.lblName.Text = "Agarrar (Grapple)";
 			this.lblName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;

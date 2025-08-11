@@ -43,7 +43,25 @@ namespace DnDCardGenerator
 				this.pctIcon.Image.Dispose();
 				this.pctIcon.Image = null;
 			}
-			this.pctIcon.Image = GameObject.Icon;
+
+			if (string.IsNullOrEmpty(GameObject.Class))
+			{
+				this.topPanel.BackgroundImage = Properties.Resources.Generic_Line;
+				this.lblName.ForeColor = Color.White;
+				this.lblRarity.ForeColor = Color.LightGray;
+				this.lblType.ForeColor = Color.LightGray;
+				this.pctIcon.Image = GameObject.Icon;
+				this.pctIcon.Visible = true;
+			}
+			else
+			{
+				this.topPanel.BackgroundImage = Properties.Resources.ResourceManager.GetObject($"{GameObject.Class}_Line") as Image;
+				this.lblName.ForeColor = Constants.ClassColors[GameObject.Class].ForeColor;
+				this.lblRarity.ForeColor = lblName.ForeColor == Color.White ? Color.LightGray : Color.FromArgb(45, 45, 45);
+				this.lblType.ForeColor = lblName.ForeColor == Color.White ? Color.LightGray : Color.FromArgb(45, 45, 45);
+				this.pctIcon.Visible = false;
+			}
+
 			this.lblType.Text = GameObject.Type.ToString();
 			this.lblRarity.Text = GameObject.Rarity.ToString();
 			this.lblBottomText.Text = GameObject.BottomText.ToUpper();

@@ -93,9 +93,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Barbarian_White {
+        internal static System.Drawing.Bitmap Barbarian_Line {
             get {
-                object obj = ResourceManager.GetObject("Barbarian_White", resourceCulture);
+                object obj = ResourceManager.GetObject("Barbarian_Line", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BarbarianLine {
+        internal static System.Drawing.Bitmap Barbarian_White {
             get {
-                object obj = ResourceManager.GetObject("BarbarianLine", resourceCulture);
+                object obj = ResourceManager.GetObject("Barbarian_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bard_White {
+        internal static System.Drawing.Bitmap Bard_Line {
             get {
-                object obj = ResourceManager.GetObject("Bard_White", resourceCulture);
+                object obj = ResourceManager.GetObject("Bard_Line", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BardLine {
+        internal static System.Drawing.Bitmap Bard_White {
             get {
-                object obj = ResourceManager.GetObject("BardLine", resourceCulture);
+                object obj = ResourceManager.GetObject("Bard_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -433,9 +433,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap GenericLine {
+        internal static System.Drawing.Bitmap Generic_Line {
             get {
-                object obj = ResourceManager.GetObject("GenericLine", resourceCulture);
+                object obj = ResourceManager.GetObject("Generic_Line", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -663,9 +663,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Paladin_White {
+        internal static System.Drawing.Bitmap Paladin_Line {
             get {
-                object obj = ResourceManager.GetObject("Paladin_White", resourceCulture);
+                object obj = ResourceManager.GetObject("Paladin_Line", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -673,9 +673,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PaladinLine {
+        internal static System.Drawing.Bitmap Paladin_White {
             get {
-                object obj = ResourceManager.GetObject("PaladinLine", resourceCulture);
+                object obj = ResourceManager.GetObject("Paladin_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -703,9 +703,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Ranger_White {
+        internal static System.Drawing.Bitmap Ranger_Line {
             get {
-                object obj = ResourceManager.GetObject("Ranger_White", resourceCulture);
+                object obj = ResourceManager.GetObject("Ranger_Line", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -713,9 +713,9 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RangerLine {
+        internal static System.Drawing.Bitmap Ranger_White {
             get {
-                object obj = ResourceManager.GetObject("RangerLine", resourceCulture);
+                object obj = ResourceManager.GetObject("Ranger_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -816,6 +816,26 @@ namespace DnDCardGenerator.Properties {
         internal static System.Drawing.Bitmap Sword_White {
             get {
                 object obj = ResourceManager.GetObject("Sword_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tabaxi {
+            get {
+                object obj = ResourceManager.GetObject("Tabaxi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tabaxi_White {
+            get {
+                object obj = ResourceManager.GetObject("Tabaxi_White", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

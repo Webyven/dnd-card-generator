@@ -55,69 +55,48 @@ namespace DnDCardGenerator
 		{
 			switch (className)
 			{
-				case "Bardo":
-					topPanel.BackgroundImage = Properties.Resources.BardLine;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Bard.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Bard.ForeColor;
+				case Constants.ClassTypes.Bard:
+					topPanel.BackgroundImage = Properties.Resources.Bard_Line;
 					break;
-				case "Bárbaro":
-					topPanel.BackgroundImage = Properties.Resources.BarbarianLine;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Barbarian.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Barbarian.ForeColor;
+				case Constants.ClassTypes.Barbarian:
+					topPanel.BackgroundImage = Properties.Resources.Barbarian_Line;
 					break;
-				case "Paladin":
-					topPanel.BackgroundImage = Properties.Resources.PaladinLine;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Paladin.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Paladin.ForeColor;
+				case Constants.ClassTypes.Paladin:
+					topPanel.BackgroundImage = Properties.Resources.Paladin_Line;
 					break;
-				case "Explorador":
-					topPanel.BackgroundImage = Properties.Resources.RangerLine;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Ranger.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Ranger.ForeColor;
+				case Constants.ClassTypes.Ranger:
+					topPanel.BackgroundImage = Properties.Resources.Ranger_Line;
 					break;
-				case "Clérigo":
+				case Constants.ClassTypes.Cleric:
 					topPanel.BackgroundImage = Properties.Resources.Cleric_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Cleric.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Cleric.ForeColor;
 					break;
-				case "Druida":
+				case Constants.ClassTypes.Druid:
 					topPanel.BackgroundImage = Properties.Resources.Druid_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Druid.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Druid.ForeColor;
 					break;
-				case "Hechicero":
+				case Constants.ClassTypes.Sorcerer:
 					topPanel.BackgroundImage = Properties.Resources.Sorcerer_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Sorcerer.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Sorcerer.ForeColor;
 					break;
-				case "Brujo":
+				case Constants.ClassTypes.Warlock:
 					topPanel.BackgroundImage = Properties.Resources.Warlock_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Warlock.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Warlock.ForeColor;
 					break;
-				case "Guerrero":
+				case Constants.ClassTypes.Fighter:
 					topPanel.BackgroundImage = Properties.Resources.Fighter_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Fighter.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Fighter.ForeColor;
 					break;
-				case "Mago":
+				case Constants.ClassTypes.Wizard:
 					topPanel.BackgroundImage = Properties.Resources.Wizard_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Wizard.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Wizard.ForeColor;
 					break;
-				case "Monje":
+				case Constants.ClassTypes.Monk:
 					topPanel.BackgroundImage = Properties.Resources.Monk_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Monk.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Monk.ForeColor;
 					break;
 				default:
 					topPanel.BackgroundImage = Properties.Resources.Rogue_Line;
-					panelRandom.BackColor = Constants.Colors.ClassColors.Rogue.BackColor;
-					lblSpellName.ForeColor = Constants.Colors.ClassColors.Rogue.ForeColor;
 					break;
 			}
 
-			if(_spell != null)
+			panelRandom.BackColor = Constants.ClassColors[className].BackColor;
+			lblSpellName.ForeColor = Constants.ClassColors[className].ForeColor;
+
+			if (_spell != null)
 				_spell.Class = className;
 
 			lblClass.Text = className.ToUpper();

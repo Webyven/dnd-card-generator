@@ -364,6 +364,7 @@ namespace DnDCardGenerator
 			if (image != null)
 			{
 				currentObject.Icon = Properties.Resources.ResourceManager.GetObject(resourceName) as Image;
+				currentObject.Class = resourceName.Contains("Line") ? resourceName.Replace("_Line", "") : string.Empty;
 				this.pctGenericIcon.Image = image;
 				genericCardControl.GameObject = currentObject;
 				genericCardControl.RefreshControl();

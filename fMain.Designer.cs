@@ -30,7 +30,7 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -105,6 +105,7 @@
 			this.halfOrcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.halflingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.humanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.tabaxiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tieflingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bardoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
 			this.bárbaroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -712,22 +713,22 @@
 			this.pages.SelectedIndex = 0;
 			this.pages.Size = new System.Drawing.Size(596, 575);
 			this.pages.TabIndex = 38;
-			animation2.AnimateOnlyDifferences = true;
-			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-			animation2.LeafCoeff = 0F;
-			animation2.MaxTime = 1F;
-			animation2.MinTime = 0F;
-			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-			animation2.MosaicSize = 0;
-			animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-			animation2.RotateCoeff = 0F;
-			animation2.RotateLimit = 0F;
-			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-			animation2.TimeCoeff = 0F;
-			animation2.TransparencyCoeff = 1F;
-			this.pages.Transition = animation2;
+			animation1.AnimateOnlyDifferences = true;
+			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+			animation1.LeafCoeff = 0F;
+			animation1.MaxTime = 1F;
+			animation1.MinTime = 0F;
+			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+			animation1.MosaicSize = 0;
+			animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+			animation1.RotateCoeff = 0F;
+			animation1.RotateLimit = 0F;
+			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+			animation1.TimeCoeff = 0F;
+			animation1.TransparencyCoeff = 1F;
+			this.pages.Transition = animation1;
 			this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Transparent;
 			// 
 			// pageSpells
@@ -1102,96 +1103,96 @@
 			// 
 			this.bardoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Bard;
 			this.bardoToolStripMenuItem2.Name = "bardoToolStripMenuItem2";
-			this.bardoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.bardoToolStripMenuItem2.Tag = "Bard_White";
+			this.bardoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.bardoToolStripMenuItem2.Tag = "Bard_Line";
 			this.bardoToolStripMenuItem2.Text = "Bardo";
 			// 
 			// bárbaroToolStripMenuItem2
 			// 
 			this.bárbaroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Barbarian;
 			this.bárbaroToolStripMenuItem2.Name = "bárbaroToolStripMenuItem2";
-			this.bárbaroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.bárbaroToolStripMenuItem2.Tag = "Barbarian_White";
+			this.bárbaroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.bárbaroToolStripMenuItem2.Tag = "Barbarian_Line";
 			this.bárbaroToolStripMenuItem2.Text = "Bárbaro";
 			// 
 			// paladinToolStripMenuItem2
 			// 
 			this.paladinToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Paladin;
 			this.paladinToolStripMenuItem2.Name = "paladinToolStripMenuItem2";
-			this.paladinToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.paladinToolStripMenuItem2.Tag = "Paladin_White";
+			this.paladinToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.paladinToolStripMenuItem2.Tag = "Paladin_Line";
 			this.paladinToolStripMenuItem2.Text = "Paladin";
 			// 
 			// exploradorToolStripMenuItem2
 			// 
 			this.exploradorToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Ranger;
 			this.exploradorToolStripMenuItem2.Name = "exploradorToolStripMenuItem2";
-			this.exploradorToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.exploradorToolStripMenuItem2.Tag = "Ranger_White";
+			this.exploradorToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.exploradorToolStripMenuItem2.Tag = "Ranger_Line";
 			this.exploradorToolStripMenuItem2.Text = "Explorador";
 			// 
 			// clérigoToolStripMenuItem2
 			// 
 			this.clérigoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Cleric;
 			this.clérigoToolStripMenuItem2.Name = "clérigoToolStripMenuItem2";
-			this.clérigoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.clérigoToolStripMenuItem2.Tag = "Cleric_White";
+			this.clérigoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.clérigoToolStripMenuItem2.Tag = "Cleric_Line";
 			this.clérigoToolStripMenuItem2.Text = "Clérigo";
 			// 
 			// pícaroToolStripMenuItem2
 			// 
 			this.pícaroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Rogue;
 			this.pícaroToolStripMenuItem2.Name = "pícaroToolStripMenuItem2";
-			this.pícaroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.pícaroToolStripMenuItem2.Tag = "Rogue_White";
+			this.pícaroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.pícaroToolStripMenuItem2.Tag = "Rogue_Line";
 			this.pícaroToolStripMenuItem2.Text = "Pícaro";
 			// 
 			// druidaToolStripMenuItem2
 			// 
 			this.druidaToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Druid;
 			this.druidaToolStripMenuItem2.Name = "druidaToolStripMenuItem2";
-			this.druidaToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.druidaToolStripMenuItem2.Tag = "Druid_White";
+			this.druidaToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.druidaToolStripMenuItem2.Tag = "Druid_Line";
 			this.druidaToolStripMenuItem2.Text = "Druida";
 			// 
 			// hechiceroToolStripMenuItem2
 			// 
 			this.hechiceroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Sorcerer;
 			this.hechiceroToolStripMenuItem2.Name = "hechiceroToolStripMenuItem2";
-			this.hechiceroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.hechiceroToolStripMenuItem2.Tag = "Sorcerer_White";
+			this.hechiceroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.hechiceroToolStripMenuItem2.Tag = "Sorcerer_Line";
 			this.hechiceroToolStripMenuItem2.Text = "Hechicero";
 			// 
 			// guerreroToolStripMenuItem2
 			// 
 			this.guerreroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Fighter;
 			this.guerreroToolStripMenuItem2.Name = "guerreroToolStripMenuItem2";
-			this.guerreroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.guerreroToolStripMenuItem2.Tag = "Fighter_White";
+			this.guerreroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.guerreroToolStripMenuItem2.Tag = "Fighter_Line";
 			this.guerreroToolStripMenuItem2.Text = "Guerrero";
 			// 
 			// brujoToolStripMenuItem2
 			// 
 			this.brujoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Warlock;
 			this.brujoToolStripMenuItem2.Name = "brujoToolStripMenuItem2";
-			this.brujoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.brujoToolStripMenuItem2.Tag = "Warlock_White";
+			this.brujoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.brujoToolStripMenuItem2.Tag = "Warlock_Line";
 			this.brujoToolStripMenuItem2.Text = "Brujo";
 			// 
 			// monjeToolStripMenuItem2
 			// 
 			this.monjeToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Monk;
 			this.monjeToolStripMenuItem2.Name = "monjeToolStripMenuItem2";
-			this.monjeToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.monjeToolStripMenuItem2.Tag = "Monk_White";
+			this.monjeToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.monjeToolStripMenuItem2.Tag = "Monk_Line";
 			this.monjeToolStripMenuItem2.Text = "Monje";
 			// 
 			// magoToolStripMenuItem2
 			// 
 			this.magoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Wizard;
 			this.magoToolStripMenuItem2.Name = "magoToolStripMenuItem2";
-			this.magoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
-			this.magoToolStripMenuItem2.Tag = "Wizard_White";
+			this.magoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.magoToolStripMenuItem2.Tag = "Wizard_Line";
 			this.magoToolStripMenuItem2.Text = "Mago";
 			// 
 			// razasToolStripMenuItem
@@ -1207,6 +1208,7 @@
             this.halfOrcToolStripMenuItem,
             this.halflingToolStripMenuItem,
             this.humanToolStripMenuItem,
+            this.tabaxiToolStripMenuItem,
             this.tieflingToolStripMenuItem});
 			this.razasToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Races;
 			this.razasToolStripMenuItem.Name = "razasToolStripMenuItem";
@@ -1218,7 +1220,7 @@
 			// 
 			this.dragonbornToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Dragonborn;
 			this.dragonbornToolStripMenuItem.Name = "dragonbornToolStripMenuItem";
-			this.dragonbornToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.dragonbornToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.dragonbornToolStripMenuItem.Tag = "Dragonborn_White";
 			this.dragonbornToolStripMenuItem.Text = "Dragonborn";
 			// 
@@ -1226,7 +1228,7 @@
 			// 
 			this.drowToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Drow;
 			this.drowToolStripMenuItem.Name = "drowToolStripMenuItem";
-			this.drowToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.drowToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.drowToolStripMenuItem.Tag = "Drow_White";
 			this.drowToolStripMenuItem.Text = "Drow";
 			// 
@@ -1234,7 +1236,7 @@
 			// 
 			this.dwarfToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Dwarf;
 			this.dwarfToolStripMenuItem.Name = "dwarfToolStripMenuItem";
-			this.dwarfToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.dwarfToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.dwarfToolStripMenuItem.Tag = "Dwarf_White";
 			this.dwarfToolStripMenuItem.Text = "Dwarf";
 			// 
@@ -1242,7 +1244,7 @@
 			// 
 			this.elfToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Elf;
 			this.elfToolStripMenuItem.Name = "elfToolStripMenuItem";
-			this.elfToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.elfToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.elfToolStripMenuItem.Tag = "Elf_White";
 			this.elfToolStripMenuItem.Text = "Elf";
 			// 
@@ -1250,7 +1252,7 @@
 			// 
 			this.githyankiToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Githyanki;
 			this.githyankiToolStripMenuItem.Name = "githyankiToolStripMenuItem";
-			this.githyankiToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.githyankiToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.githyankiToolStripMenuItem.Tag = "Githyanki_White";
 			this.githyankiToolStripMenuItem.Text = "Githyanki";
 			// 
@@ -1258,7 +1260,7 @@
 			// 
 			this.gnomeToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Gnome;
 			this.gnomeToolStripMenuItem.Name = "gnomeToolStripMenuItem";
-			this.gnomeToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.gnomeToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.gnomeToolStripMenuItem.Tag = "Gnome_White";
 			this.gnomeToolStripMenuItem.Text = "Gnome";
 			// 
@@ -1266,7 +1268,7 @@
 			// 
 			this.halfElfToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Half_Elf;
 			this.halfElfToolStripMenuItem.Name = "halfElfToolStripMenuItem";
-			this.halfElfToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.halfElfToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.halfElfToolStripMenuItem.Tag = "Half_Elf_White";
 			this.halfElfToolStripMenuItem.Text = "Half Elf";
 			// 
@@ -1274,7 +1276,7 @@
 			// 
 			this.halfOrcToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Half_Orc;
 			this.halfOrcToolStripMenuItem.Name = "halfOrcToolStripMenuItem";
-			this.halfOrcToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.halfOrcToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.halfOrcToolStripMenuItem.Tag = "Half_Orc_White";
 			this.halfOrcToolStripMenuItem.Text = "Half Orc";
 			// 
@@ -1282,7 +1284,7 @@
 			// 
 			this.halflingToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Halfling;
 			this.halflingToolStripMenuItem.Name = "halflingToolStripMenuItem";
-			this.halflingToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.halflingToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.halflingToolStripMenuItem.Tag = "Halfling_White";
 			this.halflingToolStripMenuItem.Text = "Halfling";
 			// 
@@ -1290,15 +1292,23 @@
 			// 
 			this.humanToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Human;
 			this.humanToolStripMenuItem.Name = "humanToolStripMenuItem";
-			this.humanToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.humanToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.humanToolStripMenuItem.Tag = "Human_White";
 			this.humanToolStripMenuItem.Text = "Human";
+			// 
+			// tabaxiToolStripMenuItem
+			// 
+			this.tabaxiToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Tabaxi;
+			this.tabaxiToolStripMenuItem.Name = "tabaxiToolStripMenuItem";
+			this.tabaxiToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+			this.tabaxiToolStripMenuItem.Tag = "Tabaxi_White";
+			this.tabaxiToolStripMenuItem.Text = "Tabaxi";
 			// 
 			// tieflingToolStripMenuItem
 			// 
 			this.tieflingToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Tiefling;
 			this.tieflingToolStripMenuItem.Name = "tieflingToolStripMenuItem";
-			this.tieflingToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.tieflingToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
 			this.tieflingToolStripMenuItem.Tag = "Tiefling_White";
 			this.tieflingToolStripMenuItem.Text = "Tiefling";
 			// 
@@ -1571,6 +1581,7 @@
 		private System.Windows.Forms.ToolStripMenuItem halflingToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem humanToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem tieflingToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem tabaxiToolStripMenuItem;
 	}
 }
 

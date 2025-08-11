@@ -300,6 +300,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Icon1.ico" />
+    <None Include="Resources\Tabaxi.png" />
+    <None Include="Resources\Tabaxi White.png" />
     <None Include="Resources\Races.png" />
     <None Include="Resources\Tiefling.png" />
     <None Include="Resources\Tiefling White.png" />
