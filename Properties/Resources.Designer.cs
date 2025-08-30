@@ -83,6 +83,16 @@ namespace DnDCardGenerator.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Action {
+            get {
+                object obj = ResourceManager.GetObject("Action", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Barbarian {
             get {
                 object obj = ResourceManager.GetObject("Barbarian", resourceCulture);
@@ -136,6 +146,16 @@ namespace DnDCardGenerator.Properties {
         internal static System.Drawing.Bitmap Bard_White {
             get {
                 object obj = ResourceManager.GetObject("Bard_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BonusAction {
+            get {
+                object obj = ResourceManager.GetObject("BonusAction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -716,6 +736,16 @@ namespace DnDCardGenerator.Properties {
         internal static System.Drawing.Bitmap Ranger_White {
             get {
                 object obj = ResourceManager.GetObject("Ranger_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Reaction {
+            get {
+                object obj = ResourceManager.GetObject("Reaction", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

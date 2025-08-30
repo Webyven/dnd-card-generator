@@ -300,6 +300,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Reaction.png" />
+    <None Include="Resources\BonusAction.png" />
+    <None Include="Resources\Action.png" />
     <None Include="Resources\Icon1.ico" />
     <None Include="Resources\Tabaxi.png" />
     <None Include="Resources\Tabaxi White.png" />

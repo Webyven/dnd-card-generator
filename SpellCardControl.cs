@@ -157,6 +157,8 @@ namespace DnDCardGenerator
 			if (_spell != null)
 				_spell.CastingTime = castingTime;
 
+			pctActionType.Visible = castingTime.Contains("acción");
+
 			if (!_isUpdating && SomethingChanged != null)
 				SomethingChanged(this, EventArgs.Empty);
 		}

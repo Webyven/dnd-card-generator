@@ -73,5 +73,19 @@ namespace DnDCardGenerator
 			{ ClassTypes.Wizard,    new ColorInfo { BackColor = Color.FromArgb(42, 80, 161),   ForeColor = Color.White } },
 			{ EnglishClassTypes.Wizard, new ColorInfo { BackColor = Color.FromArgb(42, 80, 161), ForeColor = Color.White } }
 		};
+
+		public class ActionType
+		{
+			public const string Action = "Acción";
+			public const string BonusAction = "Acción bonus";
+			public const string Reaction = "Reacción";
+		}
+
+		public static readonly Dictionary<string, Image> ActionTypes = new Dictionary<string, Image>
+		{
+			{ ActionType.Action,       Properties.Resources.Action },
+			{ ActionType.BonusAction,  Properties.Resources.BonusAction },
+			{ ActionType.Reaction,     Properties.Resources.Reaction },
+		};
 	}
 }

@@ -46,19 +46,23 @@
 			this.lblSovietic = new System.Windows.Forms.Label();
 			this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lblMaterial = new System.Windows.Forms.Label();
-			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowDurationPanel = new System.Windows.Forms.FlowLayoutPanel();
 			this.lblDuration = new System.Windows.Forms.Label();
 			this.pctConcentration = new System.Windows.Forms.PictureBox();
 			this.lblClass = new System.Windows.Forms.Label();
 			this.lblMaterialGold = new System.Windows.Forms.Label();
 			this.flowDescriptionPanel = new System.Windows.Forms.FlowLayoutPanel();
+			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+			this.pctActionType = new System.Windows.Forms.PictureBox();
 			this.topPanel.SuspendLayout();
 			this.panelRandom.SuspendLayout();
 			this.guna2Panel1.SuspendLayout();
 			this.guna2Panel2.SuspendLayout();
 			this.guna2Panel3.SuspendLayout();
-			this.flowLayoutPanel1.SuspendLayout();
+			this.flowDurationPanel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pctConcentration)).BeginInit();
+			this.flowLayoutPanel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pctActionType)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// topPanel
@@ -151,7 +155,7 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("MPlantin", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(92, 260);
+			this.label1.Location = new System.Drawing.Point(92, 329);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(127, 41);
 			this.label1.TabIndex = 3;
@@ -161,7 +165,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("MPlantin", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(92, 329);
+			this.label3.Location = new System.Drawing.Point(92, 398);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(172, 41);
 			this.label3.TabIndex = 4;
@@ -171,16 +175,16 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("MPlantin", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(92, 398);
+			this.label2.Location = new System.Drawing.Point(92, 261);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(299, 41);
+			this.label2.Size = new System.Drawing.Size(119, 41);
 			this.label2.TabIndex = 5;
-			this.label2.Text = "Tiempo de casteo:";
+			this.label2.Text = "Costo:";
 			// 
 			// lblRange
 			// 
 			this.lblRange.Font = new System.Drawing.Font("MPlantin-Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblRange.Location = new System.Drawing.Point(215, 260);
+			this.lblRange.Location = new System.Drawing.Point(215, 329);
 			this.lblRange.Name = "lblRange";
 			this.lblRange.Size = new System.Drawing.Size(434, 42);
 			this.lblRange.TabIndex = 6;
@@ -189,10 +193,11 @@
 			// 
 			// lblCastTime
 			// 
+			this.lblCastTime.AutoSize = true;
 			this.lblCastTime.Font = new System.Drawing.Font("MPlantin-Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCastTime.Location = new System.Drawing.Point(387, 398);
+			this.lblCastTime.Location = new System.Drawing.Point(47, 0);
 			this.lblCastTime.Name = "lblCastTime";
-			this.lblCastTime.Size = new System.Drawing.Size(262, 42);
+			this.lblCastTime.Size = new System.Drawing.Size(135, 42);
 			this.lblCastTime.TabIndex = 8;
 			this.lblCastTime.Text = "Acción";
 			this.lblCastTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -269,15 +274,15 @@
 			this.lblMaterial.Text = "M";
 			this.lblMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// flowLayoutPanel1
+			// flowDurationPanel
 			// 
-			this.flowLayoutPanel1.Controls.Add(this.lblDuration);
-			this.flowLayoutPanel1.Controls.Add(this.pctConcentration);
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(261, 329);
-			this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(388, 41);
-			this.flowLayoutPanel1.TabIndex = 17;
+			this.flowDurationPanel.Controls.Add(this.lblDuration);
+			this.flowDurationPanel.Controls.Add(this.pctConcentration);
+			this.flowDurationPanel.Location = new System.Drawing.Point(261, 398);
+			this.flowDurationPanel.Margin = new System.Windows.Forms.Padding(0);
+			this.flowDurationPanel.Name = "flowDurationPanel";
+			this.flowDurationPanel.Size = new System.Drawing.Size(388, 41);
+			this.flowDurationPanel.TabIndex = 17;
 			// 
 			// lblDuration
 			// 
@@ -329,25 +334,45 @@
 			this.flowDescriptionPanel.Size = new System.Drawing.Size(634, 413);
 			this.flowDescriptionPanel.TabIndex = 20;
 			// 
+			// flowLayoutPanel1
+			// 
+			this.flowLayoutPanel1.Controls.Add(this.pctActionType);
+			this.flowLayoutPanel1.Controls.Add(this.lblCastTime);
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(206, 261);
+			this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(443, 41);
+			this.flowLayoutPanel1.TabIndex = 21;
+			// 
+			// pctActionType
+			// 
+			this.pctActionType.Image = global::DnDCardGenerator.Properties.Resources.Action;
+			this.pctActionType.Location = new System.Drawing.Point(3, 3);
+			this.pctActionType.Name = "pctActionType";
+			this.pctActionType.Size = new System.Drawing.Size(38, 38);
+			this.pctActionType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pctActionType.TabIndex = 9;
+			this.pctActionType.TabStop = false;
+			// 
 			// SpellCardControl
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = global::DnDCardGenerator.Properties.Resources.Borde_Carta;
+			this.Controls.Add(this.flowLayoutPanel1);
 			this.Controls.Add(this.flowDescriptionPanel);
 			this.Controls.Add(this.lblMaterialGold);
 			this.Controls.Add(this.lblClass);
 			this.Controls.Add(this.guna2Panel3);
 			this.Controls.Add(this.guna2Panel2);
 			this.Controls.Add(this.guna2Panel1);
-			this.Controls.Add(this.lblCastTime);
-			this.Controls.Add(this.lblRange);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label1);
 			this.Controls.Add(this.panelRandom);
 			this.Controls.Add(this.topPanel);
-			this.Controls.Add(this.flowLayoutPanel1);
+			this.Controls.Add(this.flowDurationPanel);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.label3);
+			this.Controls.Add(this.lblRange);
+			this.Controls.Add(this.label1);
 			this.Name = "SpellCardControl";
 			this.Size = new System.Drawing.Size(822, 1122);
 			this.topPanel.ResumeLayout(false);
@@ -355,9 +380,12 @@
 			this.guna2Panel1.ResumeLayout(false);
 			this.guna2Panel2.ResumeLayout(false);
 			this.guna2Panel3.ResumeLayout(false);
+			this.flowDurationPanel.ResumeLayout(false);
+			this.flowDurationPanel.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pctConcentration)).EndInit();
 			this.flowLayoutPanel1.ResumeLayout(false);
 			this.flowLayoutPanel1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pctConcentration)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pctActionType)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -382,12 +410,14 @@
 		private System.Windows.Forms.Label lblSovietic;
 		private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
 		private System.Windows.Forms.Label lblMaterial;
-		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+		private System.Windows.Forms.FlowLayoutPanel flowDurationPanel;
 		private System.Windows.Forms.PictureBox pctConcentration;
 		private System.Windows.Forms.Label lblRitual;
 		private System.Windows.Forms.Label lblDuration;
 		private System.Windows.Forms.Label lblClass;
 		private System.Windows.Forms.Label lblMaterialGold;
 		private System.Windows.Forms.FlowLayoutPanel flowDescriptionPanel;
+		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+		private System.Windows.Forms.PictureBox pctActionType;
 	}
 }
