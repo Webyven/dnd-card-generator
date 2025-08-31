@@ -148,7 +148,7 @@
 			this.txtName.Animated = true;
 			this.txtName.BorderRadius = 5;
 			this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-			this.txtName.DefaultText = "Proyectil Guía";
+			this.txtName.DefaultText = "Proyectil guía";
 			this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
 			this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
 			this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -166,7 +166,6 @@
 			this.txtName.PasswordChar = '\0';
 			this.txtName.PlaceholderText = "";
 			this.txtName.SelectedText = "";
-			this.txtName.SelectionStart = 14;
 			this.txtName.ShadowDecoration.Parent = this.txtName;
 			this.txtName.Size = new System.Drawing.Size(283, 36);
 			this.txtName.TabIndex = 1;
@@ -706,10 +705,10 @@
 			this.pages.Location = new System.Drawing.Point(24, 100);
 			this.pages.Multiline = true;
 			this.pages.Name = "pages";
-			this.pages.Page = this.pageGeneric;
-			this.pages.PageIndex = 1;
-			this.pages.PageName = "pageGeneric";
-			this.pages.PageTitle = "GenericPage";
+			this.pages.Page = this.pageSpells;
+			this.pages.PageIndex = 0;
+			this.pages.PageName = "pageSpells";
+			this.pages.PageTitle = "SpellsPage";
 			this.pages.SelectedIndex = 0;
 			this.pages.Size = new System.Drawing.Size(596, 575);
 			this.pages.TabIndex = 38;
@@ -1020,14 +1019,14 @@
             this.clasesToolStripMenuItem,
             this.razasToolStripMenuItem});
 			this.cmsGenericTypes.Name = "contextMenuStrip1";
-			this.cmsGenericTypes.Size = new System.Drawing.Size(191, 154);
+			this.cmsGenericTypes.Size = new System.Drawing.Size(122, 132);
 			this.cmsGenericTypes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
 			// 
 			// acciónToolStripMenuItem
 			// 
 			this.acciónToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Throw;
 			this.acciónToolStripMenuItem.Name = "acciónToolStripMenuItem";
-			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
 			this.acciónToolStripMenuItem.Tag = "Throw_White";
 			this.acciónToolStripMenuItem.Text = "Acción";
 			// 
@@ -1040,7 +1039,7 @@
             this.herramientaToolStripMenuItem});
 			this.objetoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Chest;
 			this.objetoToolStripMenuItem.Name = "objetoToolStripMenuItem";
-			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
 			this.objetoToolStripMenuItem.Tag = "Chest_White";
 			this.objetoToolStripMenuItem.Text = "Objeto";
 			this.objetoToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
@@ -1094,7 +1093,7 @@
             this.magoToolStripMenuItem2});
 			this.clasesToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Witch_Hat;
 			this.clasesToolStripMenuItem.Name = "clasesToolStripMenuItem";
-			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
 			this.clasesToolStripMenuItem.Tag = "";
 			this.clasesToolStripMenuItem.Text = "Clases";
 			this.clasesToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
@@ -1103,7 +1102,7 @@
 			// 
 			this.bardoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Bard;
 			this.bardoToolStripMenuItem2.Name = "bardoToolStripMenuItem2";
-			this.bardoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.bardoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.bardoToolStripMenuItem2.Tag = "Bard_Line";
 			this.bardoToolStripMenuItem2.Text = "Bardo";
 			// 
@@ -1111,7 +1110,7 @@
 			// 
 			this.bárbaroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Barbarian;
 			this.bárbaroToolStripMenuItem2.Name = "bárbaroToolStripMenuItem2";
-			this.bárbaroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.bárbaroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.bárbaroToolStripMenuItem2.Tag = "Barbarian_Line";
 			this.bárbaroToolStripMenuItem2.Text = "Bárbaro";
 			// 
@@ -1119,7 +1118,7 @@
 			// 
 			this.paladinToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Paladin;
 			this.paladinToolStripMenuItem2.Name = "paladinToolStripMenuItem2";
-			this.paladinToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.paladinToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.paladinToolStripMenuItem2.Tag = "Paladin_Line";
 			this.paladinToolStripMenuItem2.Text = "Paladin";
 			// 
@@ -1127,7 +1126,7 @@
 			// 
 			this.exploradorToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Ranger;
 			this.exploradorToolStripMenuItem2.Name = "exploradorToolStripMenuItem2";
-			this.exploradorToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.exploradorToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.exploradorToolStripMenuItem2.Tag = "Ranger_Line";
 			this.exploradorToolStripMenuItem2.Text = "Explorador";
 			// 
@@ -1135,7 +1134,7 @@
 			// 
 			this.clérigoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Cleric;
 			this.clérigoToolStripMenuItem2.Name = "clérigoToolStripMenuItem2";
-			this.clérigoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.clérigoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.clérigoToolStripMenuItem2.Tag = "Cleric_Line";
 			this.clérigoToolStripMenuItem2.Text = "Clérigo";
 			// 
@@ -1143,7 +1142,7 @@
 			// 
 			this.pícaroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Rogue;
 			this.pícaroToolStripMenuItem2.Name = "pícaroToolStripMenuItem2";
-			this.pícaroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.pícaroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.pícaroToolStripMenuItem2.Tag = "Rogue_Line";
 			this.pícaroToolStripMenuItem2.Text = "Pícaro";
 			// 
@@ -1151,7 +1150,7 @@
 			// 
 			this.druidaToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Druid;
 			this.druidaToolStripMenuItem2.Name = "druidaToolStripMenuItem2";
-			this.druidaToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.druidaToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.druidaToolStripMenuItem2.Tag = "Druid_Line";
 			this.druidaToolStripMenuItem2.Text = "Druida";
 			// 
@@ -1159,7 +1158,7 @@
 			// 
 			this.hechiceroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Sorcerer;
 			this.hechiceroToolStripMenuItem2.Name = "hechiceroToolStripMenuItem2";
-			this.hechiceroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.hechiceroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.hechiceroToolStripMenuItem2.Tag = "Sorcerer_Line";
 			this.hechiceroToolStripMenuItem2.Text = "Hechicero";
 			// 
@@ -1167,7 +1166,7 @@
 			// 
 			this.guerreroToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Fighter;
 			this.guerreroToolStripMenuItem2.Name = "guerreroToolStripMenuItem2";
-			this.guerreroToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.guerreroToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.guerreroToolStripMenuItem2.Tag = "Fighter_Line";
 			this.guerreroToolStripMenuItem2.Text = "Guerrero";
 			// 
@@ -1175,7 +1174,7 @@
 			// 
 			this.brujoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Warlock;
 			this.brujoToolStripMenuItem2.Name = "brujoToolStripMenuItem2";
-			this.brujoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.brujoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.brujoToolStripMenuItem2.Tag = "Warlock_Line";
 			this.brujoToolStripMenuItem2.Text = "Brujo";
 			// 
@@ -1183,7 +1182,7 @@
 			// 
 			this.monjeToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Monk;
 			this.monjeToolStripMenuItem2.Name = "monjeToolStripMenuItem2";
-			this.monjeToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.monjeToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.monjeToolStripMenuItem2.Tag = "Monk_Line";
 			this.monjeToolStripMenuItem2.Text = "Monje";
 			// 
@@ -1191,7 +1190,7 @@
 			// 
 			this.magoToolStripMenuItem2.Image = global::DnDCardGenerator.Properties.Resources.Wizard;
 			this.magoToolStripMenuItem2.Name = "magoToolStripMenuItem2";
-			this.magoToolStripMenuItem2.Size = new System.Drawing.Size(190, 32);
+			this.magoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
 			this.magoToolStripMenuItem2.Tag = "Wizard_Line";
 			this.magoToolStripMenuItem2.Text = "Mago";
 			// 
@@ -1212,7 +1211,7 @@
             this.tieflingToolStripMenuItem});
 			this.razasToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Races;
 			this.razasToolStripMenuItem.Name = "razasToolStripMenuItem";
-			this.razasToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.razasToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
 			this.razasToolStripMenuItem.Text = "Razas";
 			this.razasToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
 			// 

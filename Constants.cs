@@ -83,9 +83,9 @@ namespace DnDCardGenerator
 
 		public static readonly Dictionary<string, Image> ActionTypes = new Dictionary<string, Image>
 		{
-			{ ActionType.Action,       Properties.Resources.Action },
-			{ ActionType.BonusAction,  Properties.Resources.BonusAction },
 			{ ActionType.Reaction,     Properties.Resources.Reaction },
+			{ ActionType.BonusAction,  Properties.Resources.BonusAction },
+			{ ActionType.Action,       Properties.Resources.Action },
 		};
 	}
 }

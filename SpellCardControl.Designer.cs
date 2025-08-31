@@ -84,7 +84,7 @@
 			this.lblRitual.AutoEllipsis = true;
 			this.lblRitual.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblRitual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-			this.lblRitual.Location = new System.Drawing.Point(577, 70);
+			this.lblRitual.Location = new System.Drawing.Point(577, 74);
 			this.lblRitual.Name = "lblRitual";
 			this.lblRitual.Size = new System.Drawing.Size(104, 33);
 			this.lblRitual.TabIndex = 3;
@@ -97,9 +97,9 @@
 			this.lblLevel.AutoEllipsis = true;
 			this.lblLevel.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-			this.lblLevel.Location = new System.Drawing.Point(133, 72);
+			this.lblLevel.Location = new System.Drawing.Point(122, 76);
 			this.lblLevel.Name = "lblLevel";
-			this.lblLevel.Size = new System.Drawing.Size(442, 30);
+			this.lblLevel.Size = new System.Drawing.Size(450, 30);
 			this.lblLevel.TabIndex = 2;
 			this.lblLevel.Text = "Conjuro Nivel 1";
 			this.lblLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,12 +108,12 @@
 			// 
 			this.lblSpellName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblSpellName.AutoEllipsis = true;
-			this.lblSpellName.Font = new System.Drawing.Font("Ringbearer", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblSpellName.Location = new System.Drawing.Point(125, 18);
+			this.lblSpellName.Font = new System.Drawing.Font("Ringbearer", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblSpellName.Location = new System.Drawing.Point(114, 8);
 			this.lblSpellName.Name = "lblSpellName";
-			this.lblSpellName.Size = new System.Drawing.Size(566, 50);
+			this.lblSpellName.Size = new System.Drawing.Size(577, 60);
 			this.lblSpellName.TabIndex = 1;
-			this.lblSpellName.Text = "Proyectil Guía";
+			this.lblSpellName.Text = "Proyectil guía";
 			this.lblSpellName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
 			// 
 			// panelRandom
@@ -195,7 +195,8 @@
 			// 
 			this.lblCastTime.AutoSize = true;
 			this.lblCastTime.Font = new System.Drawing.Font("MPlantin-Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblCastTime.Location = new System.Drawing.Point(47, 0);
+			this.lblCastTime.Location = new System.Drawing.Point(38, 0);
+			this.lblCastTime.Margin = new System.Windows.Forms.Padding(0);
 			this.lblCastTime.Name = "lblCastTime";
 			this.lblCastTime.Size = new System.Drawing.Size(135, 42);
 			this.lblCastTime.TabIndex = 8;
@@ -276,8 +277,8 @@
 			// 
 			// flowDurationPanel
 			// 
-			this.flowDurationPanel.Controls.Add(this.lblDuration);
 			this.flowDurationPanel.Controls.Add(this.pctConcentration);
+			this.flowDurationPanel.Controls.Add(this.lblDuration);
 			this.flowDurationPanel.Location = new System.Drawing.Point(261, 398);
 			this.flowDurationPanel.Margin = new System.Windows.Forms.Padding(0);
 			this.flowDurationPanel.Name = "flowDurationPanel";
@@ -288,7 +289,8 @@
 			// 
 			this.lblDuration.AutoSize = true;
 			this.lblDuration.Font = new System.Drawing.Font("MPlantin-Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblDuration.Location = new System.Drawing.Point(3, 0);
+			this.lblDuration.Location = new System.Drawing.Point(85, 0);
+			this.lblDuration.Margin = new System.Windows.Forms.Padding(0);
 			this.lblDuration.Name = "lblDuration";
 			this.lblDuration.Size = new System.Drawing.Size(140, 42);
 			this.lblDuration.TabIndex = 7;
@@ -297,10 +299,12 @@
 			// 
 			// pctConcentration
 			// 
+			this.pctConcentration.Dock = System.Windows.Forms.DockStyle.Left;
 			this.pctConcentration.Image = global::DnDCardGenerator.Properties.Resources.Concentration;
-			this.pctConcentration.Location = new System.Drawing.Point(149, 3);
+			this.pctConcentration.Location = new System.Drawing.Point(0, 0);
+			this.pctConcentration.Margin = new System.Windows.Forms.Padding(0);
 			this.pctConcentration.Name = "pctConcentration";
-			this.pctConcentration.Size = new System.Drawing.Size(85, 39);
+			this.pctConcentration.Size = new System.Drawing.Size(85, 42);
 			this.pctConcentration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pctConcentration.TabIndex = 8;
 			this.pctConcentration.TabStop = false;
@@ -338,19 +342,21 @@
 			// 
 			this.flowLayoutPanel1.Controls.Add(this.pctActionType);
 			this.flowLayoutPanel1.Controls.Add(this.lblCastTime);
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(206, 261);
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(208, 261);
 			this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(443, 41);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(441, 41);
 			this.flowLayoutPanel1.TabIndex = 21;
 			// 
 			// pctActionType
 			// 
+			this.pctActionType.Dock = System.Windows.Forms.DockStyle.Left;
 			this.pctActionType.Image = global::DnDCardGenerator.Properties.Resources.Action;
-			this.pctActionType.Location = new System.Drawing.Point(3, 3);
+			this.pctActionType.Location = new System.Drawing.Point(0, 0);
+			this.pctActionType.Margin = new System.Windows.Forms.Padding(0);
 			this.pctActionType.Name = "pctActionType";
-			this.pctActionType.Size = new System.Drawing.Size(38, 38);
-			this.pctActionType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pctActionType.Size = new System.Drawing.Size(38, 42);
+			this.pctActionType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pctActionType.TabIndex = 9;
 			this.pctActionType.TabStop = false;
 			// 

@@ -157,7 +157,17 @@ namespace DnDCardGenerator
 			if (_spell != null)
 				_spell.CastingTime = castingTime;
 
-			pctActionType.Visible = castingTime.Contains("acción");
+			pctActionType.Visible = false;
+
+			foreach (var ActionType in Constants.ActionTypes)
+			{
+				if (castingTime.ToLower().Contains(ActionType.Key.ToLower()))
+				{
+					pctActionType.Image = ActionType.Value;
+					pctActionType.Visible = true;
+					break;
+				}
+			}
 
 			if (!_isUpdating && SomethingChanged != null)
 				SomethingChanged(this, EventArgs.Empty);

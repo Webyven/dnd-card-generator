@@ -18,6 +18,9 @@ namespace DnDCardGenerator
 		public string Class { get; set; } = string.Empty;
 
 		[JsonIgnore]
+		public int FontSize { get; set; } = 12;
+
+		[JsonIgnore]
 		public Image Icon { get; set; } = Properties.Resources.Throw_White;
 	}
 }
