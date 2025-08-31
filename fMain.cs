@@ -155,6 +155,7 @@ namespace DnDCardGenerator
 				cbVerbal.Checked ? "V" : "",
 				cbSovietic.Checked ? "S" : "",
 				cbRitual.Checked ? "R" : "");
+			currentSpell.SpellFontSize = (int)tbSpellsFontSize.Value;
 
 			cardControl.Spell = currentSpell;
 		}
@@ -401,6 +402,12 @@ namespace DnDCardGenerator
 			genericCardControl.GameObject.DescriptionFontSize = (int)tbFontSize.Value;
 			genericCardControl.GameObject = currentObject;
 			genericCardControl.RefreshControl();
+			DebounceUpdate();
+		}
+
+		private void tbSpellsFontSize_ValueChanged(object sender, EventArgs e)
+		{
+			UpdateSpellFromInputs();
 			DebounceUpdate();
 		}
 	}

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,10 @@ namespace DnDCardGenerator
 		public string Range { get; set; }
 		public string Components { get; set; }
 		public string Duration { get; set; }
-		public string MaterialCost { get; set; } 
+		public string MaterialCost { get; set; }
+
+		[JsonIgnore]
+		public int SpellFontSize { get; set; } = 20;
 
 		public Spell() { }
 	}
