@@ -123,6 +123,8 @@
 			this.humanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tabaxiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.tieflingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.tbFontSize = new Guna.UI2.WinForms.Guna2TrackBar();
+			this.label16 = new System.Windows.Forms.Label();
 			this.guna2ShadowPanel1.SuspendLayout();
 			this.pages.SuspendLayout();
 			this.pageSpells.SuspendLayout();
@@ -767,6 +769,8 @@
 			// pageGeneric
 			// 
 			this.pageGeneric.BackColor = System.Drawing.SystemColors.Control;
+			this.pageGeneric.Controls.Add(this.label16);
+			this.pageGeneric.Controls.Add(this.tbFontSize);
 			this.pageGeneric.Controls.Add(this.txtGenericInferior);
 			this.pageGeneric.Controls.Add(this.label12);
 			this.pageGeneric.Controls.Add(this.panelGenericIcon);
@@ -1457,6 +1461,32 @@
 			this.tieflingToolStripMenuItem.Tag = "Tiefling_White";
 			this.tieflingToolStripMenuItem.Text = "Tiefling";
 			// 
+			// tbFontSize
+			// 
+			this.tbFontSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+			this.tbFontSize.HoverState.Parent = this.tbFontSize;
+			this.tbFontSize.Location = new System.Drawing.Point(421, 148);
+			this.tbFontSize.Maximum = 36;
+			this.tbFontSize.Minimum = 16;
+			this.tbFontSize.MouseWheelBarPartitions = 2;
+			this.tbFontSize.Name = "tbFontSize";
+			this.tbFontSize.Size = new System.Drawing.Size(150, 12);
+			this.tbFontSize.Style = Guna.UI2.WinForms.Enums.TrackBarStyle.Metro;
+			this.tbFontSize.TabIndex = 29;
+			this.tbFontSize.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbFontSize.Value = 20;
+			this.tbFontSize.ValueChanged += new System.EventHandler(this.tbFontSize_ValueChanged);
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Maven Pro Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.Location = new System.Drawing.Point(298, 145);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(110, 16);
+			this.label16.TabIndex = 30;
+			this.label16.Text = "Tamaño de fuente";
+			// 
 			// fMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1580,6 +1610,8 @@
 		private System.Windows.Forms.ToolStripMenuItem humanToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem tieflingToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem tabaxiToolStripMenuItem;
+		private Guna.UI2.WinForms.Guna2TrackBar tbFontSize;
+		private System.Windows.Forms.Label label16;
 	}
 }
 

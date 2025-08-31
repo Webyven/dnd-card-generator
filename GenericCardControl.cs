@@ -115,7 +115,7 @@ namespace DnDCardGenerator
 				rtb.BorderStyle = BorderStyle.None;
 				rtb.ReadOnly = true;
 				rtb.BackColor = this.flowDescriptionPanel.BackColor;
-				rtb.Font = new Font("MPlantin", 20F, FontStyle.Regular);
+				rtb.Font = new Font("MPlantin", GameObject.DescriptionFontSize, FontStyle.Regular);
 
 				int start = 0;
 				bool bold = false;

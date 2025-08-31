@@ -395,5 +395,13 @@ namespace DnDCardGenerator
 			genericCardControl.RefreshControl();
 			DebounceUpdate();
 		}
+
+		private void tbFontSize_ValueChanged(object sender, EventArgs e)
+		{
+			genericCardControl.GameObject.DescriptionFontSize = (int)tbFontSize.Value;
+			genericCardControl.GameObject = currentObject;
+			genericCardControl.RefreshControl();
+			DebounceUpdate();
+		}
 	}
 }
