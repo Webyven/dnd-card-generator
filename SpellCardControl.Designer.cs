@@ -47,8 +47,8 @@
 			this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
 			this.lblMaterial = new System.Windows.Forms.Label();
 			this.flowDurationPanel = new System.Windows.Forms.FlowLayoutPanel();
-			this.lblDuration = new System.Windows.Forms.Label();
 			this.pctConcentration = new System.Windows.Forms.PictureBox();
+			this.lblDuration = new System.Windows.Forms.Label();
 			this.lblClass = new System.Windows.Forms.Label();
 			this.lblMaterialGold = new System.Windows.Forms.Label();
 			this.flowDescriptionPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -75,7 +75,7 @@
 			this.topPanel.Location = new System.Drawing.Point(72, 109);
 			this.topPanel.Name = "topPanel";
 			this.topPanel.ShadowDecoration.Parent = this.topPanel;
-			this.topPanel.Size = new System.Drawing.Size(702, 120);
+			this.topPanel.Size = new System.Drawing.Size(702, 135);
 			this.topPanel.TabIndex = 0;
 			// 
 			// lblRitual
@@ -84,9 +84,9 @@
 			this.lblRitual.AutoEllipsis = true;
 			this.lblRitual.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblRitual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-			this.lblRitual.Location = new System.Drawing.Point(577, 74);
+			this.lblRitual.Location = new System.Drawing.Point(578, 89);
 			this.lblRitual.Name = "lblRitual";
-			this.lblRitual.Size = new System.Drawing.Size(104, 33);
+			this.lblRitual.Size = new System.Drawing.Size(104, 30);
 			this.lblRitual.TabIndex = 3;
 			this.lblRitual.Text = "Ritual";
 			this.lblRitual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,9 +97,9 @@
 			this.lblLevel.AutoEllipsis = true;
 			this.lblLevel.Font = new System.Drawing.Font("Ringbearer", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-			this.lblLevel.Location = new System.Drawing.Point(122, 76);
+			this.lblLevel.Location = new System.Drawing.Point(129, 89);
 			this.lblLevel.Name = "lblLevel";
-			this.lblLevel.Size = new System.Drawing.Size(450, 30);
+			this.lblLevel.Size = new System.Drawing.Size(443, 30);
 			this.lblLevel.TabIndex = 2;
 			this.lblLevel.Text = "Conjuro Nivel 1";
 			this.lblLevel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,9 +109,9 @@
 			this.lblSpellName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblSpellName.AutoEllipsis = true;
 			this.lblSpellName.Font = new System.Drawing.Font("Ringbearer", 39.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblSpellName.Location = new System.Drawing.Point(114, 8);
+			this.lblSpellName.Location = new System.Drawing.Point(121, 16);
 			this.lblSpellName.Name = "lblSpellName";
-			this.lblSpellName.Size = new System.Drawing.Size(577, 60);
+			this.lblSpellName.Size = new System.Drawing.Size(578, 67);
 			this.lblSpellName.TabIndex = 1;
 			this.lblSpellName.Text = "Proyectil guía";
 			this.lblSpellName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -154,39 +154,39 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("MPlantin", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(92, 329);
+			this.label1.Font = new System.Drawing.Font("MPlantin", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(92, 339);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(127, 41);
+			this.label1.Size = new System.Drawing.Size(106, 34);
 			this.label1.TabIndex = 3;
 			this.label1.Text = "Rango:";
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("MPlantin", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(92, 398);
+			this.label3.Font = new System.Drawing.Font("MPlantin", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label3.Location = new System.Drawing.Point(92, 404);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(172, 41);
+			this.label3.Size = new System.Drawing.Size(144, 34);
 			this.label3.TabIndex = 4;
 			this.label3.Text = "Duración:";
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("MPlantin", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(92, 261);
+			this.label2.Font = new System.Drawing.Font("MPlantin", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(92, 276);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(119, 41);
+			this.label2.Size = new System.Drawing.Size(99, 34);
 			this.label2.TabIndex = 5;
 			this.label2.Text = "Costo:";
 			// 
 			// lblRange
 			// 
-			this.lblRange.Font = new System.Drawing.Font("MPlantin-Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblRange.Location = new System.Drawing.Point(215, 329);
+			this.lblRange.Font = new System.Drawing.Font("MPlantin-Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblRange.Location = new System.Drawing.Point(199, 339);
 			this.lblRange.Name = "lblRange";
-			this.lblRange.Size = new System.Drawing.Size(434, 42);
+			this.lblRange.Size = new System.Drawing.Size(450, 34);
 			this.lblRange.TabIndex = 6;
 			this.lblRange.Text = "120 pies";
 			this.lblRange.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,11 +194,11 @@
 			// lblCastTime
 			// 
 			this.lblCastTime.AutoSize = true;
-			this.lblCastTime.Font = new System.Drawing.Font("MPlantin-Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblCastTime.Font = new System.Drawing.Font("MPlantin-Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblCastTime.Location = new System.Drawing.Point(38, 0);
 			this.lblCastTime.Margin = new System.Windows.Forms.Padding(0);
 			this.lblCastTime.Name = "lblCastTime";
-			this.lblCastTime.Size = new System.Drawing.Size(135, 42);
+			this.lblCastTime.Size = new System.Drawing.Size(113, 35);
 			this.lblCastTime.TabIndex = 8;
 			this.lblCastTime.Text = "Acción";
 			this.lblCastTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -208,11 +208,11 @@
 			this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.guna2Panel1.BorderThickness = 1;
 			this.guna2Panel1.Controls.Add(this.lblVerbal);
-			this.guna2Panel1.Location = new System.Drawing.Point(669, 249);
+			this.guna2Panel1.Location = new System.Drawing.Point(675, 263);
 			this.guna2Panel1.Name = "guna2Panel1";
 			this.guna2Panel1.Padding = new System.Windows.Forms.Padding(2);
 			this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-			this.guna2Panel1.Size = new System.Drawing.Size(64, 64);
+			this.guna2Panel1.Size = new System.Drawing.Size(60, 60);
 			this.guna2Panel1.TabIndex = 14;
 			// 
 			// lblVerbal
@@ -222,7 +222,7 @@
 			this.lblVerbal.ForeColor = System.Drawing.Color.Black;
 			this.lblVerbal.Location = new System.Drawing.Point(2, 2);
 			this.lblVerbal.Name = "lblVerbal";
-			this.lblVerbal.Size = new System.Drawing.Size(60, 60);
+			this.lblVerbal.Size = new System.Drawing.Size(56, 56);
 			this.lblVerbal.TabIndex = 0;
 			this.lblVerbal.Text = "V";
 			this.lblVerbal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -232,11 +232,11 @@
 			this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.guna2Panel2.BorderThickness = 1;
 			this.guna2Panel2.Controls.Add(this.lblSovietic);
-			this.guna2Panel2.Location = new System.Drawing.Point(669, 319);
+			this.guna2Panel2.Location = new System.Drawing.Point(675, 328);
 			this.guna2Panel2.Name = "guna2Panel2";
 			this.guna2Panel2.Padding = new System.Windows.Forms.Padding(2);
 			this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-			this.guna2Panel2.Size = new System.Drawing.Size(64, 64);
+			this.guna2Panel2.Size = new System.Drawing.Size(60, 60);
 			this.guna2Panel2.TabIndex = 15;
 			// 
 			// lblSovietic
@@ -246,7 +246,7 @@
 			this.lblSovietic.ForeColor = System.Drawing.Color.Black;
 			this.lblSovietic.Location = new System.Drawing.Point(2, 2);
 			this.lblSovietic.Name = "lblSovietic";
-			this.lblSovietic.Size = new System.Drawing.Size(60, 60);
+			this.lblSovietic.Size = new System.Drawing.Size(56, 56);
 			this.lblSovietic.TabIndex = 1;
 			this.lblSovietic.Text = "S";
 			this.lblSovietic.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -256,11 +256,11 @@
 			this.guna2Panel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.guna2Panel3.BorderThickness = 1;
 			this.guna2Panel3.Controls.Add(this.lblMaterial);
-			this.guna2Panel3.Location = new System.Drawing.Point(669, 388);
+			this.guna2Panel3.Location = new System.Drawing.Point(675, 392);
 			this.guna2Panel3.Name = "guna2Panel3";
 			this.guna2Panel3.Padding = new System.Windows.Forms.Padding(2);
 			this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-			this.guna2Panel3.Size = new System.Drawing.Size(64, 64);
+			this.guna2Panel3.Size = new System.Drawing.Size(60, 60);
 			this.guna2Panel3.TabIndex = 15;
 			// 
 			// lblMaterial
@@ -270,7 +270,7 @@
 			this.lblMaterial.ForeColor = System.Drawing.Color.Silver;
 			this.lblMaterial.Location = new System.Drawing.Point(2, 2);
 			this.lblMaterial.Name = "lblMaterial";
-			this.lblMaterial.Size = new System.Drawing.Size(60, 60);
+			this.lblMaterial.Size = new System.Drawing.Size(56, 56);
 			this.lblMaterial.TabIndex = 1;
 			this.lblMaterial.Text = "M";
 			this.lblMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -279,23 +279,11 @@
 			// 
 			this.flowDurationPanel.Controls.Add(this.pctConcentration);
 			this.flowDurationPanel.Controls.Add(this.lblDuration);
-			this.flowDurationPanel.Location = new System.Drawing.Point(261, 398);
+			this.flowDurationPanel.Location = new System.Drawing.Point(239, 404);
 			this.flowDurationPanel.Margin = new System.Windows.Forms.Padding(0);
 			this.flowDurationPanel.Name = "flowDurationPanel";
-			this.flowDurationPanel.Size = new System.Drawing.Size(388, 41);
+			this.flowDurationPanel.Size = new System.Drawing.Size(410, 34);
 			this.flowDurationPanel.TabIndex = 17;
-			// 
-			// lblDuration
-			// 
-			this.lblDuration.AutoSize = true;
-			this.lblDuration.Font = new System.Drawing.Font("MPlantin-Bold", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblDuration.Location = new System.Drawing.Point(85, 0);
-			this.lblDuration.Margin = new System.Windows.Forms.Padding(0);
-			this.lblDuration.Name = "lblDuration";
-			this.lblDuration.Size = new System.Drawing.Size(140, 42);
-			this.lblDuration.TabIndex = 7;
-			this.lblDuration.Text = "1 turno";
-			this.lblDuration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// pctConcentration
 			// 
@@ -304,10 +292,22 @@
 			this.pctConcentration.Location = new System.Drawing.Point(0, 0);
 			this.pctConcentration.Margin = new System.Windows.Forms.Padding(0);
 			this.pctConcentration.Name = "pctConcentration";
-			this.pctConcentration.Size = new System.Drawing.Size(85, 42);
+			this.pctConcentration.Size = new System.Drawing.Size(85, 35);
 			this.pctConcentration.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pctConcentration.TabIndex = 8;
 			this.pctConcentration.TabStop = false;
+			// 
+			// lblDuration
+			// 
+			this.lblDuration.AutoSize = true;
+			this.lblDuration.Font = new System.Drawing.Font("MPlantin-Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblDuration.Location = new System.Drawing.Point(85, 0);
+			this.lblDuration.Margin = new System.Windows.Forms.Padding(0);
+			this.lblDuration.Name = "lblDuration";
+			this.lblDuration.Size = new System.Drawing.Size(116, 35);
+			this.lblDuration.TabIndex = 7;
+			this.lblDuration.Text = "1 turno";
+			this.lblDuration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// lblClass
 			// 
@@ -322,7 +322,7 @@
 			// lblMaterialGold
 			// 
 			this.lblMaterialGold.Font = new System.Drawing.Font("MPlantin-Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lblMaterialGold.Location = new System.Drawing.Point(669, 453);
+			this.lblMaterialGold.Location = new System.Drawing.Point(674, 455);
 			this.lblMaterialGold.Name = "lblMaterialGold";
 			this.lblMaterialGold.Size = new System.Drawing.Size(64, 18);
 			this.lblMaterialGold.TabIndex = 19;
@@ -342,10 +342,10 @@
 			// 
 			this.flowLayoutPanel1.Controls.Add(this.pctActionType);
 			this.flowLayoutPanel1.Controls.Add(this.lblCastTime);
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(208, 261);
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(186, 276);
 			this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(441, 41);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(463, 34);
 			this.flowLayoutPanel1.TabIndex = 21;
 			// 
 			// pctActionType
@@ -355,7 +355,7 @@
 			this.pctActionType.Location = new System.Drawing.Point(0, 0);
 			this.pctActionType.Margin = new System.Windows.Forms.Padding(0);
 			this.pctActionType.Name = "pctActionType";
-			this.pctActionType.Size = new System.Drawing.Size(38, 42);
+			this.pctActionType.Size = new System.Drawing.Size(38, 35);
 			this.pctActionType.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pctActionType.TabIndex = 9;
 			this.pctActionType.TabStop = false;

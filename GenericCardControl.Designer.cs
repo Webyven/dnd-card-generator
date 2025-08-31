@@ -51,16 +51,16 @@
 			this.topPanel.Location = new System.Drawing.Point(72, 109);
 			this.topPanel.Name = "topPanel";
 			this.topPanel.ShadowDecoration.Parent = this.topPanel;
-			this.topPanel.Size = new System.Drawing.Size(702, 120);
+			this.topPanel.Size = new System.Drawing.Size(702, 135);
 			this.topPanel.TabIndex = 1;
 			// 
 			// panel1
 			// 
 			this.panel1.Controls.Add(this.lblRarity);
 			this.panel1.Controls.Add(this.lblType);
-			this.panel1.Location = new System.Drawing.Point(130, 71);
+			this.panel1.Location = new System.Drawing.Point(130, 87);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(555, 37);
+			this.panel1.Size = new System.Drawing.Size(555, 30);
 			this.panel1.TabIndex = 3;
 			// 
 			// lblRarity
@@ -98,7 +98,7 @@
 			this.pctIcon.Image = global::DnDCardGenerator.Properties.Resources.Fighter_White;
 			this.pctIcon.Location = new System.Drawing.Point(28, 22);
 			this.pctIcon.Name = "pctIcon";
-			this.pctIcon.Size = new System.Drawing.Size(75, 75);
+			this.pctIcon.Size = new System.Drawing.Size(90, 90);
 			this.pctIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pctIcon.TabIndex = 2;
 			this.pctIcon.TabStop = false;
@@ -107,21 +107,21 @@
 			// 
 			this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.lblName.AutoEllipsis = true;
-			this.lblName.Font = new System.Drawing.Font("Ringbearer", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblName.Font = new System.Drawing.Font("Ringbearer", 38.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lblName.ForeColor = System.Drawing.Color.White;
-			this.lblName.Location = new System.Drawing.Point(121, 22);
+			this.lblName.Location = new System.Drawing.Point(121, 18);
 			this.lblName.Name = "lblName";
-			this.lblName.Size = new System.Drawing.Size(564, 45);
+			this.lblName.Size = new System.Drawing.Size(564, 62);
 			this.lblName.TabIndex = 1;
-			this.lblName.Text = "Agarrar (Grapple)";
+			this.lblName.Text = "Agarrar";
 			this.lblName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
 			// 
 			// flowDescriptionPanel
 			// 
 			this.flowDescriptionPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-			this.flowDescriptionPanel.Location = new System.Drawing.Point(72, 247);
+			this.flowDescriptionPanel.Location = new System.Drawing.Point(72, 265);
 			this.flowDescriptionPanel.Name = "flowDescriptionPanel";
-			this.flowDescriptionPanel.Size = new System.Drawing.Size(685, 774);
+			this.flowDescriptionPanel.Size = new System.Drawing.Size(685, 755);
 			this.flowDescriptionPanel.TabIndex = 21;
 			// 
 			// lblBottomText
