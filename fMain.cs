@@ -410,5 +410,16 @@ namespace DnDCardGenerator
 			UpdateSpellFromInputs();
 			DebounceUpdate();
 		}
+
+		private void cambiarModoDeRenderizadoToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			if (MessageBox.Show("¿Deseas cambiar el modo de renderizado?\n\nLa aplicación se reiniciará y perderás los cambios no guardados.", "Cambiar modo de renderizado", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+			{
+				Properties.Settings.Default.DpiAwareness = !Properties.Settings.Default.DpiAwareness;
+				Properties.Settings.Default.Save();
+				Application.Restart();
+				Environment.Exit(0);
+			}
+		}
 	}
 }

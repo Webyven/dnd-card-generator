@@ -21,7 +21,12 @@ namespace DnDCardGenerator
 			// Para Windows 10 versión 1703 y posterior
 			if (Environment.OSVersion.Version.Major >= 6)
 			{
-				SetProcessDpiAwareness(ProcessDpiAwareness.ProcessPerMonitorDpiAware);
+				// Permitir al usuario cambiar la escala de la aplicación en monitores con diferentes DPI
+				Properties.Settings.Default.Reload();
+				if (Properties.Settings.Default.DpiAwareness)
+					SetProcessDpiAwareness(ProcessDpiAwareness.ProcessPerMonitorDpiAware);
+				else
+					SetProcessDpiAwareness(ProcessDpiAwareness.ProcessDpiUnaware);
 			}
 
 			Application.Run(new fMain());
