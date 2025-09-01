@@ -32,7 +32,7 @@
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.lblRarity = new System.Windows.Forms.Label();
 			this.lblType = new System.Windows.Forms.Label();
-			this.pctIcon = new System.Windows.Forms.PictureBox();
+			this.pctIcon = new Guna.UI2.WinForms.Guna2PictureBox();
 			this.lblName = new System.Windows.Forms.Label();
 			this.flowDescriptionPanel = new System.Windows.Forms.FlowLayoutPanel();
 			this.lblBottomText = new System.Windows.Forms.Label();
@@ -95,9 +95,11 @@
 			// 
 			// pctIcon
 			// 
+			this.pctIcon.BorderRadius = 5;
 			this.pctIcon.Image = global::DnDCardGenerator.Properties.Resources.Fighter_White;
 			this.pctIcon.Location = new System.Drawing.Point(28, 22);
 			this.pctIcon.Name = "pctIcon";
+			this.pctIcon.ShadowDecoration.Parent = this.pctIcon;
 			this.pctIcon.Size = new System.Drawing.Size(90, 90);
 			this.pctIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pctIcon.TabIndex = 2;
@@ -156,7 +158,7 @@
 
 		private Guna.UI2.WinForms.Guna2Panel topPanel;
 		private System.Windows.Forms.Label lblName;
-		private System.Windows.Forms.PictureBox pctIcon;
+		private Guna.UI2.WinForms.Guna2PictureBox pctIcon;
 		private System.Windows.Forms.FlowLayoutPanel flowDescriptionPanel;
 		private System.Windows.Forms.Label lblBottomText;
 		private System.Windows.Forms.Label lblType;

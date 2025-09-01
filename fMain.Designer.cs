@@ -30,7 +30,7 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fMain));
-			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+			Utilities.BunifuPages.BunifuAnimatorNS.Animation animation2 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
 			this.label1 = new System.Windows.Forms.Label();
 			this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
 			this.label2 = new System.Windows.Forms.Label();
@@ -65,6 +65,7 @@
 			this.label17 = new System.Windows.Forms.Label();
 			this.tbSpellsFontSize = new Guna.UI2.WinForms.Guna2TrackBar();
 			this.pageGeneric = new System.Windows.Forms.TabPage();
+			this.tbGenericTitleSize = new Guna.UI2.WinForms.Guna2TrackBar();
 			this.label16 = new System.Windows.Forms.Label();
 			this.tbFontSize = new Guna.UI2.WinForms.Guna2TrackBar();
 			this.txtGenericInferior = new Guna.UI2.WinForms.Guna2TextBox();
@@ -84,7 +85,6 @@
 			this.objetoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.armaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.escudoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.magiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.herramientaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.clasesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.bardoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -130,7 +130,18 @@
 			this.pctPreviewCard = new System.Windows.Forms.PictureBox();
 			this.mainMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.cambiarModoDeRenderizadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.tbGenericTitleSize = new Guna.UI2.WinForms.Guna2TrackBar();
+			this.spiralArrowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.spiralSwordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.thrownDaggersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.syringeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.spyglassToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.helmetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.bootsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.magiaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.tiedScrollToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.vortexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.voodooToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.bombToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.guna2ShadowPanel1.SuspendLayout();
 			this.pages.SuspendLayout();
 			this.pageSpells.SuspendLayout();
@@ -722,22 +733,22 @@
 			this.pages.SelectedIndex = 0;
 			this.pages.Size = new System.Drawing.Size(596, 575);
 			this.pages.TabIndex = 38;
-			animation1.AnimateOnlyDifferences = true;
-			animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-			animation1.LeafCoeff = 0F;
-			animation1.MaxTime = 1F;
-			animation1.MinTime = 0F;
-			animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-			animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-			animation1.MosaicSize = 0;
-			animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-			animation1.RotateCoeff = 0F;
-			animation1.RotateLimit = 0F;
-			animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-			animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-			animation1.TimeCoeff = 0F;
-			animation1.TransparencyCoeff = 1F;
-			this.pages.Transition = animation1;
+			animation2.AnimateOnlyDifferences = true;
+			animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+			animation2.LeafCoeff = 0F;
+			animation2.MaxTime = 1F;
+			animation2.MinTime = 0F;
+			animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+			animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+			animation2.MosaicSize = 0;
+			animation2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+			animation2.RotateCoeff = 0F;
+			animation2.RotateLimit = 0F;
+			animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+			animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+			animation2.TimeCoeff = 0F;
+			animation2.TransparencyCoeff = 1F;
+			this.pages.Transition = animation2;
 			this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Transparent;
 			// 
 			// pageSpells
@@ -842,6 +853,22 @@
 			this.pageGeneric.Size = new System.Drawing.Size(588, 549);
 			this.pageGeneric.TabIndex = 1;
 			this.pageGeneric.Text = "GenericPage";
+			// 
+			// tbGenericTitleSize
+			// 
+			this.tbGenericTitleSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+			this.tbGenericTitleSize.HoverState.Parent = this.tbGenericTitleSize;
+			this.tbGenericTitleSize.Location = new System.Drawing.Point(200, 13);
+			this.tbGenericTitleSize.Maximum = 44;
+			this.tbGenericTitleSize.Minimum = 20;
+			this.tbGenericTitleSize.MouseWheelBarPartitions = 2;
+			this.tbGenericTitleSize.Name = "tbGenericTitleSize";
+			this.tbGenericTitleSize.Size = new System.Drawing.Size(89, 12);
+			this.tbGenericTitleSize.Style = Guna.UI2.WinForms.Enums.TrackBarStyle.Metro;
+			this.tbGenericTitleSize.TabIndex = 37;
+			this.tbGenericTitleSize.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbGenericTitleSize.Value = 38;
+			this.tbGenericTitleSize.ValueChanged += new System.EventHandler(this.tbGenericTitleSize_ValueChanged);
 			// 
 			// label16
 			// 
@@ -1100,17 +1127,18 @@
 			this.cmsGenericTypes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.acciónToolStripMenuItem,
             this.objetoToolStripMenuItem,
+            this.magiaToolStripMenuItem1,
             this.clasesToolStripMenuItem,
             this.razasToolStripMenuItem});
 			this.cmsGenericTypes.Name = "contextMenuStrip1";
-			this.cmsGenericTypes.Size = new System.Drawing.Size(122, 132);
+			this.cmsGenericTypes.Size = new System.Drawing.Size(191, 186);
 			this.cmsGenericTypes.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
 			// 
 			// acciónToolStripMenuItem
 			// 
 			this.acciónToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Throw;
 			this.acciónToolStripMenuItem.Name = "acciónToolStripMenuItem";
-			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
+			this.acciónToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.acciónToolStripMenuItem.Tag = "Throw_White";
 			this.acciónToolStripMenuItem.Text = "Acción";
 			// 
@@ -1119,11 +1147,18 @@
 			this.objetoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.armaToolStripMenuItem,
             this.escudoToolStripMenuItem,
-            this.magiaToolStripMenuItem,
-            this.herramientaToolStripMenuItem});
+            this.herramientaToolStripMenuItem,
+            this.bombToolStripMenuItem,
+            this.spiralArrowToolStripMenuItem,
+            this.spiralSwordToolStripMenuItem,
+            this.thrownDaggersToolStripMenuItem,
+            this.syringeToolStripMenuItem,
+            this.spyglassToolStripMenuItem,
+            this.helmetToolStripMenuItem,
+            this.bootsToolStripMenuItem});
 			this.objetoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Chest;
 			this.objetoToolStripMenuItem.Name = "objetoToolStripMenuItem";
-			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
+			this.objetoToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.objetoToolStripMenuItem.Tag = "Chest_White";
 			this.objetoToolStripMenuItem.Text = "Objeto";
 			this.objetoToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
@@ -1132,7 +1167,7 @@
 			// 
 			this.armaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Sword;
 			this.armaToolStripMenuItem.Name = "armaToolStripMenuItem";
-			this.armaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.armaToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.armaToolStripMenuItem.Tag = "Sword_White";
 			this.armaToolStripMenuItem.Text = "Arma";
 			// 
@@ -1140,23 +1175,15 @@
 			// 
 			this.escudoToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Shield;
 			this.escudoToolStripMenuItem.Name = "escudoToolStripMenuItem";
-			this.escudoToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.escudoToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.escudoToolStripMenuItem.Tag = "Shield_White";
 			this.escudoToolStripMenuItem.Text = "Escudo";
-			// 
-			// magiaToolStripMenuItem
-			// 
-			this.magiaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Wand;
-			this.magiaToolStripMenuItem.Name = "magiaToolStripMenuItem";
-			this.magiaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-			this.magiaToolStripMenuItem.Tag = "Wand_White";
-			this.magiaToolStripMenuItem.Text = "Magia";
 			// 
 			// herramientaToolStripMenuItem
 			// 
 			this.herramientaToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Tool;
 			this.herramientaToolStripMenuItem.Name = "herramientaToolStripMenuItem";
-			this.herramientaToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+			this.herramientaToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.herramientaToolStripMenuItem.Tag = "Tool_White";
 			this.herramientaToolStripMenuItem.Text = "Herramienta";
 			// 
@@ -1177,7 +1204,7 @@
             this.magoToolStripMenuItem2});
 			this.clasesToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Witch_Hat;
 			this.clasesToolStripMenuItem.Name = "clasesToolStripMenuItem";
-			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
+			this.clasesToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.clasesToolStripMenuItem.Tag = "";
 			this.clasesToolStripMenuItem.Text = "Clases";
 			this.clasesToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
@@ -1295,7 +1322,7 @@
             this.tieflingToolStripMenuItem});
 			this.razasToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Races;
 			this.razasToolStripMenuItem.Name = "razasToolStripMenuItem";
-			this.razasToolStripMenuItem.Size = new System.Drawing.Size(121, 32);
+			this.razasToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
 			this.razasToolStripMenuItem.Text = "Razas";
 			this.razasToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
 			// 
@@ -1557,21 +1584,106 @@
 			this.cambiarModoDeRenderizadoToolStripMenuItem.Text = "Cambiar modo de renderizado";
 			this.cambiarModoDeRenderizadoToolStripMenuItem.Click += new System.EventHandler(this.cambiarModoDeRenderizadoToolStripMenuItem_Click);
 			// 
-			// tbGenericTitleSize
+			// spiralArrowToolStripMenuItem
 			// 
-			this.tbGenericTitleSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-			this.tbGenericTitleSize.HoverState.Parent = this.tbGenericTitleSize;
-			this.tbGenericTitleSize.Location = new System.Drawing.Point(200, 13);
-			this.tbGenericTitleSize.Maximum = 44;
-			this.tbGenericTitleSize.Minimum = 20;
-			this.tbGenericTitleSize.MouseWheelBarPartitions = 2;
-			this.tbGenericTitleSize.Name = "tbGenericTitleSize";
-			this.tbGenericTitleSize.Size = new System.Drawing.Size(89, 12);
-			this.tbGenericTitleSize.Style = Guna.UI2.WinForms.Enums.TrackBarStyle.Metro;
-			this.tbGenericTitleSize.TabIndex = 37;
-			this.tbGenericTitleSize.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.tbGenericTitleSize.Value = 38;
-			this.tbGenericTitleSize.ValueChanged += new System.EventHandler(this.tbGenericTitleSize_ValueChanged);
+			this.spiralArrowToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Spiral_Arrow;
+			this.spiralArrowToolStripMenuItem.Name = "spiralArrowToolStripMenuItem";
+			this.spiralArrowToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.spiralArrowToolStripMenuItem.Tag = "Spiral_Arrow_White";
+			this.spiralArrowToolStripMenuItem.Text = "Spiral Arrow";
+			// 
+			// spiralSwordToolStripMenuItem
+			// 
+			this.spiralSwordToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Spiral_Sword;
+			this.spiralSwordToolStripMenuItem.Name = "spiralSwordToolStripMenuItem";
+			this.spiralSwordToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.spiralSwordToolStripMenuItem.Tag = "Spiral_Sword_White";
+			this.spiralSwordToolStripMenuItem.Text = "Spiral Sword";
+			// 
+			// thrownDaggersToolStripMenuItem
+			// 
+			this.thrownDaggersToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Thrown_Daggers;
+			this.thrownDaggersToolStripMenuItem.Name = "thrownDaggersToolStripMenuItem";
+			this.thrownDaggersToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.thrownDaggersToolStripMenuItem.Tag = "Thrown_Daggers_White";
+			this.thrownDaggersToolStripMenuItem.Text = "Thrown Daggers";
+			// 
+			// syringeToolStripMenuItem
+			// 
+			this.syringeToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Syringe;
+			this.syringeToolStripMenuItem.Name = "syringeToolStripMenuItem";
+			this.syringeToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.syringeToolStripMenuItem.Tag = "Syringe_White";
+			this.syringeToolStripMenuItem.Text = "Syringe";
+			// 
+			// spyglassToolStripMenuItem
+			// 
+			this.spyglassToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Spyglass;
+			this.spyglassToolStripMenuItem.Name = "spyglassToolStripMenuItem";
+			this.spyglassToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.spyglassToolStripMenuItem.Tag = "Spyglass_White";
+			this.spyglassToolStripMenuItem.Text = "Spyglass";
+			// 
+			// helmetToolStripMenuItem
+			// 
+			this.helmetToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Helmet;
+			this.helmetToolStripMenuItem.Name = "helmetToolStripMenuItem";
+			this.helmetToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.helmetToolStripMenuItem.Tag = "Helmet_White";
+			this.helmetToolStripMenuItem.Text = "Helmet";
+			// 
+			// bootsToolStripMenuItem
+			// 
+			this.bootsToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Boot;
+			this.bootsToolStripMenuItem.Name = "bootsToolStripMenuItem";
+			this.bootsToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.bootsToolStripMenuItem.Tag = "Boot_White";
+			this.bootsToolStripMenuItem.Text = "Boots";
+			// 
+			// magiaToolStripMenuItem1
+			// 
+			this.magiaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tiedScrollToolStripMenuItem1,
+            this.vortexToolStripMenuItem,
+            this.voodooToolStripMenuItem});
+			this.magiaToolStripMenuItem1.Image = global::DnDCardGenerator.Properties.Resources.Wand;
+			this.magiaToolStripMenuItem1.Name = "magiaToolStripMenuItem1";
+			this.magiaToolStripMenuItem1.Size = new System.Drawing.Size(190, 32);
+			this.magiaToolStripMenuItem1.Tag = "Wand_White";
+			this.magiaToolStripMenuItem1.Text = "Magia";
+			this.magiaToolStripMenuItem1.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.cmsGenericTypes_ItemClicked);
+			// 
+			// tiedScrollToolStripMenuItem1
+			// 
+			this.tiedScrollToolStripMenuItem1.Image = global::DnDCardGenerator.Properties.Resources.Tied_Scroll;
+			this.tiedScrollToolStripMenuItem1.Name = "tiedScrollToolStripMenuItem1";
+			this.tiedScrollToolStripMenuItem1.Size = new System.Drawing.Size(190, 32);
+			this.tiedScrollToolStripMenuItem1.Tag = "Tied_Scroll_White";
+			this.tiedScrollToolStripMenuItem1.Text = "Tied Scroll";
+			// 
+			// vortexToolStripMenuItem
+			// 
+			this.vortexToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Vortex;
+			this.vortexToolStripMenuItem.Name = "vortexToolStripMenuItem";
+			this.vortexToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.vortexToolStripMenuItem.Tag = "Vortex_White";
+			this.vortexToolStripMenuItem.Text = "Vortex";
+			// 
+			// voodooToolStripMenuItem
+			// 
+			this.voodooToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Voodoo;
+			this.voodooToolStripMenuItem.Name = "voodooToolStripMenuItem";
+			this.voodooToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.voodooToolStripMenuItem.Tag = "Voodoo_White";
+			this.voodooToolStripMenuItem.Text = "Voodoo";
+			// 
+			// bombToolStripMenuItem
+			// 
+			this.bombToolStripMenuItem.Image = global::DnDCardGenerator.Properties.Resources.Bomb;
+			this.bombToolStripMenuItem.Name = "bombToolStripMenuItem";
+			this.bombToolStripMenuItem.Size = new System.Drawing.Size(190, 32);
+			this.bombToolStripMenuItem.Tag = "Bomb_White";
+			this.bombToolStripMenuItem.Text = "Bomb";
 			// 
 			// fMain
 			// 
@@ -1682,7 +1794,6 @@
 		private Guna.UI2.WinForms.Guna2GradientButton btnExport;
 		private System.Windows.Forms.ToolStripMenuItem armaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem escudoToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem magiaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem herramientaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem razasToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem dragonbornToolStripMenuItem;
@@ -1705,6 +1816,18 @@
 		private System.Windows.Forms.ToolStripMenuItem cambiarModoDeRenderizadoToolStripMenuItem;
 		private Guna.UI2.WinForms.Guna2TrackBar tbSpellNameSize;
 		private Guna.UI2.WinForms.Guna2TrackBar tbGenericTitleSize;
+		private System.Windows.Forms.ToolStripMenuItem spiralArrowToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem spiralSwordToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem thrownDaggersToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem syringeToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem spyglassToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem helmetToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem bootsToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem magiaToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem tiedScrollToolStripMenuItem1;
+		private System.Windows.Forms.ToolStripMenuItem vortexToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem bombToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem voodooToolStripMenuItem;
 	}
 }
 

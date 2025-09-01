@@ -415,4 +415,106 @@
   <data name="Reaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Reaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Bomb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bomb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bomb_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bomb White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boot_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boot White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Helmet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Helmet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Helmet_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Helmet White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monster.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Monster_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Monster White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Punch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Punch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Punch_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Punch White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scratch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scratch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scratch_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scratch White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spiral_Arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spiral Arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spiral_Arrow_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spiral Arrow White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spiral_Sword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spiral Sword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spiral_Sword_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spiral Sword White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spyglass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spyglass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spyglass_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spyglass White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Syringe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Syringe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Syringe_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Syringe White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thrown_Daggers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thrown Daggers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thrown_Daggers_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thrown Daggers White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thunder_Skull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thunder Skull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thunder_Skull_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thunder Skull White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tied_Scroll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tied Scroll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tied_Scroll_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tied Scroll White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tinker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tinker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tinker_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tinker White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toad_Teeth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toad Teeth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toad_Teeth_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toad Teeth White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Voodoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Voodoo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Voodoo_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Voodoo White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vortex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vortex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vortex_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vortex White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
