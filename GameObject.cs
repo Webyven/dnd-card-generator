@@ -18,6 +18,9 @@ namespace DnDCardGenerator
 		public string Class { get; set; } = string.Empty;
 
 		[JsonIgnore]
+		public int TitleFontSize { get; internal set; } = 38;
+
+		[JsonIgnore]
 		public int DescriptionFontSize { get; set; } = 20;
 
 		[JsonIgnore]

@@ -61,6 +61,7 @@
 			this.label10 = new System.Windows.Forms.Label();
 			this.pages = new Bunifu.UI.WinForms.BunifuPages();
 			this.pageSpells = new System.Windows.Forms.TabPage();
+			this.tbSpellNameSize = new Guna.UI2.WinForms.Guna2TrackBar();
 			this.label17 = new System.Windows.Forms.Label();
 			this.tbSpellsFontSize = new Guna.UI2.WinForms.Guna2TrackBar();
 			this.pageGeneric = new System.Windows.Forms.TabPage();
@@ -129,7 +130,7 @@
 			this.pctPreviewCard = new System.Windows.Forms.PictureBox();
 			this.mainMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.cambiarModoDeRenderizadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.tbSpellNameSize = new Guna.UI2.WinForms.Guna2TrackBar();
+			this.tbGenericTitleSize = new Guna.UI2.WinForms.Guna2TrackBar();
 			this.guna2ShadowPanel1.SuspendLayout();
 			this.pages.SuspendLayout();
 			this.pageSpells.SuspendLayout();
@@ -714,10 +715,10 @@
 			this.pages.Location = new System.Drawing.Point(24, 100);
 			this.pages.Multiline = true;
 			this.pages.Name = "pages";
-			this.pages.Page = this.pageSpells;
-			this.pages.PageIndex = 0;
-			this.pages.PageName = "pageSpells";
-			this.pages.PageTitle = "SpellsPage";
+			this.pages.Page = this.pageGeneric;
+			this.pages.PageIndex = 1;
+			this.pages.PageName = "pageGeneric";
+			this.pages.PageTitle = "GenericPage";
 			this.pages.SelectedIndex = 0;
 			this.pages.Size = new System.Drawing.Size(596, 575);
 			this.pages.TabIndex = 38;
@@ -776,6 +777,22 @@
 			this.pageSpells.TabIndex = 0;
 			this.pageSpells.Text = "SpellsPage";
 			// 
+			// tbSpellNameSize
+			// 
+			this.tbSpellNameSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+			this.tbSpellNameSize.HoverState.Parent = this.tbSpellNameSize;
+			this.tbSpellNameSize.Location = new System.Drawing.Point(200, 13);
+			this.tbSpellNameSize.Maximum = 44;
+			this.tbSpellNameSize.Minimum = 20;
+			this.tbSpellNameSize.MouseWheelBarPartitions = 2;
+			this.tbSpellNameSize.Name = "tbSpellNameSize";
+			this.tbSpellNameSize.Size = new System.Drawing.Size(89, 12);
+			this.tbSpellNameSize.Style = Guna.UI2.WinForms.Enums.TrackBarStyle.Metro;
+			this.tbSpellNameSize.TabIndex = 36;
+			this.tbSpellNameSize.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbSpellNameSize.Value = 40;
+			this.tbSpellNameSize.ValueChanged += new System.EventHandler(this.tbSpellNameSize_ValueChanged);
+			// 
 			// label17
 			// 
 			this.label17.AutoSize = true;
@@ -805,6 +822,7 @@
 			// pageGeneric
 			// 
 			this.pageGeneric.BackColor = System.Drawing.SystemColors.Control;
+			this.pageGeneric.Controls.Add(this.tbGenericTitleSize);
 			this.pageGeneric.Controls.Add(this.label16);
 			this.pageGeneric.Controls.Add(this.tbFontSize);
 			this.pageGeneric.Controls.Add(this.txtGenericInferior);
@@ -1539,21 +1557,21 @@
 			this.cambiarModoDeRenderizadoToolStripMenuItem.Text = "Cambiar modo de renderizado";
 			this.cambiarModoDeRenderizadoToolStripMenuItem.Click += new System.EventHandler(this.cambiarModoDeRenderizadoToolStripMenuItem_Click);
 			// 
-			// tbSpellNameSize
+			// tbGenericTitleSize
 			// 
-			this.tbSpellNameSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
-			this.tbSpellNameSize.HoverState.Parent = this.tbSpellNameSize;
-			this.tbSpellNameSize.Location = new System.Drawing.Point(200, 13);
-			this.tbSpellNameSize.Maximum = 44;
-			this.tbSpellNameSize.Minimum = 20;
-			this.tbSpellNameSize.MouseWheelBarPartitions = 2;
-			this.tbSpellNameSize.Name = "tbSpellNameSize";
-			this.tbSpellNameSize.Size = new System.Drawing.Size(89, 12);
-			this.tbSpellNameSize.Style = Guna.UI2.WinForms.Enums.TrackBarStyle.Metro;
-			this.tbSpellNameSize.TabIndex = 36;
-			this.tbSpellNameSize.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.tbSpellNameSize.Value = 40;
-			this.tbSpellNameSize.ValueChanged += new System.EventHandler(this.tbSpellNameSize_ValueChanged);
+			this.tbGenericTitleSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+			this.tbGenericTitleSize.HoverState.Parent = this.tbGenericTitleSize;
+			this.tbGenericTitleSize.Location = new System.Drawing.Point(200, 13);
+			this.tbGenericTitleSize.Maximum = 44;
+			this.tbGenericTitleSize.Minimum = 20;
+			this.tbGenericTitleSize.MouseWheelBarPartitions = 2;
+			this.tbGenericTitleSize.Name = "tbGenericTitleSize";
+			this.tbGenericTitleSize.Size = new System.Drawing.Size(89, 12);
+			this.tbGenericTitleSize.Style = Guna.UI2.WinForms.Enums.TrackBarStyle.Metro;
+			this.tbGenericTitleSize.TabIndex = 37;
+			this.tbGenericTitleSize.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbGenericTitleSize.Value = 38;
+			this.tbGenericTitleSize.ValueChanged += new System.EventHandler(this.tbGenericTitleSize_ValueChanged);
 			// 
 			// fMain
 			// 
@@ -1686,6 +1704,7 @@
 		private System.Windows.Forms.ContextMenuStrip mainMenuStrip;
 		private System.Windows.Forms.ToolStripMenuItem cambiarModoDeRenderizadoToolStripMenuItem;
 		private Guna.UI2.WinForms.Guna2TrackBar tbSpellNameSize;
+		private Guna.UI2.WinForms.Guna2TrackBar tbGenericTitleSize;
 	}
 }
 

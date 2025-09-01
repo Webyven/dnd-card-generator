@@ -78,6 +78,7 @@ namespace DnDCardGenerator
 		{
 			public const string Action = "Acción";
 			public const string BonusAction = "Acción bonus";
+			public const string AditionalAction = "Acción adicional";
 			public const string Reaction = "Reacción";
 		}
 
@@ -85,6 +86,7 @@ namespace DnDCardGenerator
 		{
 			{ ActionType.Reaction,     Properties.Resources.Reaction },
 			{ ActionType.BonusAction,  Properties.Resources.BonusAction },
+			{ ActionType.AditionalAction, Properties.Resources.BonusAction },
 			{ ActionType.Action,       Properties.Resources.Action },
 		};
 	}

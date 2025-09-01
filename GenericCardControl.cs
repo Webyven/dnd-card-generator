@@ -36,6 +36,7 @@ namespace DnDCardGenerator
 				return;
 
 			this.lblName.Text = GameObject.Name;
+			this.lblName.Font = new Font("Ringbearer", GameObject.TitleFontSize, FontStyle.Bold);
 
 			// Liberar imagen previa de pctIcon
 			if (this.pctIcon.Image != null && this.pctIcon.Image != GameObject.Icon)

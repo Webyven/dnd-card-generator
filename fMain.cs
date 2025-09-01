@@ -418,6 +418,14 @@ namespace DnDCardGenerator
 			DebounceUpdate();
 		}
 
+		private void tbGenericTitleSize_ValueChanged(object sender, EventArgs e)
+		{
+			genericCardControl.GameObject.TitleFontSize = (int)tbGenericTitleSize.Value;
+			genericCardControl.GameObject = currentObject;
+			genericCardControl.RefreshControl();
+			DebounceUpdate();
+		}
+
 		private void cambiarModoDeRenderizadoToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			if (MessageBox.Show("¿Deseas cambiar el modo de renderizado?\n\nLa aplicación se reiniciará y perderás los cambios no guardados.", "Cambiar modo de renderizado", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
