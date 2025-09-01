@@ -129,6 +129,7 @@
 			this.pctPreviewCard = new System.Windows.Forms.PictureBox();
 			this.mainMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.cambiarModoDeRenderizadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.tbSpellNameSize = new Guna.UI2.WinForms.Guna2TrackBar();
 			this.guna2ShadowPanel1.SuspendLayout();
 			this.pages.SuspendLayout();
 			this.pageSpells.SuspendLayout();
@@ -741,6 +742,7 @@
 			// pageSpells
 			// 
 			this.pageSpells.BackColor = System.Drawing.SystemColors.Control;
+			this.pageSpells.Controls.Add(this.tbSpellNameSize);
 			this.pageSpells.Controls.Add(this.label17);
 			this.pageSpells.Controls.Add(this.tbSpellsFontSize);
 			this.pageSpells.Controls.Add(this.txtDescription);
@@ -1537,6 +1539,22 @@
 			this.cambiarModoDeRenderizadoToolStripMenuItem.Text = "Cambiar modo de renderizado";
 			this.cambiarModoDeRenderizadoToolStripMenuItem.Click += new System.EventHandler(this.cambiarModoDeRenderizadoToolStripMenuItem_Click);
 			// 
+			// tbSpellNameSize
+			// 
+			this.tbSpellNameSize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(210)))));
+			this.tbSpellNameSize.HoverState.Parent = this.tbSpellNameSize;
+			this.tbSpellNameSize.Location = new System.Drawing.Point(200, 13);
+			this.tbSpellNameSize.Maximum = 44;
+			this.tbSpellNameSize.Minimum = 20;
+			this.tbSpellNameSize.MouseWheelBarPartitions = 2;
+			this.tbSpellNameSize.Name = "tbSpellNameSize";
+			this.tbSpellNameSize.Size = new System.Drawing.Size(89, 12);
+			this.tbSpellNameSize.Style = Guna.UI2.WinForms.Enums.TrackBarStyle.Metro;
+			this.tbSpellNameSize.TabIndex = 36;
+			this.tbSpellNameSize.ThumbColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.tbSpellNameSize.Value = 40;
+			this.tbSpellNameSize.ValueChanged += new System.EventHandler(this.tbSpellNameSize_ValueChanged);
+			// 
 			// fMain
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1667,6 +1685,7 @@
 		private Guna.UI2.WinForms.Guna2TrackBar tbSpellsFontSize;
 		private System.Windows.Forms.ContextMenuStrip mainMenuStrip;
 		private System.Windows.Forms.ToolStripMenuItem cambiarModoDeRenderizadoToolStripMenuItem;
+		private Guna.UI2.WinForms.Guna2TrackBar tbSpellNameSize;
 	}
 }
 

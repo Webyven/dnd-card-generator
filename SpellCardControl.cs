@@ -109,6 +109,7 @@ namespace DnDCardGenerator
 		public void SetSpellName(string name)
 		{
 			lblSpellName.Text = name;
+			lblSpellName.Font = new Font("Ringbearer", _spell.SpellNameFontSize, FontStyle.Bold);
 
 			if (_spell != null)
 				_spell.Name = name;

@@ -114,7 +114,7 @@
 			this.lblSpellName.Size = new System.Drawing.Size(578, 67);
 			this.lblSpellName.TabIndex = 1;
 			this.lblSpellName.Text = "Proyectil guía";
-			this.lblSpellName.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+			this.lblSpellName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// panelRandom
 			// 

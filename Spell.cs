@@ -22,6 +22,7 @@ namespace DnDCardGenerator
 
 		[JsonIgnore]
 		public int SpellFontSize { get; set; } = 20;
+		public int SpellNameFontSize { get; set; } = 40;
 
 		public Spell() { }
 	}
