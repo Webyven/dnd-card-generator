@@ -300,6 +300,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Artificer.png" />
+    <None Include="Resources\Artificer White.png" />
+    <None Include="Resources\ArtificerLine.png" />
     <None Include="Resources\Punch.png" />
     <None Include="Resources\Boot.png" />
     <None Include="Resources\Bomb.png" />

@@ -23,6 +23,7 @@ namespace DnDCardGenerator
 			public const string Warlock = "Brujo";
 			public const string Monk = "Monje";
 			public const string Wizard = "Mago";
+			public const string Artificer = "Artificiero";
 		}
 
 		public class EnglishClassTypes
@@ -39,6 +40,7 @@ namespace DnDCardGenerator
 			public const string Warlock = "Warlock";
 			public const string Monk = "Monk";
 			public const string Wizard = "Wizard";
+			public const string Artificer = "Artificer";
 		}
 
 		public class ColorInfo
@@ -71,7 +73,9 @@ namespace DnDCardGenerator
 			{ ClassTypes.Monk,      new ColorInfo { BackColor = Color.FromArgb(81, 165, 197),  ForeColor = Color.Black } },
 			{ EnglishClassTypes.Monk, new ColorInfo { BackColor = Color.FromArgb(81, 165, 197), ForeColor = Color.Black } },
 			{ ClassTypes.Wizard,    new ColorInfo { BackColor = Color.FromArgb(42, 80, 161),   ForeColor = Color.White } },
-			{ EnglishClassTypes.Wizard, new ColorInfo { BackColor = Color.FromArgb(42, 80, 161), ForeColor = Color.White } }
+			{ EnglishClassTypes.Wizard, new ColorInfo { BackColor = Color.FromArgb(42, 80, 161), ForeColor = Color.White } },
+			{ ClassTypes.Artificer, new ColorInfo { BackColor = Color.FromArgb(26, 48, 65), ForeColor = Color.White } },
+			{ EnglishClassTypes.Artificer, new ColorInfo { BackColor = Color.FromArgb(26, 48, 65), ForeColor = Color.White } },
 		};
 
 		public class ActionType

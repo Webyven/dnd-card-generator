@@ -88,6 +88,9 @@ namespace DnDCardGenerator
 				case Constants.ClassTypes.Monk:
 					topPanel.BackgroundImage = Properties.Resources.Monk_Line;
 					break;
+				case Constants.ClassTypes.Artificer:
+					topPanel.BackgroundImage = Properties.Resources.Artificer_Line;
+					break;
 				default:
 					topPanel.BackgroundImage = Properties.Resources.Rogue_Line;
 					break;
